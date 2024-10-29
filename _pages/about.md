@@ -7,7 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-Hi Guys!
+👋 **Hello, I'm AmirReza**
+
+🎓 I'm currently a computer engineering student at Sharif University of Technology with a deep interest in Computer Vision, Artificial Intelligence, Machine Learning. I'm also working as a **Research Assistant** at [IPL](http://ipl.ce.sharif.edu/)(Image Processing Lab), where I focus on Efficient Image Super-Resolution using Deep Learning.
+
 
 
 <div style="display: flex; justify-content: space-between;">
@@ -27,7 +30,10 @@ Hi Guys!
                 <strong>Bachelor of Science in Computer Engineering</strong>, 2020 -- Present<br />
                 <span style="color: silver;">Sharif University of Technology</span><br />
             </li>
-
+            <li>
+                <strong>Diploma of Mathematics and Physics</strong>, 2017 -- 2020<br />
+                <span style="color: silver;">Allame Helli School (NODET)</span><br />
+            </li>
         </ul>
     </div>
 </div>
