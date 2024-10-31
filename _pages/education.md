@@ -128,7 +128,7 @@ author_profile: true
     font-family: Arial, sans-serif;
   }
   .exp-item, .course-card {
-    border-left: 4px solid #4CAF50;
+    border-left: 4px solid #800000;
     padding-left: 15px;
     margin-bottom: 20px;
   }
@@ -152,6 +152,6 @@ author_profile: true
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   .course-card h4 {
-    color: #1B8A6B;
+    color: #800000;
   }
 </style>
