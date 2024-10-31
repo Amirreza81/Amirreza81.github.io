@@ -15,10 +15,10 @@ I'm currently a computer engineering student at **Sharif University of Technolog
     <div class="column">
         <h2>Research Interests</h2>
         <ul>
-          <li>Computer Vision</li>
-          <li>Deep Learning</li>
-          <li>Machine Learning</li>
-          <li>Algorithms</li>
+          <li><img src="https://img.icons8.com/ios-filled/20/4CAF50/checkmark.png" alt="check"> Computer Vision</li>
+          <li><img src="https://img.icons8.com/ios-filled/20/4CAF50/checkmark.png" alt="check"> Deep Learning</li>
+          <li><img src="https://img.icons8.com/ios-filled/20/4CAF50/checkmark.png" alt="check"> Machine Learning</li>
+          <li><img src="https://img.icons8.com/ios-filled/20/4CAF50/checkmark.png" alt="check"> Algorithms</li>
         </ul>
     </div>
     <div class="column">
@@ -39,6 +39,7 @@ I'm currently a computer engineering student at **Sharif University of Technolog
 </div>
 
 <style>
+  /* Main layout */
   .about-section {
     display: flex;
     gap: 20px;
@@ -47,19 +48,42 @@ I'm currently a computer engineering student at **Sharif University of Technolog
   .column {
     flex: 1;
   }
+
+  /* Section titles */
   .about-section h2 {
     color: #333;
     border-bottom: 2px solid #4CAF50;
     padding-bottom: 8px;
+    font-size: 1.2em;
   }
+
+  /* Lists and list items */
   .about-section ul {
     list-style-type: none;
     padding: 0;
   }
   .about-section li {
-    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
     color: #444;
+    font-size: 1em;
+    transition: color 0.3s ease;
   }
+  .about-section li:hover {
+    color: #333;
+  }
+
+  /* Checkmark icons */
+  .about-section img {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+  }
+  .about-section li:hover img {
+    transform: scale(1.1);
+  }
+
+  /* Education info */
   .info {
     font-size: 0.9em;
     color: #888;
@@ -67,5 +91,11 @@ I'm currently a computer engineering student at **Sharif University of Technolog
   .institution {
     font-size: 0.9em;
     color: silver;
+  }
+
+  /* Typography */
+  strong {
+    color: #4CAF50;
+    font-weight: bold;
   }
 </style>
