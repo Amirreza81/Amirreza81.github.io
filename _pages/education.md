@@ -5,8 +5,6 @@ permalink: /education/
 author_profile: true
 ---
 
-## Education
-
 <div class="education-section">
 
   <div class="edu-item">
