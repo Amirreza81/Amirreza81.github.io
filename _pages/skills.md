@@ -3,6 +3,8 @@ layout: archive
 title: "Skills"
 permalink: /skills/
 author_profile: true
+redirect_from:
+  - /resume
 ---
 
-Hello from skiils page.
+Hello from skills page.
