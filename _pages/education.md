@@ -15,14 +15,13 @@ author_profile: true
     <p>September 2020 – Present</p>
     <p><em>Tehran, Iran</em></p>
     <ul>
-      <li>Overall GPA: 17.93/20.00</li>
       <li>Last Two Year GPA: 19.60/20.00</li>
     </ul>
   </div>
   
   <div class="edu-item">
     <h3>Allameh Helli High School</h3>
-    <p><strong>Diploma of Mathematics</strong></p>
+    <p><strong>Diploma of Mathematics and Physics</strong></p>
     <p>July 2017 - June 2020</p>
     <p><em>Tehran, Iran</em></p>
     <ul>
