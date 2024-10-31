@@ -5,7 +5,7 @@ permalink: /experience/
 author_profile: true
 ---
 
-## <span class="section-title">Research Experience</span>
+## Research Experience
 
 <div class="experience-section">
 
@@ -23,17 +23,17 @@ author_profile: true
 
 </div>
 
-## <span class="section-title">Education</span>
+## Education
 
 <div class="experience-section">
 
-  <!-- Education Section -->
   <div class="exp-item">
     <h3>Sharif University of Technology</h3>
     <p><strong>Bachelor of Science in Computer Engineering</strong></p>
     <p>September 2020 – Present</p>
     <p><em>Tehran, Iran</em></p>
     <ul>
+      <li>Overall GPA: 17.93/20.00</li>
       <li>Last Two Year GPA: 19.60/20.00</li>
     </ul>
   </div>
@@ -51,56 +51,61 @@ author_profile: true
 
 </div>
 
-## <span class="section-title">Coursework</span>
+## Coursework
 
-<div class="experience-section">
-  <div class="exp-item">
-    <ul>
-      <li><strong>Artificial Intelligence</strong> - Dr. Mohammad Hossein Rohban - 20.00/20.00</li>
-      <li><strong>Machine Learning</strong> - Dr. Fateme Seyed Salehi - 20.00/20.00</li>
-      <li><strong>Fundamental 3D Computer Vision</strong> - Prof. Shohreh Kasaei - 20.00/20.00</li>
-      <li><strong>Probability and Statistics for Engineering</strong> - Dr. Ali Sharifi Zarchi - 20.00/20.00</li>
-      <li><strong>Linear Algebra</strong> - Prof. Hamid Reza Rabiee - 20.00/20.00</li>
-      <li><strong>Data Structure and Algorithms</strong> - Dr. Safarnejad - 20.00/20.00</li>
-      <li><strong>Design of Algorithms</strong> - Dr. Hamid Zarrabi-Zadeh - 19.20/20.00</li>
-      <li><strong>Algorithmic Game Theory</strong> - Dr. Masoud Seddighin - 20.00/20.00</li>
-      <li><strong>Theory of Formal Languages and Automata</strong> - Dr. Mahdi Dowlati - 20.00/20.00</li>
-      <li><strong>Operating Systems</strong> - Dr. Mirzaei - 20.00/20.00</li>
-      <li><strong>Compiler Design</strong> - Ms. HosseinMardi - 20.00/20.00</li>
-    </ul>
+<div class="coursework-section">
+  
+  <div class="course-card">
+    <h4>Artificial Intelligence</h4>
+    <p><strong>Instructor:</strong> Dr. Mohammad Hossein Rohban</p>
+    <p><strong>Grade:</strong> 20.00/20.00</p>
   </div>
+  
+  <div class="course-card">
+    <h4>Machine Learning</h4>
+    <p><strong>Instructor:</strong> Dr. Fateme Seyed Salehi</p>
+    <p><strong>Grade:</strong> 20.00/20.00</p>
+  </div>
+  
+  <div class="course-card">
+    <h4>Fundamental 3D Computer Vision</h4>
+    <p><strong>Instructor:</strong> Prof. Shohreh Kasaei</p>
+    <p><strong>Grade:</strong> 20.00/20.00</p>
+  </div>
+
+  <!-- Add more courses as needed -->
+  
 </div>
 
 <style>
   .experience-section {
     font-family: Arial, sans-serif;
   }
-  .section-title {
-    color: #4CAF50;
-    font-size: 1.5em;
-    font-weight: bold;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 8px;
-    margin-top: 20px;
-  }
-  .exp-item {
+  .exp-item, .course-card {
     border-left: 4px solid #4CAF50;
     padding-left: 15px;
     margin-bottom: 20px;
   }
-  .exp-item h3 {
+  .exp-item h3, .course-card h4 {
     margin: 0;
     color: #333;
   }
-  .exp-item p {
+  .exp-item p, .course-card p {
     margin: 4px 0;
+    color: #444;
   }
-  .exp-item ul {
-    list-style-type: none;
-    padding: 0;
+  .coursework-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
   }
-  .exp-item li {
-    color: #666;
-    margin-bottom: 8px;
+  .course-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .course-card h4 {
+    color: #4CAF50;
   }
 </style>
