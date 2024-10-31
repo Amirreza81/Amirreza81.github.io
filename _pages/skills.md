@@ -43,7 +43,7 @@ redirect_from:
 <div class="skills-section">
   <div class="skill-category">
     <h3>English</h3>
-    <p>Upper-Intermediate</p>
+    <p>Upper-Intermediate (TOEFL exam scheduled for November 2024)</p>
   </div>
   
   <div class="skill-category">
