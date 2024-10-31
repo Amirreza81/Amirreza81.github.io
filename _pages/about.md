@@ -95,7 +95,7 @@ I'm currently a computer engineering student at **Sharif University of Technolog
 
   /* Typography */
   strong {
-    color: #4CAF50;
+    color: #FBB117;
     font-weight: bold;
   }
 </style>
