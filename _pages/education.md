@@ -1,11 +1,28 @@
 ---
 layout: archive
-title: "Education"
-permalink: /education/
+title: "Experience"
+permalink: /experience/
 author_profile: true
 ---
 
+## Research Experience
+
 <div class="education-section">
+
+  <!-- Research Experience Section -->
+  <div class="edu-item">
+    <h3>Image Processing Lab (IPL), Sharif University of Technology</h3>
+    <p><strong>Research Assistant</strong></p>
+    <p>June 2024 – Present</p>
+    <p><em>Tehran, Iran</em></p>
+    <ul>
+      <li>Working under the supervision of Prof. Kasaei</li>
+      <li>Focus on Efficient Image Super-Resolution using Deep Learning</li>
+    </ul>
+  </div>
+
+  <!-- Education Section -->
+  ## Education
 
   <div class="edu-item">
     <h3>Sharif University of Technology</h3>
@@ -13,13 +30,14 @@ author_profile: true
     <p>September 2020 – Present</p>
     <p><em>Tehran, Iran</em></p>
     <ul>
+      <li>Overall GPA: 17.93/20.00</li>
       <li>Last Two Year GPA: 19.60/20.00</li>
     </ul>
   </div>
   
   <div class="edu-item">
     <h3>Allameh Helli High School</h3>
-    <p><strong>Diploma of Mathematics and Physics</strong></p>
+    <p><strong>Diploma of Mathematics</strong></p>
     <p>July 2017 - June 2020</p>
     <p><em>Tehran, Iran</em></p>
     <ul>

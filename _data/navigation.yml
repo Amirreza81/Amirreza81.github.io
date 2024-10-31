@@ -6,8 +6,8 @@
 
 main: 
 
-  - title: "Education"
-    url: /education/  
+  - title: "Experience"
+    url: /experience/  
 
   - title: "Teaching"
     url: /teaching/    
