@@ -72,9 +72,55 @@ author_profile: true
     <p><strong>Instructor:</strong> Prof. Shohreh Kasaei</p>
     <p><strong>Grade:</strong> 20.00/20.00</p>
   </div>
-
-  <!-- Add more courses as needed -->
   
+  <div class="course-card">
+    <h4>Probability and Statistics for Engineering</h4>
+    <p><strong>Instructor:</strong> Dr. Ali Sharifi Zarchi</p>
+    <p><strong>Grade:</strong> 20.00/20.00</p>
+  </div>
+  
+  <div class="course-card">
+    <h4>Linear Algebra</h4>
+    <p><strong>Instructors:</strong> Prof. Hamid Reza Rabiee</p>
+    <p><strong>Grade:</strong> 20.00/20.00</p>
+  </div>
+
+  <div class="course-card">
+    <h4>Data Structure and Algorithms</h4>
+    <p><strong>Instructor:</strong> Dr. Safarnejad</p>
+    <p><strong>Grade:</strong> 20.00/20.00</p>
+  </div>
+
+  <div class="course-card">
+    <h4>Design of Algorithms</h4>
+    <p><strong>Instructor:</strong> Dr. Hamid Zarrabi-Zadeh</p>
+    <p><strong>Grade:</strong> 19.20/20.00</p>
+  </div>
+
+  <div class="course-card">
+    <h4>Algorithmic Game Theory</h4>
+    <p><strong>Instructor:</strong> Dr. Masoud Seddighin</p>
+    <p><strong>Grade:</strong> 20.00/20.00</p>
+  </div>
+
+  <div class="course-card">
+    <h4>Theory of Formal Languages and Automata</h4>
+    <p><strong>Instructor:</strong> Dr. Mahdi Dowlati</p>
+    <p><strong>Grade:</strong> 20.00/20.00</p>
+  </div>
+
+  <div class="course-card">
+    <h4>Operating Systems</h4>
+    <p><strong>Instructor:</strong> Dr. Mirzaei</p>
+    <p><strong>Grade:</strong> 20.00/20.00</p>
+  </div>
+
+  <div class="course-card">
+    <h4>Compiler Design</h4>
+    <p><strong>Instructor:</strong> Ms. HosseinMardi</p>
+    <p><strong>Grade:</strong> 20.00/20.00</p>
+  </div>
+
 </div>
 
 <style>
