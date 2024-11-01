@@ -11,10 +11,6 @@ redirect_from:
 
 I'm currently a computer engineering student at **Sharif University of Technology** with a deep interest in **Computer Vision**, **Artificial Intelligence**, and **Machine Learning**. I'm also working as a **Research Assistant** at [IPL](http://ipl.ce.sharif.edu/) (Image Processing Lab), where I focus on **Efficient Image Super-Resolution using Deep Learning**.
 
-<div class="theme-toggle">
-  <button id="theme-button">Toggle Night/Day Mode</button>
-</div>
-
 <div class="about-section">
     <div class="column">
         <h2>Research Interests</h2>
@@ -29,17 +25,22 @@ I'm currently a computer engineering student at **Sharif University of Technolog
         <h2>Education</h2>
         <ul>
             <li>
-                <strong>Bachelor of Science in Computer Engineering</strong> <br>
-                <span class="info">2020 – Present</span> <br>
+                <strong>Bachelor of Science in Computer Engineering</strong><br>
+                <span class="info">2020 – Present</span><br>
                 <span class="institution">Sharif University of Technology</span>
             </li>
             <li>
-                <strong>Diploma of Mathematics and Physics</strong> <br>
-                <span class="info">2017 – 2020</span> <br>
+                <strong>Diploma of Mathematics and Physics</strong><br>
+                <span class="info">2017 – 2020</span><br>
                 <span class="institution">Allameh Helli School (NODET)</span>
             </li>
         </ul>
     </div>
+</div>
+
+<!-- Toggle Button for Dark and Light Mode -->
+<div class="toggle-container">
+    <button class="toggle-button" onclick="toggleMode()">Toggle Dark/Light Mode</button>
 </div>
 
 <style>
@@ -67,10 +68,16 @@ I'm currently a computer engineering student at **Sharif University of Technolog
   }
   .about-section li {
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 12px;
     font-size: 1em;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+  }
+  .about-section li:hover {
+    background-color: #f0f0f0;
+    padding-left: 5px;
+    border-radius: 5px;
   }
 
   /* Checkmark icons */
@@ -93,42 +100,46 @@ I'm currently a computer engineering student at **Sharif University of Technolog
     color: #666;
   }
 
-  /* Toggle Button */
-  .theme-toggle {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20px;
+  /* Typography */
+  strong {
+    font-weight: bold;
   }
-  #theme-button {
-    padding: 8px 12px;
-    font-size: 1em;
+
+  /* Toggle button for dark/light mode */
+  .toggle-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .toggle-button {
     background-color: #4CAF50;
-    color: #fff;
+    color: white;
     border: none;
-    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1em;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
   }
-  #theme-button:hover {
+  .toggle-button:hover {
     background-color: #388E3C;
+  }
+
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  .dark-mode .about-section h2, .dark-mode .institution, .dark-mode .info, .dark-mode strong {
+    color: #ffffff;
+  }
+  .dark-mode .toggle-button {
+    background-color: #ffffff;
+    color: #4CAF50;
   }
 </style>
 
 <script>
-  const themeButton = document.getElementById('theme-button');
-  themeButton.addEventListener('click', () => {
-    document.body.classList.toggle('night-mode');
-  });
+  function toggleMode() {
+    document.body.classList.toggle("dark-mode");
+  }
 </script>
-
-<style>
-  /* Night Mode Styles */
-  body.night-mode {
-    background-color: #2e2e2e;
-    color: #f9f9f9;
-  }
-  body.night-mode .about-section h2,
-  body.night-mode #theme-button {
-    background-color: #f9f9f9;
-    color: #2e2e2e;
-  }
-</style>
