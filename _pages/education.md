@@ -29,6 +29,7 @@ author_profile: true
     <p>September 2020 – Present</p>
     <p><em>Tehran, Iran</em></p>
     <ul>
+      <li>Overall GPA: 17.93/20.00</li>
       <li>Last Two Year GPA: 19.60/20.00</li>
     </ul>
   </div>
@@ -116,7 +117,7 @@ author_profile: true
 </div>
 
 <style>
-  /* Experience and Coursework Section Styles */
+  /* Experience Section without color */
   .experience-section {
     font-family: Arial, sans-serif;
     margin-bottom: 20px;
@@ -124,18 +125,18 @@ author_profile: true
   .exp-item {
     padding-left: 15px;
     margin-bottom: 20px;
+    border-left: 4px solid #4CAF50;
   }
 
-  /* Titles for Research and Education */
+  /* Titles */
   .exp-item h3 {
     margin-top: 0;
-    color: #4CAF50;
   }
   .exp-item p, .exp-item li {
     color: #444;
   }
 
-  /* Coursework styling as cards */
+  /* Coursework as cards */
   .coursework-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* نمایش ۳ کارت در هر ردیف */
