@@ -63,7 +63,7 @@ I'm currently a computer engineering student at **Sharif University of Technolog
   }
   .about-section li {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* هر آیتم به صورت ستونی نمایش داده شود */
     margin-bottom: 12px;
     font-size: 1em;
     transition: background-color 0.3s ease, padding 0.3s ease;
