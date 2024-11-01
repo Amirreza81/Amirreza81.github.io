@@ -11,6 +11,10 @@ redirect_from:
 
 I'm currently a computer engineering student at **Sharif University of Technology** with a deep interest in **Computer Vision**, **Artificial Intelligence**, and **Machine Learning**. I'm also working as a **Research Assistant** at [IPL](http://ipl.ce.sharif.edu/) (Image Processing Lab), where I focus on **Efficient Image Super-Resolution using Deep Learning**.
 
+<div class="theme-toggle">
+  <button id="theme-button">Toggle Night/Day Mode</button>
+</div>
+
 <div class="about-section">
     <div class="column">
         <h2>Research Interests</h2>
@@ -63,15 +67,10 @@ I'm currently a computer engineering student at **Sharif University of Technolog
   }
   .about-section li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     margin-bottom: 12px;
     font-size: 1em;
-    transition: background-color 0.3s ease, padding 0.3s ease;
-  }
-  .about-section li:hover {
-    background-color: #f0f0f0;
-    padding-left: 5px;
-    border-radius: 5px;
   }
 
   /* Checkmark icons */
@@ -94,8 +93,42 @@ I'm currently a computer engineering student at **Sharif University of Technolog
     color: #666;
   }
 
-  /* Typography */
-  strong {
-    font-weight: bold;
+  /* Toggle Button */
+  .theme-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  #theme-button {
+    padding: 8px 12px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #theme-button:hover {
+    background-color: #388E3C;
+  }
+</style>
+
+<script>
+  const themeButton = document.getElementById('theme-button');
+  themeButton.addEventListener('click', () => {
+    document.body.classList.toggle('night-mode');
+  });
+</script>
+
+<style>
+  /* Night Mode Styles */
+  body.night-mode {
+    background-color: #2e2e2e;
+    color: #f9f9f9;
+  }
+  body.night-mode .about-section h2,
+  body.night-mode #theme-button {
+    background-color: #f9f9f9;
+    color: #2e2e2e;
   }
 </style>
