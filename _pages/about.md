@@ -56,14 +56,14 @@ I'm currently a computer engineering student at **Sharif University of Technolog
     font-size: 1.2em;
   }
 
-  /* Lists and list items */
+  /* Lists for Research Interests */
   .about-section ul {
     list-style-type: none;
     padding: 0;
   }
   .about-section li {
     display: flex;
-    flex-direction: column; /* هر آیتم به صورت ستونی نمایش داده شود */
+    align-items: center;
     margin-bottom: 12px;
     font-size: 1em;
     transition: background-color 0.3s ease, padding 0.3s ease;
@@ -74,16 +74,20 @@ I'm currently a computer engineering student at **Sharif University of Technolog
     border-radius: 5px;
   }
 
-  /* Checkmark icons */
-  .about-section img {
+  /* Checkmark icons for Research Interests */
+  .about-section .column:first-child li img {
     margin-right: 8px;
     transition: transform 0.3s ease;
+    width: 20px; /* اندازه اصلی چک‌مارک‌ها */
   }
   .about-section li:hover img {
     transform: scale(1.1);
   }
 
-  /* Education info */
+  /* Education info styling */
+  .column:nth-child(2) li {
+    display: block; /* تنظیم برای آیتم‌های Education */
+  }
   .info, .institution {
     font-size: 0.9em;
   }
