@@ -39,6 +39,7 @@ I'm currently a computer engineering student at **Sharif University of Technolog
 </div>
 
 <style>
+  /* Main layout */
   .about-section {
     display: flex;
     gap: 20px;
@@ -47,12 +48,15 @@ I'm currently a computer engineering student at **Sharif University of Technolog
   .column {
     flex: 1;
   }
+
+  /* Section titles */
   .about-section h2 {
-    color: #333;
     border-bottom: 2px solid #4CAF50;
     padding-bottom: 8px;
     font-size: 1.2em;
   }
+
+  /* Lists and list items */
   .about-section ul {
     list-style-type: none;
     padding: 0;
@@ -61,13 +65,16 @@ I'm currently a computer engineering student at **Sharif University of Technolog
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-    color: #444;
     font-size: 1em;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, padding 0.3s ease;
   }
   .about-section li:hover {
-    color: #333;
+    background-color: #f0f0f0;
+    padding-left: 5px;
+    border-radius: 5px;
   }
+
+  /* Checkmark icons */
   .about-section img {
     margin-right: 8px;
     transition: transform 0.3s ease;
@@ -75,16 +82,20 @@ I'm currently a computer engineering student at **Sharif University of Technolog
   .about-section li:hover img {
     transform: scale(1.1);
   }
-  .info {
+
+  /* Education info */
+  .info, .institution {
     font-size: 0.9em;
+  }
+  .info {
     color: #888;
   }
   .institution {
-    font-size: 0.9em;
-    color: silver;
+    color: #666;
   }
+
+  /* Typography */
   strong {
-    color: #4CAF50;
     font-weight: bold;
   }
 </style>
