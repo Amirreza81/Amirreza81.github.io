@@ -55,6 +55,7 @@ redirect_from:
 </div>
 
 <style>
+  /* Projects Section and Card Styles */
   .projects-section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -67,16 +68,28 @@ redirect_from:
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #4CAF50;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
   }
+  .project-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    background-color: #e8f5e9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Titles */
   .project-card h4 {
     color: #4CAF50;
     margin-top: 0;
   }
+
+  /* Paragraphs */
   .project-card p {
     color: #444;
     line-height: 1.6;
   }
+
+  /* Button styles for GitHub links */
   .btn {
     display: inline-block;
     padding: 10px 15px;
@@ -86,9 +99,10 @@ redirect_from:
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
   .btn:hover {
     background-color: #388E3C;
+    transform: scale(1.05);
   }
 </style>

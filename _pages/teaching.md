@@ -8,112 +8,95 @@ author_profile: true
 ## Teaching Assistantships
 
 <div class="teaching-section">
-
-  <div class="teach-item">
-    <h3>Artificial Intelligence</h3>
+  
+  <div class="teach-card">
+    <h4>Artificial Intelligence</h4>
     <p><strong>Instructor:</strong> Dr. Mohammad Hossein Rohban</p>
-    <ul>
-      <li>Spring 2024</li>
-      <li>Fall 2024</li>
-    </ul>
+    <p><strong>Terms:</strong> Spring 2024, Fall 2024</p>
   </div>
-
-  <div class="teach-item">
-    <h3>Machine Learning</h3>
+  
+  <div class="teach-card">
+    <h4>Machine Learning</h4>
     <p><strong>Instructor:</strong> Dr. Ali Sharifi Zarchi</p>
-    <ul>
-      <li>Fall 2024</li>
-    </ul>
+    <p><strong>Term:</strong> Fall 2024</p>
   </div>
 
-  <div class="teach-item">
-    <h3>Probability and Statistics for Engineering</h3>
+  <div class="teach-card">
+    <h4>Probability and Statistics for Engineering</h4>
     <p><strong>Instructors:</strong> Dr. Amir Najafi, Dr. Elham Monifi</p>
-    <ul>
-      <li>Fall 2024</li>
-      <li>Spring 2023</li>
-      <li>Fall 2023</li>
-    </ul>
+    <p><strong>Terms:</strong> Fall 2024, Spring 2023, Fall 2023</p>
   </div>
 
-  <div class="teach-item">
-    <h3>Linear Algebra</h3>
+  <div class="teach-card">
+    <h4>Linear Algebra</h4>
     <p><strong>Instructors:</strong> Prof. Hamid Reza Rabiee, Dr. Maryam Ramezani</p>
-    <ul>
-      <li>Spring 2023</li>
-    </ul>
+    <p><strong>Term:</strong> Spring 2023</p>
   </div>
 
-  <div class="teach-item">
-    <h3>Computer Architecture</h3>
+  <div class="teach-card">
+    <h4>Computer Architecture</h4>
     <p><strong>Instructor:</strong> Dr. Laleh Arshadi</p>
-    <ul>
-      <li>Spring 2024</li>
-      <li>Fall 2023</li>
-      <li>Spring 2023</li>
-    </ul>
+    <p><strong>Terms:</strong> Spring 2024, Fall 2023, Spring 2023</p>
   </div>
 
-  <div class="teach-item">
-    <h3>Computer Simulation</h3>
+  <div class="teach-card">
+    <h4>Computer Simulation</h4>
     <p><strong>Instructors:</strong> Dr. Bardia Safaei, Dr. Hossein Peyvandi</p>
-    <ul>
-      <li>Fall 2024</li>
-      <li>Spring 2024</li>
-      <li>Fall 2023</li>
-    </ul>
+    <p><strong>Terms:</strong> Fall 2024, Spring 2024, Fall 2023</p>
   </div>
 
-  <div class="teach-item">
-    <h3>Numerical Computations</h3>
+  <div class="teach-card">
+    <h4>Numerical Computations</h4>
     <p><strong>Instructors:</strong> Prof. Hamid Sarbazi-Azad, Dr. Samira Hossein Ghorban</p>
-    <ul>
-      <li>Fall 2023</li>
-    </ul>
+    <p><strong>Term:</strong> Fall 2023</p>
   </div>
 
-  <div class="teach-item">
-    <h3>Compiler Design</h3>
+  <div class="teach-card">
+    <h4>Compiler Design</h4>
     <p><strong>Instructor:</strong> Ms. Samaneh HosseinMardi</p>
-    <ul>
-      <li>Fall 2024</li>
-      <li>Spring 2024</li>
-    </ul>
+    <p><strong>Terms:</strong> Fall 2024, Spring 2024</p>
   </div>
 
-  <div class="teach-item">
-    <h3>Technical Presentation</h3>
+  <div class="teach-card">
+    <h4>Technical Presentation</h4>
     <p><strong>Instructor:</strong> Dr. Laleh Arshadi</p>
-    <ul>
-      <li>Spring 2024</li>
-    </ul>
+    <p><strong>Term:</strong> Spring 2024</p>
   </div>
 
 </div>
 
 <style>
+  /* Teaching Section and Card Styles */
   .teaching-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
     font-family: Arial, sans-serif;
   }
-  .teach-item {
+  .teach-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #4CAF50;
-    padding-left: 15px;
-    margin-bottom: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
   }
-  .teach-item h3 {
-    margin: 0;
-    color: #333;
+  .teach-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    background-color: #e8f5e9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
-  .teach-item p {
-    margin: 4px 0;
+
+  /* Titles */
+  .teach-card h4 {
+    color: #4CAF50;
+    margin-top: 0;
+  }
+
+  /* Paragraphs */
+  .teach-card p {
     color: #444;
-  }
-  .teach-item ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  .teach-item li {
-    color: #666;
-    margin-bottom: 5px;
+    line-height: 1.6;
   }
 </style>

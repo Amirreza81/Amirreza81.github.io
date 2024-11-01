@@ -8,8 +8,6 @@ author_profile: true
 ## Research Experience
 
 <div class="experience-section">
-
-  <!-- Research Experience Section -->
   <div class="exp-item">
     <h3>Image Processing Lab (IPL), Sharif University of Technology</h3>
     <p><strong>Research Assistant</strong></p>
@@ -20,13 +18,11 @@ author_profile: true
       <li>Focus on Efficient Image Super-Resolution using Deep Learning</li>
     </ul>
   </div>
-
 </div>
 
 ## Education
 
 <div class="experience-section">
-
   <div class="exp-item">
     <h3>Sharif University of Technology</h3>
     <p><strong>Bachelor of Science in Computer Engineering</strong></p>
@@ -48,7 +44,6 @@ author_profile: true
       <li>GPA: 19.78/20.00</li>
     </ul>
   </div>
-
 </div>
 
 ## Coursework
@@ -81,7 +76,7 @@ author_profile: true
   
   <div class="course-card">
     <h4>Linear Algebra</h4>
-    <p><strong>Instructors:</strong> Prof. Hamid Reza Rabiee</p>
+    <p><strong>Instructor:</strong> Prof. Hamid Reza Rabiee</p>
     <p><strong>Grade:</strong> 20.00/20.00</p>
   </div>
 
@@ -124,34 +119,43 @@ author_profile: true
 </div>
 
 <style>
-  .experience-section {
+  /* Experience and Coursework Section Styles */
+  .experience-section, .coursework-section {
     font-family: Arial, sans-serif;
   }
   .exp-item, .course-card {
-    border-left: 4px solid #800000;
+    border-left: 4px solid #4CAF50;
     padding-left: 15px;
     margin-bottom: 20px;
-  }
-  .exp-item h3, .course-card h4 {
-    margin: 0;
-    color: #333;
-  }
-  .exp-item p, .course-card p {
-    margin: 4px 0;
-    color: #444;
-  }
-  .coursework-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  .course-card {
     background-color: #f9f9f9;
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   }
-  .course-card h4 {
-    color: #800000;
+  .exp-item:hover, .course-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    background-color: #e8f5e9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Titles */
+  .exp-item h3, .course-card h4 {
+    margin-top: 0;
+    color: #4CAF50;
+  }
+
+  /* Paragraphs and List Styles */
+  .exp-item p, .course-card p {
+    color: #444;
+    line-height: 1.6;
+  }
+  .exp-item ul, .course-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .exp-item li, .course-card li {
+    color: #666;
+    margin-bottom: 8px;
   }
 </style>

@@ -3,70 +3,95 @@ layout: archive
 title: "Skills"
 permalink: /skills/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
 ## Technical Skills
 
 <div class="skills-section">
-
-  <div class="skill-category">
-    <h3>General Programming Languages</h3>
-    <p>Python, Java, C, HTML/CSS, R, SQL</p>
+  
+  <div class="skill-card">
+    <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" class="icon">
+    <h4>Python</h4>
+    <p>Advanced proficiency in data science libraries like NumPy, Pandas, and TensorFlow.</p>
   </div>
   
-  <div class="skill-category">
-    <h3>Data Science Libraries</h3>
-    <p>OpenCV, Sklearn, Matplotlib, Numpy, PyTorch, TensorFlow</p>
-  </div>
-
-  <div class="skill-category">
-    <h3>Assembly Programming Languages</h3>
-    <p>MIPS, x86</p>
-  </div>
-
-  <div class="skill-category">
-    <h3>Typesetting Languages</h3>
-    <p>LaTeX, Markdown</p>
-  </div>
-
-  <div class="skill-category">
-    <h3>Domain Specific Languages</h3>
-    <p>Verilog</p>
-  </div>
-
-</div>
-
-## Languages
-
-<div class="skills-section">
-  <div class="skill-category">
-    <h3>English</h3>
-    <p>Upper-Intermediate (TOEFL exam scheduled for November 2024)</p>
+  <div class="skill-card">
+    <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" class="icon">
+    <h4>Java</h4>
+    <p>Experience in object-oriented programming and application development with JavaFX.</p>
   </div>
   
-  <div class="skill-category">
-    <h3>Persian</h3>
-    <p>Native proficiency</p>
+  <div class="skill-card">
+    <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C" class="icon">
+    <h4>C Programming</h4>
+    <p>Skilled in low-level programming, efficient algorithms, and data structure implementation.</p>
   </div>
+
+  <div class="skill-card">
+    <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" class="icon">
+    <h4>HTML & CSS</h4>
+    <p>Proficient in web design fundamentals, responsive layouts, and style customization.</p>
+  </div>
+
+  <div class="skill-card">
+    <img src="https://img.icons8.com/color/48/000000/latex.png" alt="LaTeX" class="icon">
+    <h4>LaTeX</h4>
+    <p>Skilled in academic typesetting and document preparation with LaTeX.</p>
+  </div>
+
+  <div class="skill-card">
+    <img src="https://img.icons8.com/color/48/000000/sql.png" alt="SQL" class="icon">
+    <h4>SQL</h4>
+    <p>Proficient in database design, management, and data manipulation using SQL.</p>
+  </div>
+
 </div>
 
 <style>
+  /* Skills Section and Card Styles */
   .skills-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
     font-family: Arial, sans-serif;
   }
-  .skill-category {
+  .skill-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #4CAF50;
-    padding-left: 15px;
-    margin-bottom: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    text-align: left;
   }
-  .skill-category h3 {
-    margin: 0;
-    color: #333;
+  .skill-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    background-color: #e8f5e9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
-  .skill-category p {
-    margin: 4px 0;
-    color: #666;
+
+  /* Titles */
+  .skill-card h4 {
+    color: #4CAF50;
+    margin-top: 10px;
+  }
+
+  /* Paragraphs */
+  .skill-card p {
+    color: #444;
+    line-height: 1.6;
+  }
+
+  /* Icon styling */
+  .icon {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: transform 0.3s ease;
+  }
+  .icon:hover {
+    transform: scale(1.2) rotate(15deg);
   }
 </style>
