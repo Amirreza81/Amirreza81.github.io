@@ -29,7 +29,6 @@ author_profile: true
     <p>September 2020 – Present</p>
     <p><em>Tehran, Iran</em></p>
     <ul>
-      <li>Overall GPA: 17.93/20.00</li>
       <li>Last Two Year GPA: 19.60/20.00</li>
     </ul>
   </div>
@@ -49,7 +48,6 @@ author_profile: true
 ## Coursework
 
 <div class="coursework-section">
-  
   <div class="course-card">
     <h4>Artificial Intelligence</h4>
     <p><strong>Instructor:</strong> Dr. Mohammad Hossein Rohban</p>
@@ -115,47 +113,54 @@ author_profile: true
     <p><strong>Instructor:</strong> Ms. HosseinMardi</p>
     <p><strong>Grade:</strong> 20.00/20.00</p>
   </div>
-
 </div>
 
 <style>
   /* Experience and Coursework Section Styles */
-  .experience-section, .coursework-section {
+  .experience-section {
     font-family: Arial, sans-serif;
+    margin-bottom: 20px;
   }
-  .exp-item, .course-card {
-    border-left: 4px solid #4CAF50;
+  .exp-item {
     padding-left: 15px;
     margin-bottom: 20px;
+  }
+
+  /* Titles for Research and Education */
+  .exp-item h3 {
+    margin-top: 0;
+    color: #4CAF50;
+  }
+  .exp-item p, .exp-item li {
+    color: #444;
+  }
+
+  /* Coursework styling as cards */
+  .coursework-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* نمایش ۳ کارت در هر ردیف */
+    gap: 20px;
+    font-family: Arial, sans-serif;
+  }
+  .course-card {
     background-color: #f9f9f9;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #4CAF50;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   }
-  .exp-item:hover, .course-card:hover {
+  .course-card:hover {
     transform: translateY(-5px) scale(1.02);
     background-color: #e8f5e9;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
-
-  /* Titles */
-  .exp-item h3, .course-card h4 {
-    margin-top: 0;
+  .course-card h4 {
     color: #4CAF50;
+    margin-top: 0;
   }
-
-  /* Paragraphs and List Styles */
-  .exp-item p, .course-card p {
+  .course-card p {
     color: #444;
     line-height: 1.6;
-  }
-  .exp-item ul, .course-card ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  .exp-item li, .course-card li {
-    color: #666;
-    margin-bottom: 8px;
   }
 </style>
