@@ -59,13 +59,13 @@ author_profile: true
   </div>
 
   <div class="skill-card">
-    <img src="https://img.icons8.com/color/48/000000/scikit-learn.png" alt="Sklearn" class="icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Sklearn" class="icon">
     <h4>Scikit-Learn (Sklearn)</h4>
     <p>Machine learning algorithms and data preprocessing.</p>
   </div>
 
   <div class="skill-card">
-    <img src="https://img.icons8.com/color/48/000000/matplotlib.png" alt="Matplotlib" class="icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" class="icon">
     <h4>Matplotlib</h4>
     <p>Data visualization and plotting in Python.</p>
   </div>
@@ -77,7 +77,7 @@ author_profile: true
   </div>
 
   <div class="skill-card">
-    <img src="https://img.icons8.com/color/48/000000/pytorch.png" alt="PyTorch" class="icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Pytorch_logo.png" alt="PyTorch" class="icon">
     <h4>PyTorch</h4>
     <p>Deep learning frameworks for research and development.</p>
   </div>
@@ -127,7 +127,7 @@ author_profile: true
   /* Skills Section and Card Styles */
   .skills-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased card width */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     font-family: Arial, sans-serif;
   }
@@ -135,7 +135,7 @@ author_profile: true
   .skill-card {
     background-color: #f9f9f9;
     border-radius: 8px;
-    padding: 25px; /* Increased padding for larger cards */
+    padding: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #4CAF50;
     position: relative;
@@ -151,10 +151,10 @@ author_profile: true
     line-height: 1.6;
   }
 
-  /* Larger and better positioned icons */
+  /* Adjusted Icon Size and Hover Effect */
   .icon {
-    width: 60px; /* Increased icon size */
-    height: 60px;
+    width: 36px; /* Reduced icon size to 0.75x */
+    height: 36px;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -162,6 +162,6 @@ author_profile: true
   }
   
   .icon:hover {
-    transform: scale(1.2) rotate(15deg); /* Increased hover effect */
+    transform: scale(1.2) rotate(15deg);
   }
 </style>
