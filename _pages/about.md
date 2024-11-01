@@ -25,22 +25,17 @@ I'm currently a computer engineering student at **Sharif University of Technolog
         <h2>Education</h2>
         <ul>
             <li>
-                <strong>Bachelor of Science in Computer Engineering</strong><br>
-                <span class="info">2020 – Present</span><br>
+                <strong>Bachelor of Science in Computer Engineering</strong> <br>
+                <span class="info">2020 – Present</span> <br>
                 <span class="institution">Sharif University of Technology</span>
             </li>
             <li>
-                <strong>Diploma of Mathematics and Physics</strong><br>
-                <span class="info">2017 – 2020</span><br>
+                <strong>Diploma of Mathematics and Physics</strong> <br>
+                <span class="info">2017 – 2020</span> <br>
                 <span class="institution">Allameh Helli School (NODET)</span>
             </li>
         </ul>
     </div>
-</div>
-
-<!-- Toggle Button for Dark and Light Mode -->
-<div class="toggle-container">
-    <button class="toggle-button" onclick="toggleMode()">Toggle Dark/Light Mode</button>
 </div>
 
 <style>
@@ -68,8 +63,7 @@ I'm currently a computer engineering student at **Sharif University of Technolog
   }
   .about-section li {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 12px;
     font-size: 1em;
     transition: background-color 0.3s ease, padding 0.3s ease;
@@ -104,42 +98,4 @@ I'm currently a computer engineering student at **Sharif University of Technolog
   strong {
     font-weight: bold;
   }
-
-  /* Toggle button for dark/light mode */
-  .toggle-container {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .toggle-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  .toggle-button:hover {
-    background-color: #388E3C;
-  }
-
-  /* Dark mode styles */
-  body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-  }
-  .dark-mode .about-section h2, .dark-mode .institution, .dark-mode .info, .dark-mode strong {
-    color: #ffffff;
-  }
-  .dark-mode .toggle-button {
-    background-color: #ffffff;
-    color: #4CAF50;
-  }
 </style>
-
-<script>
-  function toggleMode() {
-    document.body.classList.toggle("dark-mode");
-  }
-</script>
