@@ -7,44 +7,64 @@ author_profile: true
 
 ## Technical Skills
 
+### Programming Languages
+
 <div class="skills-section">
-  
   <div class="skill-card">
     <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" class="icon">
     <h4>Python</h4>
-    <p>Advanced proficiency in data science libraries like NumPy, Pandas, and TensorFlow.</p>
+    <p>Advanced in data science libraries like NumPy, Pandas, and TensorFlow.</p>
   </div>
   
   <div class="skill-card">
     <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" class="icon">
     <h4>Java</h4>
-    <p>Experience in object-oriented programming and application development with JavaFX.</p>
+    <p>Proficient in OOP and application development with JavaFX.</p>
   </div>
   
   <div class="skill-card">
     <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C" class="icon">
-    <h4>C Programming</h4>
-    <p>Skilled in low-level programming, efficient algorithms, and data structure implementation.</p>
+    <h4>C</h4>
+    <p>Experience in low-level programming and algorithm optimization.</p>
   </div>
+</div>
 
+### Web Development
+
+<div class="skills-section">
   <div class="skill-card">
     <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" class="icon">
     <h4>HTML & CSS</h4>
-    <p>Proficient in web design fundamentals, responsive layouts, and style customization.</p>
+    <p>Responsive web design and layout customization.</p>
+  </div>
+
+  <div class="skill-card">
+    <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" class="icon">
+    <h4>JavaScript</h4>
+    <p>Interactive web elements and front-end functionality.</p>
+  </div>
+</div>
+
+### Tools and Software
+
+<div class="skills-section">
+  <div class="skill-card">
+    <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" class="icon">
+    <h4>Git</h4>
+    <p>Version control and collaborative development.</p>
   </div>
 
   <div class="skill-card">
     <img src="https://img.icons8.com/color/48/000000/latex.png" alt="LaTeX" class="icon">
     <h4>LaTeX</h4>
-    <p>Skilled in academic typesetting and document preparation with LaTeX.</p>
+    <p>Academic typesetting and document preparation.</p>
   </div>
 
   <div class="skill-card">
     <img src="https://img.icons8.com/color/48/000000/sql.png" alt="SQL" class="icon">
     <h4>SQL</h4>
-    <p>Proficient in database design, management, and data manipulation using SQL.</p>
+    <p>Database management and data manipulation.</p>
   </div>
-
 </div>
 
 <style>
@@ -71,7 +91,7 @@ author_profile: true
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
-  /* Titles */
+  /* Title for each skill */
   .skill-card h4 {
     color: #4CAF50;
     margin-top: 10px;
@@ -83,9 +103,9 @@ author_profile: true
     line-height: 1.6;
   }
 
-  /* Icon styling */
+  /* Icon styling with larger size */
   .icon {
-    width: 40px;
+    width: 50px;
     position: absolute;
     top: 10px;
     right: 10px;

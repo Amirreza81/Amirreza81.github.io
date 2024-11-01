@@ -7,48 +7,46 @@ redirect_from:
   - /resume
 ---
 
-## Projects
-
 <div class="projects-section">
   
   <div class="project-card">
     <h4>3D Tennis Complete Analysis</h4>
-    <p><strong>Technologies:</strong> Python, 3D-Vision</p>
-    <p>This project presents a comprehensive 3D analysis of tennis, utilizing advanced computer vision methodologies. It focuses on detecting players, tracking ball trajectories, establishing a 3D comprehension of the court, and classifying player poses.</p>
+    <p class="technologies"><strong>Technologies:</strong> Python, 3D-Vision</p>
+    <p class="description">This project presents a comprehensive 3D analysis of tennis, utilizing advanced computer vision methodologies. It focuses on detecting players, tracking ball trajectories, establishing a 3D comprehension of the court, and classifying player poses.</p>
     <a href="https://github.com/Amirreza81/Tennis-3DVision-Project" class="btn">View on GitHub</a>
   </div>
 
   <div class="project-card">
     <h4>Task Management App</h4>
-    <p><strong>Technologies:</strong> Java, JavaFX</p>
-    <p>A client-server application developed with socket programming, allowing multi-threaded server functionality to handle multiple clients. Built with MVC architecture, it facilitates efficient task management.</p>
+    <p class="technologies"><strong>Technologies:</strong> Java, JavaFX</p>
+    <p class="description">A client-server application developed with socket programming, allowing multi-threaded server functionality to handle multiple clients. Built with MVC architecture, it facilitates efficient task management.</p>
     <a href="https://github.com/Amirreza81/Task-Management-App" class="btn">View on GitHub</a>
   </div>
 
   <div class="project-card">
     <h4>CMinus Compiler</h4>
-    <p><strong>Technologies:</strong> Python</p>
-    <p>Developed a compiler for the CMinus language, a simplified subset of the C language, including Lexer, Parser, Code Generator, and Semantic Analyzer components.</p>
+    <p class="technologies"><strong>Technologies:</strong> Python</p>
+    <p class="description">Developed a compiler for the CMinus language, a simplified subset of the C language, including Lexer, Parser, Code Generator, and Semantic Analyzer components.</p>
     <a href="https://github.com/Amirreza81/CMinus-Compiler" class="btn">View on GitHub</a>
   </div>
 
   <div class="project-card">
     <h4>Computer Vision Project</h4>
-    <p><strong>Technologies:</strong> Python</p>
-    <p>Implemented a Convolutional Neural Network (CNN) and Neural Style Transfer, utilizing deep learning techniques in the field of computer vision.</p>
+    <p class="technologies"><strong>Technologies:</strong> Python</p>
+    <p class="description">Implemented a Convolutional Neural Network (CNN) and Neural Style Transfer, utilizing deep learning techniques in the field of computer vision.</p>
     <a href="https://github.com/Amirreza81/Machine-Learning" class="btn">View on GitHub</a>
   </div>
 
   <div class="project-card">
     <h4>Büchi Automaton</h4>
-    <p>A theoretical project focusing on Büchi and Generalized Büchi automaton, exploring automata theory applications in computation.</p>
+    <p class="description">A theoretical project focusing on Büchi and Generalized Büchi automaton, exploring automata theory applications in computation.</p>
     <a href="https://github.com/Amirreza81/Buchi-automaton" class="btn">View on GitHub</a>
   </div>
 
   <div class="project-card">
     <h4>Correlated and Mixed Nash Equilibrium</h4>
-    <p><strong>Technologies:</strong> Python</p>
-    <p>This project implements algorithms for calculating Correlated and Mixed Nash Equilibria within the context of game theory.</p>
+    <p class="technologies"><strong>Technologies:</strong> Python</p>
+    <p class="description">This project implements algorithms for calculating Correlated and Mixed Nash Equilibria within the context of game theory.</p>
     <a href="https://github.com/Amirreza81/Equilibrium-Game-Theory" class="btn">View on GitHub</a>
   </div>
 
@@ -77,16 +75,17 @@ redirect_from:
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
-  /* Titles */
+  /* Project Title */
   .project-card h4 {
     color: #4CAF50;
     margin-top: 0;
+    font-size: 1.2em; /* بزرگتر کردن اندازه عنوان پروژه */
   }
 
-  /* Paragraphs */
-  .project-card p {
-    color: #444;
-    line-height: 1.6;
+  /* Technologies and Description */
+  .project-card .technologies, .project-card .description {
+    font-size: 0.9em; /* کوچکتر کردن اندازه توضیحات */
+    color: #666;
   }
 
   /* Button styles for GitHub links */
