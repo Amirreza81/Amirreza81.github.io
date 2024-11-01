@@ -29,7 +29,6 @@ author_profile: true
     <p>September 2020 – Present</p>
     <p><em>Tehran, Iran</em></p>
     <ul>
-      <li>Overall GPA: 17.93/20.00</li>
       <li>Last Two Year GPA: 19.60/20.00</li>
     </ul>
   </div>
