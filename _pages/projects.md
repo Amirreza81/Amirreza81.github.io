@@ -68,7 +68,7 @@ redirect_from:
   /* Projects Section and Card Styles */
   .projects-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     font-family: Arial, sans-serif;
   }
@@ -80,8 +80,8 @@ redirect_from:
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #4CAF50;
-    width: 300px; /* ثابت نگه‌داشتن عرض کارت */
-    height: 350px; /* ثابت نگه‌داشتن ارتفاع کارت */
+    width: 320px;
+    height: 400px;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     opacity: 0;
@@ -92,9 +92,9 @@ redirect_from:
 
   /* Hover Effect for Project Card */
   .project-card:hover {
-    transform: translateY(-10px) scale(1.05); /* افکت تکان و بزرگ شدن */
+    transform: translateY(-10px) scale(1.05);
     background-color: #e8f5e9;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* افزایش سایه */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
   /* Fade-in Animation for Cards */
@@ -135,7 +135,7 @@ redirect_from:
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: 80%; /* عرض ثابت برای دکمه */
+    width: 45%; /* نصف عرض کارت */
     text-align: center;
   }
   .btn:hover {
