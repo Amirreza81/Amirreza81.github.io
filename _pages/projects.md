@@ -9,43 +9,55 @@ redirect_from:
 
 <div class="projects-section">
   
-  <div class="project-card">
+  <div class="project-card animated-card" style="--delay: 0;">
     <h4>3D Tennis Complete Analysis</h4>
-    <p class="technologies"><strong>Technologies:</strong> <i class="icon-python"></i> Python, <i class="icon-3d-vision"></i> 3D-Vision</p>
+    <p class="technologies"><strong>Technologies:</strong> 
+      <img src="/assets/icons/python-icon.png" alt="Python Icon" class="tech-icon"> Python, 
+      <img src="/assets/icons/3d-vision-icon.png" alt="3D Vision Icon" class="tech-icon"> 3D-Vision
+    </p>
     <p class="description">This project presents a comprehensive 3D analysis of tennis, utilizing advanced computer vision methodologies. It focuses on detecting players, tracking ball trajectories, establishing a 3D comprehension of the court, and classifying player poses.</p>
     <a href="https://github.com/Amirreza81/Tennis-3DVision-Project" class="btn">View on GitHub</a>
   </div>
 
-  <div class="project-card">
+  <div class="project-card animated-card" style="--delay: 1;">
     <h4>Task Management App</h4>
-    <p class="technologies"><strong>Technologies:</strong> <i class="icon-java"></i> Java, <i class="icon-javafx"></i> JavaFX</p>
+    <p class="technologies"><strong>Technologies:</strong> 
+      <img src="/assets/icons/java-icon.png" alt="Java Icon" class="tech-icon"> Java, 
+      <img src="/assets/icons/javafx-icon.png" alt="JavaFX Icon" class="tech-icon"> JavaFX
+    </p>
     <p class="description">A client-server application developed with socket programming, allowing multi-threaded server functionality to handle multiple clients. Built with MVC architecture, it facilitates efficient task management.</p>
     <a href="https://github.com/Amirreza81/Task-Management-App" class="btn">View on GitHub</a>
   </div>
 
-  <div class="project-card">
+  <div class="project-card animated-card" style="--delay: 2;">
     <h4>CMinus Compiler</h4>
-    <p class="technologies"><strong>Technologies:</strong> <i class="icon-python"></i> Python</p>
+    <p class="technologies"><strong>Technologies:</strong> 
+      <img src="/assets/icons/python-icon.png" alt="Python Icon" class="tech-icon"> Python
+    </p>
     <p class="description">Developed a compiler for the CMinus language, a simplified subset of the C language, including Lexer, Parser, Code Generator, and Semantic Analyzer components.</p>
     <a href="https://github.com/Amirreza81/CMinus-Compiler" class="btn">View on GitHub</a>
   </div>
 
-  <div class="project-card">
+  <div class="project-card animated-card" style="--delay: 3;">
     <h4>Computer Vision Project</h4>
-    <p class="technologies"><strong>Technologies:</strong> <i class="icon-python"></i> Python</p>
+    <p class="technologies"><strong>Technologies:</strong> 
+      <img src="/assets/icons/python-icon.png" alt="Python Icon" class="tech-icon"> Python
+    </p>
     <p class="description">Implemented a Convolutional Neural Network (CNN) and Neural Style Transfer, utilizing deep learning techniques in the field of computer vision.</p>
     <a href="https://github.com/Amirreza81/Machine-Learning" class="btn">View on GitHub</a>
   </div>
 
-  <div class="project-card">
+  <div class="project-card animated-card" style="--delay: 4;">
     <h4>Büchi Automaton</h4>
     <p class="description">A theoretical project focusing on Büchi and Generalized Büchi automaton, exploring automata theory applications in computation.</p>
     <a href="https://github.com/Amirreza81/Buchi-automaton" class="btn">View on GitHub</a>
   </div>
 
-  <div class="project-card">
+  <div class="project-card animated-card" style="--delay: 5;">
     <h4>Correlated and Mixed Nash Equilibrium</h4>
-    <p class="technologies"><strong>Technologies:</strong> <i class="icon-python"></i> Python</p>
+    <p class="technologies"><strong>Technologies:</strong> 
+      <img src="/assets/icons/python-icon.png" alt="Python Icon" class="tech-icon"> Python
+    </p>
     <p class="description">This project implements algorithms for calculating Correlated and Mixed Nash Equilibria within the context of game theory.</p>
     <a href="https://github.com/Amirreza81/Equilibrium-Game-Theory" class="btn">View on GitHub</a>
   </div>
@@ -70,10 +82,10 @@ redirect_from:
     border-left: 4px solid #4CAF50;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    animation: fadeInUp 0.5s ease-out;
-    animation-delay: calc(var(--delay) * 0.1s);
     opacity: 0;
-    animation-fill-mode: forwards;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: calc(var(--delay) * 0.2s);
   }
 
   /* Fade-in Animation for Cards */
@@ -118,21 +130,12 @@ redirect_from:
     transform: scale(1.05);
   }
 
-  /* Icons for technologies */
-  .technologies i {
-    margin-right: 5px;
-    font-style: normal;
-    display: inline-block;
+  /* Icon for technologies */
+  .tech-icon {
     width: 16px;
     height: 16px;
-    background-size: contain;
-    background-repeat: no-repeat;
     vertical-align: middle;
+    margin-right: 5px;
   }
-
-  .icon-python { background-image: url('path-to-python-icon.png'); }
-  .icon-3d-vision { background-image: url('path-to-3d-vision-icon.png'); }
-  .icon-java { background-image: url('path-to-java-icon.png'); }
-  .icon-javafx { background-image: url('path-to-javafx-icon.png'); }
 
 </style>
