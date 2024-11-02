@@ -73,7 +73,7 @@ author_profile: true
   </div>
 
   <div class="skill-card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/PyTorch_logo_icon.svg" alt="PyTorch" class="icon">
+    <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="PyTorch" class="icon">
     <h4>PyTorch</h4>
     <p>Deep learning frameworks for research and development.</p>
   </div>
@@ -151,6 +151,7 @@ author_profile: true
 
   .skill-card p {
     color: #444;
+    font-size: 0.85em; /* Smaller font size for description */
     line-height: 1.6;
   }
 
