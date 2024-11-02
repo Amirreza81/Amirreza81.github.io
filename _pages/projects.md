@@ -80,19 +80,21 @@ redirect_from:
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #4CAF50;
+    width: 300px; /* ثابت نگه‌داشتن عرض کارت */
+    height: 350px; /* ثابت نگه‌داشتن ارتفاع کارت */
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.5s ease-out forwards;
-    animation-delay: calc(var(--delay) * 0.4s); /* Increased delay for more visibility */
+    animation-delay: calc(var(--delay) * 0.4s);
   }
 
   /* Hover Effect for Project Card */
   .project-card:hover {
-    transform: translateY(-5px) scale(1.03);
+    transform: translateY(-10px) scale(1.05); /* افکت تکان و بزرگ شدن */
     background-color: #e8f5e9;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* افزایش سایه */
   }
 
   /* Fade-in Animation for Cards */
@@ -124,7 +126,6 @@ redirect_from:
   .btn {
     display: inline-block;
     padding: 10px 15px;
-    margin-top: 10px;
     color: white;
     background-color: #4CAF50;
     text-decoration: none;
@@ -134,7 +135,8 @@ redirect_from:
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: calc(100% - 40px); /* Fixed width */
+    width: 80%; /* عرض ثابت برای دکمه */
+    text-align: center;
   }
   .btn:hover {
     background-color: #388E3C;
@@ -148,5 +150,4 @@ redirect_from:
     vertical-align: middle;
     margin-right: 5px;
   }
-
 </style>
