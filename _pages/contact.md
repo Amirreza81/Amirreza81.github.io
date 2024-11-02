@@ -5,8 +5,6 @@ permalink: /contact/
 author_profile: true
 ---
 
-## Let's Connect!
-
 <div class="contact-section">
   
   <!-- GitHub Card -->
@@ -39,7 +37,7 @@ author_profile: true
 
   <!-- Music Channel Card -->
   <div class="contact-card animated-card" style="--delay: 4;">
-    <img src="https://img.icons8.com/ios-glyphs/48/000000/music.png" alt="Music Channel" class="icon">
+    <img src="https://img.icons8.com/ios-glyphs/48/000000/music.png" alt="My Music Channel" class="icon">
     <h4>Music Channel</h4>
     <a href="https://t.me/YourMusicChannel" target="_blank" class="contact-link">@YourMusicChannel</a>
   </div>

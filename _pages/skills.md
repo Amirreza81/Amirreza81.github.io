@@ -55,8 +55,8 @@ author_profile: true
   </div>
 
   <div class="skill-card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Sklearn" class="icon">
-    <h4>Scikit-Learn (Sklearn)</h4>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-Learn" class="icon">
+    <h4>Scikit-Learn</h4>
     <p>Machine learning algorithms and data preprocessing.</p>
   </div>
 
@@ -99,7 +99,7 @@ author_profile: true
   </div>
 </div>
 
-### Typesetting and Domain Specific Languages
+### Typesetting Languages
 
 <div class="skills-section">
   <div class="skill-card">
@@ -112,7 +112,11 @@ author_profile: true
     <h4>Markdown</h4>
     <p>Simple and efficient formatting for web content.</p>
   </div>
+</div>
 
+### Domain Specific Languages
+
+<div class="skills-section">
   <div class="skill-card">
     <h4>Verilog</h4>
     <p>Hardware description language for digital circuits.</p>
