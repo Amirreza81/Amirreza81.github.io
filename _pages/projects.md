@@ -88,6 +88,13 @@ redirect_from:
     animation-delay: calc(var(--delay) * 0.4s); /* Increased delay for more visibility */
   }
 
+  /* Hover Effect for Project Card */
+  .project-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    background-color: #e8f5e9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
   /* Fade-in Animation for Cards */
   @keyframes fadeInUp {
     from {
@@ -124,6 +131,10 @@ redirect_from:
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px); /* Fixed width */
   }
   .btn:hover {
     background-color: #388E3C;
