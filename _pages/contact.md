@@ -5,131 +5,106 @@ permalink: /contact/
 author_profile: true
 ---
 
-<div class="main-card" onclick="toggleDropdown()">
-  <h3>Let's Connect!</h3>
-</div>
-
-<div id="dropdown-menu" class="dropdown-menu">
+<div class="contact-section">
   
-  <!-- GitHub Link -->
-  <div class="dropdown-item">
-    <a href="https://github.com/Amirreza81" target="_blank">
-      <img src="https://img.icons8.com/material-outlined/48/000000/github.png" alt="GitHub" class="icon">
-      <span>GitHub</span>
-    </a>
+  <!-- GitHub Card -->
+  <div class="contact-card animated-card" style="--delay: 0;">
+    <img src="https://img.icons8.com/material-outlined/48/000000/github.png" alt="GitHub" class="icon">
+    <a href="https://github.com/Amirreza81" target="_blank" class="contact-link">GitHub</a>
   </div>
 
-  <!-- LinkedIn Link -->
-  <div class="dropdown-item">
-    <a href="https://www.linkedin.com/in/amirreza-azari-2b3a13229/" target="_blank">
-      <img src="https://img.icons8.com/ios-glyphs/48/000000/linkedin.png" alt="LinkedIn" class="icon">
-      <span>LinkedIn</span>
-    </a>
+  <!-- LinkedIn Card -->
+  <div class="contact-card animated-card" style="--delay: 1;">
+    <img src="https://img.icons8.com/ios-glyphs/48/000000/linkedin.png" alt="LinkedIn" class="icon">
+    <a href="https://www.linkedin.com/in/amirreza-azari-2b3a13229/" target="_blank" class="contact-link">LinkedIn</a>
   </div>
 
-  <!-- Telegram Link -->
-  <div class="dropdown-item">
-    <a href="https://t.me/AmirReza_Azari" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/48/000000/telegram-app.png" alt="Telegram" class="icon">
-      <span>Telegram</span>
-    </a>
+  <!-- Telegram Card -->
+  <div class="contact-card animated-card" style="--delay: 2;">
+    <img src="https://img.icons8.com/ios-filled/48/000000/telegram-app.png" alt="Telegram" class="icon">
+    <a href="https://t.me/AmirReza_Azari" target="_blank" class="contact-link">Telegram</a>
   </div>
 
-  <!-- Instagram Link -->
-  <div class="dropdown-item">
-    <a href="https://instagram.com/amirrezaazari_" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/48/000000/instagram-new.png" alt="Instagram" class="icon">
-      <span>Instagram</span>
-    </a>
+  <!-- Instagram Card -->
+  <div class="contact-card animated-card" style="--delay: 3;">
+    <img src="https://img.icons8.com/ios-filled/48/000000/instagram-new.png" alt="Instagram" class="icon">
+    <a href="https://instagram.com/amirrezaazari_" target="_blank" class="contact-link">Instagram</a>
   </div>
 
-  <!-- Music Channel Link -->
-  <div class="dropdown-item">
-    <a href="https://t.me/avayeamir" target="_blank">
-      <img src="https://img.icons8.com/ios-glyphs/48/000000/music.png" alt="Music Channel" class="icon">
-      <span>Music Channel</span>
-    </a>
+  <!-- Music Channel Card -->
+  <div class="contact-card animated-card" style="--delay: 4;">
+    <img src="https://img.icons8.com/ios-glyphs/48/000000/music.png" alt="Music Channel" class="icon">
+    <a href="https://t.me/avayeamir" target="_blank" class="contact-link">My Music Channel</a>
   </div>
 
 </div>
 
 <style>
-  /* Main Card Style */
-  .main-card {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 40px;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    margin: 100px auto 20px auto;
-    width: fit-content;
-  }
-  .main-card:hover {
-    transform: scale(1.05);
-  }
-
-  /* Dropdown Menu Style */
-  .dropdown-menu {
-    display: none; /* Hidden by default */
+  /* Contact Section and Card Styles */
+  .contact-section {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .contact-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* سایه برای کارت */
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px) scale(0.9); /* موج ورود */
+    animation: fadeInWave 0.6s ease-out forwards;
+    animation-delay: calc(var(--delay) * 0.5s); /* تاخیر برای هر کارت */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
     text-align: center;
   }
 
-  /* Dropdown Item Style */
-  .dropdown-item {
-    background-color: #f9f9f9;
-    padding: 15px 20px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 0 4px 8px rgba(0, 150, 136, 0.3);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    width: fit-content;
+  .contact-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    background-color: #e8f5e9;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* سایه بیشتر در hover */
   }
 
-  .dropdown-item:hover {
-    transform: translateY(-3px);
-    background-color: #e8f5e9;
+  .contact-link {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 8px;
+    display: block;
+    transition: color 0.3s ease;
+  }
+
+  .contact-link:hover {
+    color: #555;
   }
 
   /* Icon Style */
   .icon {
-    width: 36px;
-    height: 36px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
     transition: transform 0.3s ease;
   }
-  
-  /* Icon Hover Effect */
+
   .icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.2) rotate(15deg); /* چرخش و بزرگنمایی آیکون */
   }
 
-  /* Link Style */
-  .dropdown-item a {
-    display: flex;
-    align-items: center;
-    color: #333;
-    font-weight: bold;
-    text-decoration: none;
-  }
-</style>
-
-<script>
-  /* Toggle Dropdown Function */
-  function toggleDropdown() {
-    var menu = document.getElementById("dropdown-menu");
-    if (menu.style.display === "flex") {
-      menu.style.display = "none";
-    } else {
-      menu.style.display = "flex";
+  /* Fade-in Wave Animation */
+  @keyframes fadeInWave {
+    0% {
+      transform: translateY(20px) scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
     }
   }
-</script>
+</style>
