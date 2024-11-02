@@ -9,37 +9,37 @@ author_profile: true
   
   <!-- GitHub Card -->
   <div class="contact-card animated-card" style="--delay: 0;">
-    <img src="https://img.icons8.com/material-outlined/48/000000/github.png" alt="GitHub" class="icon">
-    <h4>GitHub</h4>
-    <a href="https://github.com/Amirreza81" target="_blank" class="contact-link">GitHub</a>
+    <a href="https://github.com/Amirreza81" target="_blank">
+      <img src="https://img.icons8.com/material-outlined/48/000000/github.png" alt="GitHub" class="icon">
+    </a>
   </div>
 
   <!-- LinkedIn Card -->
   <div class="contact-card animated-card" style="--delay: 1;">
-    <img src="https://img.icons8.com/ios-glyphs/48/000000/linkedin.png" alt="LinkedIn" class="icon">
-    <h4>LinkedIn</h4>
-    <a href="https://www.linkedin.com/in/amirreza-azari-2b3a13229/" target="_blank" class="contact-link">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/amirreza-azari-2b3a13229/" target="_blank">
+      <img src="https://img.icons8.com/ios-glyphs/48/000000/linkedin.png" alt="LinkedIn" class="icon">
+    </a>
   </div>
 
   <!-- Telegram Card -->
   <div class="contact-card animated-card" style="--delay: 2;">
-    <img src="https://img.icons8.com/ios-filled/48/000000/telegram-app.png" alt="Telegram" class="icon">
-    <h4>Telegram</h4>
-    <a href="https://t.me/AmirReza_Azari" target="_blank" class="contact-link">Telegram</a>
+    <a href="https://t.me/AmirReza_Azari" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/48/000000/telegram-app.png" alt="Telegram" class="icon">
+    </a>
   </div>
 
   <!-- Instagram Card -->
   <div class="contact-card animated-card" style="--delay: 3;">
-    <img src="https://img.icons8.com/ios-filled/48/000000/instagram-new.png" alt="Instagram" class="icon">
-    <h4>Instagram</h4>
-    <a href="https://instagram.com/amirrezaazari_" target="_blank" class="contact-link">Instagram</a>
+    <a href="https://instagram.com/amirrezaazari_" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/48/000000/instagram-new.png" alt="Instagram" class="icon">
+    </a>
   </div>
 
   <!-- Music Channel Card -->
   <div class="contact-card animated-card" style="--delay: 4;">
-    <img src="https://img.icons8.com/ios-glyphs/48/000000/music.png" alt="Music Channel" class="icon">
-    <h4>Music Channel</h4>
-    <a href="https://t.me/avayeamir" target="_blank" class="contact-link">Music Channel</a>
+    <a href="https://t.me/avayeamir" target="_blank">
+      <img src="https://img.icons8.com/ios-glyphs/48/000000/music.png" alt="Music Channel" class="icon">
+    </a>
   </div>
 
 </div>
@@ -48,7 +48,7 @@ author_profile: true
   /* Contact Section and Card Styles */
   .contact-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 20px;
     font-family: Arial, sans-serif;
   }
@@ -66,7 +66,7 @@ author_profile: true
     animation-delay: calc(var(--delay) * 0.5s); /* تاخیر برای هر کارت */
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
   }
@@ -77,29 +77,10 @@ author_profile: true
     box-shadow: 0 6px 12px rgba(0, 150, 136, 0.5); /* سایه سبز بیشتر در hover */
   }
 
-  .contact-card h4 {
-    color: #4CAF50;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 1.1em;
-  }
-
-  .contact-link {
-    color: #333;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .contact-link:hover {
-    color: #4CAF50;
-  }
-
   /* Icon Styles and Hover Effect */
   .icon {
-    width: 36px;
-    height: 36px;
-    margin-bottom: 10px;
+    width: 48px;
+    height: 48px;
     transition: transform 0.3s ease;
   }
 
@@ -113,12 +94,9 @@ author_profile: true
       transform: translateY(20px) scale(0.9);
       opacity: 0;
     }
-    60% {
-      transform: translateY(-5px) scale(1.03);
-      opacity: 1;
-    }
     100% {
       transform: translateY(0) scale(1);
+      opacity: 1;
     }
   }
 </style>
