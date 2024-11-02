@@ -18,8 +18,8 @@ main:
   - title: "Skills"
     url: /skills/  
     
-  - title: "CV"
-    url: /cv/
+  # - title: "CV"
+  #   url: /cv/
 
   - title: "Contact"
     url: /contact/
