@@ -13,6 +13,9 @@ redirect_from:
     <h4>3D Tennis Complete Analysis</h4>
     <p class="technologies"><strong>Technologies:</strong> Python, 3D-Vision</p>
     <p class="description">This project presents a comprehensive 3D analysis of tennis, utilizing advanced computer vision methodologies. It focuses on detecting players, tracking ball trajectories, establishing a 3D comprehension of the court, and classifying player poses.</p>
+    
+    <div class="spacer"></div>
+    
     <a href="https://github.com/Amirreza81/Tennis-3DVision-Project" class="btn">View on GitHub</a>
   </div>
 
@@ -20,6 +23,9 @@ redirect_from:
     <h4>Task Management App</h4>
     <p class="technologies"><strong>Technologies:</strong> Java, JavaFX</p>
     <p class="description">A client-server application developed with socket programming, allowing multi-threaded server functionality to handle multiple clients. Built with MVC architecture, it facilitates efficient task management.</p>
+    
+    <div class="spacer"></div>
+    
     <a href="https://github.com/Amirreza81/Task-Management-App" class="btn">View on GitHub</a>
   </div>
 
@@ -27,6 +33,9 @@ redirect_from:
     <h4>CMinus Compiler</h4>
     <p class="technologies"><strong>Technologies:</strong> Python</p>
     <p class="description">Developed a compiler for the CMinus language, a simplified subset of the C language, including Lexer, Parser, Code Generator, and Semantic Analyzer components.</p>
+    
+    <div class="spacer"></div>
+    
     <a href="https://github.com/Amirreza81/CMinus-Compiler" class="btn">View on GitHub</a>
   </div>
 
@@ -34,12 +43,18 @@ redirect_from:
     <h4>Computer Vision Project</h4>
     <p class="technologies"><strong>Technologies:</strong> Python</p>
     <p class="description">Implemented a Convolutional Neural Network (CNN) and Neural Style Transfer, utilizing deep learning techniques in the field of computer vision.</p>
+    
+    <div class="spacer"></div>
+    
     <a href="https://github.com/Amirreza81/Machine-Learning" class="btn">View on GitHub</a>
   </div>
 
   <div class="project-card">
     <h4>Büchi Automaton</h4>
     <p class="description">A theoretical project focusing on Büchi and Generalized Büchi automaton, exploring automata theory applications in computation.</p>
+    
+    <div class="spacer"></div>
+    
     <a href="https://github.com/Amirreza81/Buchi-automaton" class="btn">View on GitHub</a>
   </div>
 
@@ -47,6 +62,9 @@ redirect_from:
     <h4>Correlated and Mixed Nash Equilibrium</h4>
     <p class="technologies"><strong>Technologies:</strong> Python</p>
     <p class="description">This project implements algorithms for calculating Correlated and Mixed Nash Equilibria within the context of game theory.</p>
+    
+    <div class="spacer"></div>
+    
     <a href="https://github.com/Amirreza81/Equilibrium-Game-Theory" class="btn">View on GitHub</a>
   </div>
 
@@ -60,6 +78,7 @@ redirect_from:
     gap: 20px;
     font-family: Arial, sans-serif;
   }
+  
   .project-card {
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -68,7 +87,10 @@ redirect_from:
     border-left: 4px solid #4CAF50;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column; /* جهت عمودی برای استفاده از فضای خالی */
   }
+  
   .project-card:hover {
     transform: translateY(-5px) scale(1.02);
     background-color: #e8f5e9;
@@ -79,13 +101,18 @@ redirect_from:
   .project-card h4 {
     color: #4CAF50;
     margin-top: 0;
-    font-size: 1.2em; /* بزرگتر کردن اندازه عنوان پروژه */
+    font-size: 1.2em;
   }
 
   /* Technologies and Description */
   .project-card .technologies, .project-card .description {
-    font-size: 0.9em; /* کوچکتر کردن اندازه توضیحات */
+    font-size: 0.9em;
     color: #666;
+  }
+
+  /* Spacer to push the button to the bottom */
+  .spacer {
+    flex-grow: 1;
   }
 
   /* Button styles for GitHub links */
@@ -100,6 +127,7 @@ redirect_from:
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
+
   .btn:hover {
     background-color: #388E3C;
     transform: scale(1.05);
