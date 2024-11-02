@@ -25,9 +25,7 @@ author_profile: true
     <h4>C</h4>
     <p>Experience in low-level programming and algorithm optimization.</p>
   </div>
-</div>
 
-<div class="skills-section">
   <div class="skill-card">
     <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" class="icon">
     <h4>HTML/CSS</h4>
@@ -75,7 +73,7 @@ author_profile: true
   </div>
 
   <div class="skill-card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Pytorch_logo.png" alt="PyTorch" class="icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/PyTorch_logo_icon.svg" alt="PyTorch" class="icon">
     <h4>PyTorch</h4>
     <p>Deep learning frameworks for research and development.</p>
   </div>
@@ -137,6 +135,13 @@ author_profile: true
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #4CAF50;
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #e8f5e9;
   }
 
   .skill-card h4 {
@@ -149,16 +154,16 @@ author_profile: true
     line-height: 1.6;
   }
 
-  /* Adjusted Icon Size and Hover Effect */
+  /* Adjusted Icon Size */
   .icon {
-    width: 36px; /* Reduced icon size to 0.75x */
+    width: 36px;
     height: 36px;
     position: absolute;
     top: 10px;
     right: 10px;
     transition: transform 0.3s ease;
   }
-  
+
   .icon:hover {
     transform: scale(1.2) rotate(15deg);
   }
