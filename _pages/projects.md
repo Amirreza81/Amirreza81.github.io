@@ -81,7 +81,7 @@ redirect_from:
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #4CAF50;
     width: 320px;
-    height: 400px;
+    height: 450px;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     opacity: 0;
