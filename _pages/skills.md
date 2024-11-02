@@ -5,8 +5,6 @@ permalink: /skills/
 author_profile: true
 ---
 
-## Skills
-
 ### General Programming Languages
 
 <div class="skills-section">
