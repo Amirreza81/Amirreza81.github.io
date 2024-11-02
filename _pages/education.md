@@ -116,7 +116,7 @@ author_profile: true
 </div>
 
 <style>
-  /* Experience Section without color */
+  /* Experience Section with smaller font */
   .experience-section {
     font-family: Arial, sans-serif;
     margin-bottom: 20px;
@@ -129,13 +129,15 @@ author_profile: true
 
   /* Titles */
   .exp-item h3 {
+    font-size: 1.2em; /* Smaller font for titles */
     margin-top: 0;
   }
   .exp-item p, .exp-item li {
     color: #444;
+    font-size: 0.9em; /* Smaller font for descriptions */
   }
 
-  /* Coursework as cards */
+  /* Coursework Section */
   .coursework-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* نمایش ۳ کارت در هر ردیف */
@@ -155,12 +157,16 @@ author_profile: true
     background-color: #e8f5e9;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
+
+  /* Adjusted Font Sizes for Coursework */
   .course-card h4 {
     color: #4CAF50;
     margin-top: 0;
+    font-size: 1.1em; /* Larger font for course names */
   }
   .course-card p {
     color: #444;
     line-height: 1.6;
+    font-size: 0.85em; /* Smaller font for course details */
   }
 </style>
