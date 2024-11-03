@@ -91,9 +91,10 @@ author_profile: true
   /* Hover Effect for Project Card */
   .project-card:hover {
     transform: translateY(-10px) scale(1.05);
-    background-color: #e8f5e9;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+    background-color: #e8f5e9; /* رنگ پس‌زمینه جدید */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* سایه جدید */
+    border-color: #388E3C; /* رنگ جدید برای حاشیه */
+}
 
   /* Fade-in Animation for Cards */
   @keyframes fadeInUp {
