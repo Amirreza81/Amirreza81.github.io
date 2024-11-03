@@ -3,8 +3,6 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
 <div class="projects-section">
@@ -71,7 +69,6 @@ redirect_from:
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     font-family: Arial, sans-serif;
-    padding: 20px;
   }
 
   /* Project Card */
@@ -81,26 +78,24 @@ redirect_from:
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #4CAF50;
-    max-width: 320px;
-    min-height: 450px;
-    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    width: 320px;
+    height: 450px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: calc(var(--delay) * 0.4s);
   }
 
   /* Hover Effect for Project Card */
   .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px) scale(1.05);
+    background-color: #e8f5e9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
   /* Fade-in Animation for Cards */
-  .project-card {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s ease-out forwards;
-    animation-delay: calc(var(--delay) * 0.3s);
-  }
-
   @keyframes fadeInUp {
     from {
       transform: translateY(20px);
@@ -138,10 +133,9 @@ redirect_from:
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: calc(100% - 40px);
+    width: 45%; /* نصف عرض کارت */
     text-align: center;
   }
-
   .btn:hover {
     background-color: #388E3C;
     transform: scale(1.05);
