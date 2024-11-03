@@ -71,6 +71,7 @@ redirect_from:
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     font-family: Arial, sans-serif;
+    padding: 20px;
   }
 
   /* Project Card */
@@ -80,26 +81,26 @@ redirect_from:
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #4CAF50;
-    width: 100%; /* عرض کارت‌ها را تنظیم می‌کند که در صفحه پر شود */
-    max-width: 320px; /* حداکثر عرض */
-    height: auto; /* ارتفاع را بر اساس محتوا تنظیم می‌کند */
-    min-height: 450px; /* حداقل ارتفاع برای سازگاری با متن‌ها */
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    max-width: 320px;
+    min-height: 450px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
     position: relative;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s ease-out forwards;
-    animation-delay: calc(var(--delay) * 0.4s);
   }
 
   /* Hover Effect for Project Card */
   .project-card:hover {
-    transform: translateY(-15px) scale(1.05); /* جلو آمدن کارت با انیمیشن و افزایش سایز */
-    background-color: #e8f5e9;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* سایه بزرگ‌تر در حالت hover */
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
   }
 
   /* Fade-in Animation for Cards */
+  .project-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: calc(var(--delay) * 0.3s);
+  }
+
   @keyframes fadeInUp {
     from {
       transform: translateY(20px);
@@ -110,7 +111,7 @@ redirect_from:
       opacity: 1;
     }
   }
-
+  
   /* Project Title */
   .project-card h4 {
     color: #4CAF50;
@@ -137,10 +138,10 @@ redirect_from:
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: calc(100% - 40px); /* عرض دکمه به اندازه عرض کارت منهای فاصله */
+    width: calc(100% - 40px);
     text-align: center;
   }
-  
+
   .btn:hover {
     background-color: #388E3C;
     transform: scale(1.05);
