@@ -91,10 +91,9 @@ author_profile: true
   /* Hover Effect for Project Card */
   .project-card:hover {
     transform: translateY(-10px) scale(1.05);
-    background-color: #e8f5e9; /* رنگ پس‌زمینه جدید */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* سایه جدید */
-    border-color: #388E3C; /* رنگ جدید برای حاشیه */
-}
+    background-color: #e8f5e9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 
   /* Fade-in Animation for Cards */
   @keyframes fadeInUp {
@@ -130,16 +129,17 @@ author_profile: true
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
     position: absolute;
     bottom: 20px;
     left: 20px;
     width: 45%; /* نصف عرض کارت */
     text-align: center;
   }
-  .btn:hover {
+
+  .project-card:hover .btn {
+    transform: scale(1.1);
     background-color: #388E3C;
-    transform: scale(1.05);
   }
 
   /* Icon for technologies */
