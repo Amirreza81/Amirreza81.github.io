@@ -80,7 +80,7 @@ author_profile: true
     border-left: 4px solid #4CAF50;
     width: 320px;
     height: 450px;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     position: relative;
     opacity: 0;
     transform: translateY(20px);
@@ -137,8 +137,9 @@ author_profile: true
     text-align: center;
   }
 
+  /* Hover Effect for both Project Card and GitHub Button */
   .project-card:hover .btn {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: #388E3C;
   }
 
