@@ -9,7 +9,9 @@ redirect_from:
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Pacifico&size=22&duration=6100&pause=5000&color=4CAF50&background=FFEE2200&vCenter=true&repeat=false&width=435&height=55&lines=Welcome+to+My+Website!)](https://amirreza81.github.io/)
 
-Hello, I'm **AmirReza Azari**. I'm currently an undergraduate computer engineering student at **Sharif University of Technology** with a deep interest in **Computer Vision**, **Artificial Intelligence**, and **Machine Learning**. I'm also working as a **Research Assistant** at [IPL](http://ipl.ce.sharif.edu/) (Image Processing Lab), where I focus on **Efficient Image Super-Resolution using Deep Learning**.
+Hello, I'm **AmirReza Azari**. I'm currently an undergraduate computer engineering student at **Sharif University of Technology** with a deep interest in **Computer Vision**, **Artificial Intelligence**, and **Machine Learning**. I'm also working as a **Research Assistant** at
+ <a href="http://ipl.ce.sharif.edu/" style="color: green; text-decoration: underline;text-decoration-style: dotted;">IPL</a>
+  (Image Processing Lab), where I focus on **Efficient Image Super-Resolution using Deep Learning**.
 
 <div class="about-section">
     <div class="column">
