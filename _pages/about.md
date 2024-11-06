@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=53F7CF&width=435&lines=Welcome+to+My+Website!)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Pacifico&size=22&duration=6100&pause=5000&color=4CAF50&background=FFEE2200&vCenter=true&repeat=false&width=435&height=55&lines=Welcome+to+My+Website!)](https://git.io/typing-svg)
 
 Hello, I'm **AmirReza Azari**. I'm currently an undergraduate computer engineering student at **Sharif University of Technology** with a deep interest in **Computer Vision**, **Artificial Intelligence**, and **Machine Learning**. I'm also working as a **Research Assistant** at [IPL](http://ipl.ce.sharif.edu/) (Image Processing Lab), where I focus on **Efficient Image Super-Resolution using Deep Learning**.
 
