@@ -7,9 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-## Hello, I'm AmirReza Azari
-
-I'm currently an undergraduate computer engineering student at **Sharif University of Technology** with a deep interest in **Computer Vision**, **Artificial Intelligence**, and **Machine Learning**. I'm also working as a **Research Assistant** at [IPL](http://ipl.ce.sharif.edu/) (Image Processing Lab), where I focus on **Efficient Image Super-Resolution using Deep Learning**.
+Hello, I'm AmirReza Azari. I'm currently an undergraduate computer engineering student at **Sharif University of Technology** with a deep interest in **Computer Vision**, **Artificial Intelligence**, and **Machine Learning**. I'm also working as a **Research Assistant** at [IPL](http://ipl.ce.sharif.edu/) (Image Processing Lab), where I focus on **Efficient Image Super-Resolution using Deep Learning**.
 
 <div class="about-section">
     <div class="column">
