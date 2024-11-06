@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Welcome to AmirReza's Page"
+title                    : "Home Page"
 title_separator          : "-"
 name                     : &name "AmirReza"
 description              : &description "personal description"
