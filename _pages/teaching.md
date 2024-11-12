@@ -24,13 +24,13 @@ author_profile: true
   <div class="teach-card">
     <h4>Probability and Statistics for Engineering</h4>
     <p class="instructor"><strong>Instructors:</strong> Dr. Amir Najafi</p>
-    <p class="term"><strong>Terms:</strong> Fall 2023</p>
+    <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2024, Fall 2023</p>
   </div>
 
   <div class="teach-card">
     <h4>Probability and Statistics for Engineering</h4>
     <p class="instructor"><strong>Instructors:</strong> Dr. Elham Monifi</p>
-    <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2023</p>
+    <p class="term"><strong>Terms:</strong> Spring 2023</p>
   </div>
 
   <div class="teach-card">
