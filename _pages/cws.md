@@ -5,8 +5,6 @@ permalink: /cws/
 author_profile: true
 ---
 
-## Coursework
-
 <!-- Online Courses -->
 <div class="coursework-section">
 
@@ -37,11 +35,8 @@ author_profile: true
     <p><strong>Status:</strong> Ongoing</p>
     <span class="label">Online</span>
   </div>
-</div>
 
-<!-- University Courses -->
-<div class="coursework-section">
-  
+  <!-- University Courses -->
   <div class="course-card animated-card" style="--delay: 4;">
     <h4>Artificial Intelligence</h4>
     <p><strong>Instructor:</strong> Dr. Mohammad Hossein Rohban</p>
@@ -107,6 +102,7 @@ author_profile: true
     <p><strong>Instructor:</strong> Ms. HosseinMardi</p>
     <p><strong>Grade:</strong> 20.00/20.00</p>
   </div>
+
 </div>
 
 <style>
@@ -134,9 +130,9 @@ author_profile: true
 
   /* Hover Effect for Course Cards */
   .course-card:hover {
-    transform: translateY(-5px) scale(1.02);
+    transform: translateY(-5px) scale(1.05); /* جلو آوردن کارت */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* سایه بیشتر */
     background-color: #e8f5e9;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
   /* Online Label */
