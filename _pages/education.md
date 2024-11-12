@@ -45,82 +45,13 @@ author_profile: true
   </div>
 </div>
 
-## Coursework
-
-<div class="coursework-section">
-  <div class="course-card">
-    <h4>Artificial Intelligence</h4>
-    <p><strong>Instructor:</strong> Dr. Mohammad Hossein Rohban</p>
-    <p><strong>Grade:</strong> 20.00/20.00</p>
-  </div>
-  
-  <div class="course-card">
-    <h4>Machine Learning</h4>
-    <p><strong>Instructor:</strong> Dr. Fateme Seyed Salehi</p>
-    <p><strong>Grade:</strong> 20.00/20.00</p>
-  </div>
-  
-  <div class="course-card">
-    <h4>Fundamental 3D Computer Vision</h4>
-    <p><strong>Instructor:</strong> Prof. Shohreh Kasaei</p>
-    <p><strong>Grade:</strong> 20.00/20.00</p>
-  </div>
-  
-  <div class="course-card">
-    <h4>Probability and Statistics for Engineering</h4>
-    <p><strong>Instructor:</strong> Dr. Ali Sharifi Zarchi</p>
-    <p><strong>Grade:</strong> 20.00/20.00</p>
-  </div>
-  
-  <div class="course-card">
-    <h4>Linear Algebra</h4>
-    <p><strong>Instructor:</strong> Prof. Hamid Reza Rabiee</p>
-    <p><strong>Grade:</strong> 20.00/20.00</p>
-  </div>
-
-  <div class="course-card">
-    <h4>Data Structure and Algorithms</h4>
-    <p><strong>Instructor:</strong> Dr. Safarnejad</p>
-    <p><strong>Grade:</strong> 20.00/20.00</p>
-  </div>
-
-  <div class="course-card">
-    <h4>Design of Algorithms</h4>
-    <p><strong>Instructor:</strong> Dr. Hamid Zarrabi-Zadeh</p>
-    <p><strong>Grade:</strong> 19.20/20.00</p>
-  </div>
-
-  <div class="course-card">
-    <h4>Algorithmic Game Theory</h4>
-    <p><strong>Instructor:</strong> Dr. Masoud Seddighin</p>
-    <p><strong>Grade:</strong> 20.00/20.00</p>
-  </div>
-
-  <div class="course-card">
-    <h4>Theory of Formal Languages and Automata</h4>
-    <p><strong>Instructor:</strong> Dr. Mahdi Dowlati</p>
-    <p><strong>Grade:</strong> 20.00/20.00</p>
-  </div>
-
-  <div class="course-card">
-    <h4>Operating Systems</h4>
-    <p><strong>Instructor:</strong> Dr. Mirzaei</p>
-    <p><strong>Grade:</strong> 20.00/20.00</p>
-  </div>
-
-  <div class="course-card">
-    <h4>Compiler Design</h4>
-    <p><strong>Instructor:</strong> Ms. HosseinMardi</p>
-    <p><strong>Grade:</strong> 20.00/20.00</p>
-  </div>
-</div>
-
 <style>
-  /* Experience Section with smaller font */
+  /* Experience Section with Smaller Font */
   .experience-section {
     font-family: Arial, sans-serif;
     margin-bottom: 20px;
   }
+
   .exp-item {
     padding-left: 15px;
     margin-bottom: 20px;
@@ -129,44 +60,12 @@ author_profile: true
 
   /* Titles */
   .exp-item h3 {
-    font-size: 1.2em; /* Smaller font for titles */
+    font-size: 1.2em;
     margin-top: 0;
   }
+
   .exp-item p, .exp-item li {
     color: #444;
-    font-size: 0.9em; /* Smaller font for descriptions */
-  }
-
-  /* Coursework Section */
-  .coursework-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* نمایش ۳ کارت در هر ردیف */
-    gap: 20px;
-    font-family: Arial, sans-serif;
-  }
-  .course-card {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid #4CAF50;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  .course-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    background-color: #e8f5e9;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-
-  /* Adjusted Font Sizes for Coursework */
-  .course-card h4 {
-    color: #4CAF50;
-    margin-top: 0;
-    font-size: 1.1em; /* Larger font for course names */
-  }
-  .course-card p {
-    color: #444;
-    line-height: 1.6;
-    font-size: 0.85em; /* Smaller font for course details */
+    font-size: 0.9em;
   }
 </style>
