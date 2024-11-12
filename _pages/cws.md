@@ -147,27 +147,33 @@ author_profile: true
     right: 10px;
   }
 
-  /* Fade-in Animation for Cards */
-  @keyframes fadeInUp {
+  /* Fade-in Animation */
+@keyframes fadeInUp {
     from {
-      transform: translateY(20px);
-      opacity: 0;
+        transform: translateY(20px);
+        opacity: 0;
     }
     to {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
-  /* Adjusted Font Sizes */
-  .course-card h4 {
-    color: #4CAF50;
-    font-size: 1.1em;
-  }
+}
 
-  .course-card p {
-    color: #444;
-    font-size: 0.85em;
-    line-height: 1.6;
-  }
+/* Course Card Style */
+.course-card {
+    /* Animation Settings */
+    animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: calc(var(--delay) * 0.3s);
+    /* Hover Settings */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Hover Effect */
+.course-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #e8f5e9;
+}
+
 </style>
