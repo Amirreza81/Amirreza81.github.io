@@ -23,8 +23,14 @@ author_profile: true
 
   <div class="teach-card">
     <h4>Probability and Statistics for Engineering</h4>
-    <p class="instructor"><strong>Instructors:</strong> Dr. Amir Najafi, Dr. Elham Monifi</p>
-    <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2023, Fall 2023</p>
+    <p class="instructor"><strong>Instructors:</strong> Dr. Amir Najafi</p>
+    <p class="term"><strong>Terms:</strong> Fall 2023</p>
+  </div>
+
+  <div class="teach-card">
+    <h4>Probability and Statistics for Engineering</h4>
+    <p class="instructor"><strong>Instructors:</strong> Dr. Elham Monifi</p>
+    <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2023</p>
   </div>
 
   <div class="teach-card">
@@ -38,11 +44,17 @@ author_profile: true
     <p class="instructor"><strong>Instructor:</strong> Dr. Laleh Arshadi</p>
     <p class="term"><strong>Terms:</strong> Spring 2024, Fall 2023, Spring 2023</p>
   </div>
+  
+  <div class="teach-card">
+    <h4>Computer Simulation</h4>
+    <p class="instructor"><strong>Instructors:</strong> Dr. Bardia Safaei</p>
+    <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2024</p>
+  </div>
 
   <div class="teach-card">
     <h4>Computer Simulation</h4>
-    <p class="instructor"><strong>Instructors:</strong> Dr. Bardia Safaei, Dr. Hossein Peyvandi</p>
-    <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2024, Fall 2023</p>
+    <p class="instructor"><strong>Instructors:</strong> Dr. Hossein Peyvandi</p>
+    <p class="term"><strong>Terms:</strong> Fall 2023</p>
   </div>
 
   <div class="teach-card">
