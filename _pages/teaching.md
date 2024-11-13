@@ -104,12 +104,12 @@ author_profile: true
   .teach-card h4 {
     color: #4CAF50;
     margin-top: 0;
-    font-size: 1.2em; /* بزرگتر کردن اندازه عنوان درس */
+    font-size: 1.1em;
   }
 
   /* Instructor and term styles */
   .teach-card .instructor, .teach-card .term {
-    font-size: 0.9em; /* کوچکتر کردن اندازه فونت */
+    font-size: 0.8em; 
     color: #666;
   }
 </style>
