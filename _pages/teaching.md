@@ -17,7 +17,7 @@ author_profile: true
   
   <div class="teach-card">
     <h4>Machine Learning</h4>
-    <p class="instructor"><strong>Instructor:</strong> <a href="https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en" style="color: green">Dr. Ali Sharifi Zarchi</a></p>
+    <p class="instructor"><strong>Instructor:</strong> <a href="https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en" style="color: balck">Dr. Ali Sharifi Zarchi</a></p>
     <p class="term"><strong>Term:</strong> Fall 2024</p>
   </div>
 
