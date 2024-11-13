@@ -13,7 +13,7 @@ author_profile: true
     <p><strong>Research Assistant</strong></p>
     <p>June 2024 – Present</p>
     <ul>
-      <li>Working under the supervision of <a href="https://scholar.google.com/citations?user=mvx4PvgAAAAJ&hl=en" style="color: green; text-decoration: underline;text-decoration-style: dotted;">Prof. Kasaei</a></li>
+      <li>Working under the supervision of <a href="https://scholar.google.com/citations?user=mvx4PvgAAAAJ&hl=en" style="color: green">Prof. Kasaei</a></li>
       <li>Focus on Efficient Image Super-Resolution using Deep Learning</li>
     </ul>
   </div>
