@@ -17,7 +17,7 @@ author_profile: true
   
   <div class="teach-card">
     <h4>Machine Learning</h4>
-    <p class="instructor"><strong>Instructor:</strong> <a href="https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en" style="color: balck">Dr. Ali Sharifi Zarchi</a></p>
+    <p class="instructor"><strong>Instructor:</strong> <a href="https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en" style="color: green">Dr. Ali Sharifi Zarchi</a></p>
     <p class="term"><strong>Term:</strong> Fall 2024</p>
   </div>
 
@@ -35,7 +35,7 @@ author_profile: true
 
   <div class="teach-card">
     <h4>Linear Algebra</h4>
-    <p class="instructor"><strong>Instructors:</strong> Prof. Hamid Reza Rabiee, Dr. Maryam Ramezani</p>
+    <p class="instructor"><strong>Instructors:</strong> <a href="https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en" style="color: green">Prof. Hamid Reza Rabiee</a>, Dr. Maryam Ramezani</p>
     <p class="term"><strong>Term:</strong> Spring 2023</p>
   </div>
 
@@ -47,7 +47,7 @@ author_profile: true
   
   <div class="teach-card">
     <h4>Computer Simulation</h4>
-    <p class="instructor"><strong>Instructors:</strong> Dr. Bardia Safaei</p>
+    <p class="instructor"><strong>Instructors:</strong> <a href="https://scholar.google.com/citations?user=SVrMscYAAAAJ&hl=en" style="color: green"> Dr. Bardia Safaei </a></p>
     <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2024</p>
   </div>
 
@@ -59,7 +59,7 @@ author_profile: true
 
   <div class="teach-card">
     <h4>Numerical Computations</h4>
-    <p class="instructor"><strong>Instructors:</strong> Prof. Hamid Sarbazi-Azad, Dr. Samira Hossein Ghorban</p>
+    <p class="instructor"><strong>Instructors:</strong> <a href="https://scholar.google.com/citations?user=9OHC9AsAAAAJ&hl=en" style="color: green">Prof. Hamid Sarbazi-Azad</a>, <a href="https://scholar.google.com/citations?user=XAta_TgAAAAJ&hl=en" style="color: green">Dr. Samira Hossein Ghorban</a></p>
     <p class="term"><strong>Term:</strong> Fall 2023</p>
   </div>
 
