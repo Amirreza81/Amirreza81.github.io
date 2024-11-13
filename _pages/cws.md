@@ -122,7 +122,7 @@ author_profile: true
     border-left: 4px solid #4CAF50;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
-    transform: translateY(20px);
+    transform: scale(0.9);
     animation: fadeInUp 0.5s ease-out forwards;
     animation-delay: calc(var(--delay) * 0.3s);
     position: relative;
@@ -130,13 +130,13 @@ author_profile: true
 
   /* Hover Effect for Course Cards */
   .course-card:hover {
-    transform: translateY(-5px) scale(1.05); /* جلو آوردن کارت */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* سایه بیشتر */
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     background-color: #e8f5e9;
   }
 
-  /* Online Label */
-  .online-course .label {
+  /* Label for Online Courses */
+.online-course .label {
     background-color: #ff9800;
     color: white;
     font-size: 0.8em;
@@ -145,7 +145,9 @@ author_profile: true
     position: absolute;
     top: 10px;
     right: 10px;
-  }
+    transform: scale(0.9); 
+}
+
 
   /* Fade-in Animation for Cards */
   @keyframes fadeInUp {
@@ -162,12 +164,12 @@ author_profile: true
   /* Adjusted Font Sizes */
   .course-card h4 {
     color: #4CAF50;
-    font-size: 1.3em; /* بزرگ‌تر کردن اندازه اسم درس */
+    font-size: 1.3em; 
   }
 
   .course-card p {
     color: #444;
-    font-size: 0.8em; /* کوچک‌تر کردن اندازه توضیحات */
+    font-size: 0.8em; 
     line-height: 1.6;
   }
 </style>
