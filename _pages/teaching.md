@@ -26,11 +26,17 @@ author_profile: true
     <p class="instructor"><strong>Instructors:</strong><a href="https://scholar.google.com/citations?user=N_zYPC0AAAAJ&hl=en" style="color: green"> Dr. Amir Najafi </a></p>
     <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2024, Fall 2023</p>
   </div>
+  
+  <div class="teach-card">
+    <h4>Computer Simulation</h4>
+    <p class="instructor"><strong>Instructors:</strong> <a href="https://scholar.google.com/citations?user=SVrMscYAAAAJ&hl=en" style="color: green"> Dr. Bardia Safaei </a></p>
+    <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2024</p>
+  </div>
 
   <div class="teach-card">
-    <h4>Probability and Statistics for Engineering</h4>
-    <p class="instructor"><strong>Instructors:</strong> Dr. Elham Monifi</p>
-    <p class="term"><strong>Terms:</strong> Spring 2023</p>
+    <h4>Numerical Computations</h4>
+    <p class="instructor"><strong>Instructors:</strong> <a href="https://scholar.google.com/citations?user=9OHC9AsAAAAJ&hl=en" style="color: green">Prof. Hamid Sarbazi-Azad</a>, <a href="https://scholar.google.com/citations?user=XAta_TgAAAAJ&hl=en" style="color: green">Dr. Samira Hossein Ghorban</a></p>
+    <p class="term"><strong>Term:</strong> Fall 2023</p>
   </div>
 
   <div class="teach-card">
@@ -40,27 +46,21 @@ author_profile: true
   </div>
 
   <div class="teach-card">
+    <h4>Probability and Statistics for Engineering</h4>
+    <p class="instructor"><strong>Instructors:</strong> Dr. Elham Monifi</p>
+    <p class="term"><strong>Terms:</strong> Spring 2023</p>
+  </div>
+
+  <div class="teach-card">
     <h4>Computer Architecture</h4>
     <p class="instructor"><strong>Instructor:</strong> Dr. Laleh Arshadi</p>
     <p class="term"><strong>Terms:</strong> Spring 2024, Fall 2023, Spring 2023</p>
-  </div>
-  
-  <div class="teach-card">
-    <h4>Computer Simulation</h4>
-    <p class="instructor"><strong>Instructors:</strong> <a href="https://scholar.google.com/citations?user=SVrMscYAAAAJ&hl=en" style="color: green"> Dr. Bardia Safaei </a></p>
-    <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2024</p>
   </div>
 
   <div class="teach-card">
     <h4>Computer Simulation</h4>
     <p class="instructor"><strong>Instructors:</strong> Dr. Hossein Peyvandi</p>
     <p class="term"><strong>Terms:</strong> Fall 2023</p>
-  </div>
-
-  <div class="teach-card">
-    <h4>Numerical Computations</h4>
-    <p class="instructor"><strong>Instructors:</strong> <a href="https://scholar.google.com/citations?user=9OHC9AsAAAAJ&hl=en" style="color: green">Prof. Hamid Sarbazi-Azad</a>, <a href="https://scholar.google.com/citations?user=XAta_TgAAAAJ&hl=en" style="color: green">Dr. Samira Hossein Ghorban</a></p>
-    <p class="term"><strong>Term:</strong> Fall 2023</p>
   </div>
 
   <div class="teach-card">
