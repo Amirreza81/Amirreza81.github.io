@@ -73,6 +73,13 @@ author_profile: true
   </div>
 
   <div class="skill-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" alt="Pandas" class="icon">
+    <h4>Pandas</h4>
+    <p>Data manipulation and analysis with a powerful Python library.</p>
+  </div>
+
+
+  <div class="skill-card">
     <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="PyTorch" class="icon">
     <h4>PyTorch</h4>
     <p>Deep learning frameworks for research and development.</p>
