@@ -145,7 +145,7 @@ author_profile: true
     position: absolute;
     top: 10px;
     right: 10px;
-    transform: scale(0.9); 
+    transform: scale(0.75); 
 }
 
 
