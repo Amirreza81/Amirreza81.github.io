@@ -164,12 +164,12 @@ author_profile: true
   /* Adjusted Font Sizes */
   .course-card h4 {
     color: #4CAF50;
-    font-size: 1.3em; 
+    font-size: 1.1em; 
   }
 
   .course-card p {
     color: #444;
-    font-size: 0.8em; 
+    font-size: 0.7em; 
     line-height: 1.6;
   }
 </style>
