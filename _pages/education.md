@@ -60,12 +60,12 @@ author_profile: true
 
   /* Titles */
   .exp-item h3 {
-    font-size: 1.2em;
+    font-size: 1.15em;
     margin-top: 0;
   }
 
   .exp-item p, .exp-item li {
     color: #444;
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
 </style>
