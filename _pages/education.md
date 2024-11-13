@@ -12,7 +12,6 @@ author_profile: true
     <h3>Image Processing Lab (IPL), Sharif University of Technology</h3>
     <p><strong>Research Assistant</strong></p>
     <p>June 2024 – Present</p>
-    <p><em>Tehran, Iran</em></p>
     <ul>
       <li>Working under the supervision of Prof. Kasaei</li>
       <li>Focus on Efficient Image Super-Resolution using Deep Learning</li>
@@ -27,7 +26,6 @@ author_profile: true
     <h3>Sharif University of Technology</h3>
     <p><strong>Bachelor of Science in Computer Engineering</strong></p>
     <p>September 2020 – Present</p>
-    <p><em>Tehran, Iran</em></p>
     <ul>
       <li>Last Two Year GPA: 19.60/20.00</li>
     </ul>
@@ -37,7 +35,6 @@ author_profile: true
     <h3>Allameh Helli High School</h3>
     <p><strong>Diploma of Mathematics</strong></p>
     <p>July 2017 - June 2020</p>
-    <p><em>Tehran, Iran</em></p>
     <ul>
       <li>Affiliated with National Organization for Development of Exceptional Talents (NODET)</li>
       <li>GPA: 19.78/20.00</li>
