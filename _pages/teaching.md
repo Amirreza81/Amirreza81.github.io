@@ -11,19 +11,19 @@ author_profile: true
   
   <div class="teach-card">
     <h4>Artificial Intelligence</h4>
-    <p class="instructor"><strong>Instructor:</strong> Dr. Mohammad Hossein Rohban</p>
+    <p class="instructor"><strong>Instructor:</strong> <a href="https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en" style="color: green">Dr. Mohammad Hossein Rohban</a></p>
     <p class="term"><strong>Terms:</strong> Spring 2024, Fall 2024</p>
   </div>
   
   <div class="teach-card">
     <h4>Machine Learning</h4>
-    <p class="instructor"><strong>Instructor:</strong> Dr. Ali Sharifi Zarchi</p>
+    <p class="instructor"><strong>Instructor:</strong> <a href="https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en" style="color: green">Dr. Ali Sharifi Zarchi</a></p>
     <p class="term"><strong>Term:</strong> Fall 2024</p>
   </div>
 
   <div class="teach-card">
     <h4>Probability and Statistics for Engineering</h4>
-    <p class="instructor"><strong>Instructors:</strong> Dr. Amir Najafi</p>
+    <p class="instructor"><strong>Instructors:</strong><a href="https://scholar.google.com/citations?user=N_zYPC0AAAAJ&hl=en" style="color: green"> Dr. Amir Najafi </a></p>
     <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2024, Fall 2023</p>
   </div>
 
