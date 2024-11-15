@@ -130,6 +130,23 @@ author_profile: true
   </div>
 </div>
 
+### Languages
+
+<div class="skills-section">
+  <div class="skill-card">
+    <h4>Persian</h4>
+    <p>Native.</p>
+  </div>
+</div>
+
+<div class="skills-section">
+  <div class="skill-card">
+    <h4>English</h4>
+    <p>Upper-Intermediate</p>
+    <p>TOEFL: 107 (R:30, L:28, S:23, W:26)</p>
+  </div>
+</div>
+
 <style>
   /* Skills Section and Card Styles */
   .skills-section {
