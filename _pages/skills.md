@@ -137,9 +137,7 @@ author_profile: true
     <h4>Persian</h4>
     <p>Native.</p>
   </div>
-</div>
 
-<div class="skills-section">
   <div class="skill-card">
     <h4>English</h4>
     <p>Upper-Intermediate</p>
