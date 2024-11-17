@@ -9,6 +9,13 @@ author_profile: true
 <div class="coursework-section">
 
   <div class="course-card online-course animated-card" style="--delay: 0;">
+    <h4>Supervised Machine Learning: Regression and Classification</h4>
+    <p><strong>Institution:</strong> Coursera </p>
+    <p><strong>Status:</strong> Audited </p>
+    <span class="label">Online</span>
+  </div>
+
+  <div class="course-card online-course animated-card" style="--delay: 0;">
     <h4>Machine Learning</h4>
     <p><strong>Institution:</strong> Stanford (CS229)</p>
     <p><strong>Status:</strong> Audited</p>
