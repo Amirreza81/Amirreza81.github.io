@@ -29,13 +29,6 @@ author_profile: true
     <span class="label">Online</span>
   </div>
 
-  <div class="course-card online-course animated-card" style="--delay: 2;">
-    <h4>Supervised Machine Learning</h4>
-    <p><strong>Institution:</strong> Coursera</p>
-    <p><strong>Status:</strong> Ongoing</p>
-    <span class="label">Online</span>
-  </div>
-
   <div class="course-card online-course animated-card" style="--delay: 3;">
     <h4>Neural Networks and Deep Learning</h4>
     <p><strong>Institution:</strong> Coursera</p>
