@@ -32,10 +32,10 @@ author_profile: true
   </div>
 
   <!-- Music Channel Card -->
-  <div class="contact-card animated-card" style="--delay: 4;">
+  <!-- <div class="contact-card animated-card" style="--delay: 4;">
     <img src="https://img.icons8.com/ios-glyphs/48/000000/music.png" alt="Music Channel" class="icon">
     <a href="https://t.me/avayeamir" target="_blank" class="contact-link">My Music Channel</a>
-  </div>
+  </div> -->
 
 </div>
 
