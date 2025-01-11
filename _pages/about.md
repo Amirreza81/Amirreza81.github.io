@@ -18,6 +18,7 @@ Hello, I'm **AmirReza Azari**. I'm currently an undergraduate computer engineeri
         <h2>Research Interests</h2>
         <ul>
           <li><img src="https://img.icons8.com/ios-filled/20/4CAF50/checkmark.png" alt="check"> Computer Vision</li>
+          <li><img src="https://img.icons8.com/ios-filled/20/4CAF50/checkmark.png" alt="check"> Data Science</li>
           <li><img src="https://img.icons8.com/ios-filled/20/4CAF50/checkmark.png" alt="check"> Deep Learning</li>
           <li><img src="https://img.icons8.com/ios-filled/20/4CAF50/checkmark.png" alt="check"> Machine Learning</li>
           <li><img src="https://img.icons8.com/ios-filled/20/4CAF50/checkmark.png" alt="check"> Algorithms</li>
