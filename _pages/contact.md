@@ -26,10 +26,10 @@ author_profile: true
   </div>
 
   <!-- Instagram Card -->
-  <div class="contact-card animated-card" style="--delay: 3;">
+  <!-- <div class="contact-card animated-card" style="--delay: 3;">
     <img src="https://img.icons8.com/ios-filled/48/000000/instagram-new.png" alt="Instagram" class="icon">
     <a href="https://instagram.com/amirrezaazari_" target="_blank" class="contact-link">Instagram</a>
-  </div>
+  </div> -->
 
   <!-- Music Channel Card -->
   <!-- <div class="contact-card animated-card" style="--delay: 4;">
