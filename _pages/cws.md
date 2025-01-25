@@ -97,6 +97,12 @@ author_profile: true
     <p><strong>Grade:</strong> 20.00/20.00</p>
   </div>
 
+  <div class="course-card animated-card" style="--delay: 13;">
+    <h4>Computer Network</h4>
+    <p><strong>Instructor:</strong> Dr. Mizanian</p>
+    <p><strong>Grade:</strong> 20.00/20.00</p>
+  </div>
+
   <div class="course-card animated-card" style="--delay: 14;">
     <h4>Compiler Design</h4>
     <p><strong>Instructor:</strong> Ms. HosseinMardi</p>
