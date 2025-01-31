@@ -22,6 +22,12 @@ author_profile: true
   </div>
 
   <div class="teach-card">
+    <h4>Machine Learning</h4>
+    <p class="instructor"><strong>Instructor:</strong> <a href="https://scholar.google.com/citations?hl=en&user=rKDtrNgAAAAJ&view_op=list_works" style="color: green">Dr. HamidReza Rabiee</a>,, Dr. Zahra Dehghanian</p>
+    <p class="term"><strong>Term:</strong> Fall 2024</p>
+  </div>
+
+  <div class="teach-card">
     <h4>Probability and Statistics for Engineering</h4>
     <p class="instructor"><strong>Instructors:</strong><a href="https://scholar.google.com/citations?user=N_zYPC0AAAAJ&hl=en" style="color: green"> Dr. Amir Najafi </a></p>
     <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2024, Fall 2023</p>
