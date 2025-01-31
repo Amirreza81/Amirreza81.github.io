@@ -23,7 +23,7 @@ author_profile: true
 
   <div class="teach-card">
     <h4>Machine Learning</h4>
-    <p class="instructor"><strong>Instructor:</strong> <a href="https://scholar.google.com/citations?hl=en&user=rKDtrNgAAAAJ&view_op=list_works" style="color: green">Dr. HamidReza Rabiee</a>,, Dr. Zahra Dehghanian</p>
+    <p class="instructor"><strong>Instructor:</strong> <a href="https://scholar.google.com/citations?hl=en&user=rKDtrNgAAAAJ&view_op=list_works" style="color: green">Prof. Hamid Reza Rabiee</a>, Dr. Zahra Dehghanian</p>
     <p class="term"><strong>Term:</strong> Fall 2024</p>
   </div>
 
