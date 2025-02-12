@@ -27,7 +27,7 @@ author_profile: true
     <p><strong>Bachelor of Science in Computer Engineering</strong></p>
     <p>September 2020 – Present</p>
     <ul>
-      <li>Last Two Year GPA: 19.60/20.00</li>
+      <li>Last Two Year GPA: 19.63/20.00</li>
     </ul>
   </div>
   
