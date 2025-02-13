@@ -121,6 +121,28 @@ author_profile: true
   </div>
 </div>
 
+### API & Tools
+
+<div class="skills-section">
+  <div class="skill-card">
+    <img src="https://img.icons8.com/color/48/000000/postman-api.png" alt="Postman" class="icon">
+    <h4>Postman</h4>
+    <p>API testing and development.</p>
+  </div>
+
+  <div class="skill-card">
+    <img src="https://www.vectorlogo.zone/logos/wso2/wso2-icon.svg" alt="WSO2" class="icon">
+    <h4>WSO2</h4>
+    <p>API management and integration.</p>
+  </div>
+
+  <div class="skill-card">
+    <img src="https://img.icons8.com/ios-filled/50/000000/api-settings.png" alt="REST API" class="icon">
+    <h4>REST API</h4>
+    <p>Designing and consuming RESTful APIs.</p>
+  </div>
+</div>
+
 ### Domain Specific Languages
 
 <div class="skills-section">
