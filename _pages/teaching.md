@@ -127,9 +127,9 @@ author_profile: true
     right: 10px;
     background: #ff5722;
     color: white;
-    font-size: 0.75em;
+    font-size: 0.7em;
     font-weight: bold;
-    padding: 3px 8px;
+    padding: 2px 6px;
     border-radius: 5px;
   }
 
