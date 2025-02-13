@@ -145,7 +145,7 @@ author_profile: true
     right: 10px;
     background: #ff5722;
     color: white;
-    font-size: 0.35em;
+    font-size: 0.2em;
     font-weight: bold;
     padding: 1px 4px;
     border-radius: 5px;
