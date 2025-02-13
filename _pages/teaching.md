@@ -132,4 +132,16 @@ author_profile: true
     padding: 3px 8px;
     border-radius: 5px;
   }
+
+  /* New label blinking effect */
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+  }
+
+  .new-label {
+    animation: blink 1s infinite;
+  }
+
 </style>
