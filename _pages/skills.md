@@ -125,13 +125,13 @@ author_profile: true
 
 <div class="skills-section">
   <div class="skill-card">
-    <img src="https://img.icons8.com/color/48/000000/postman-api.png" alt="Postman" class="icon">
+    <img src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="Postman" class="icon">
     <h4>Postman</h4>
     <p>API testing and development.</p>
   </div>
 
   <div class="skill-card">
-    <img src="https://www.vectorlogo.zone/logos/wso2/wso2-icon.svg" alt="WSO2" class="icon">
+    <img src="https://seeklogo.com/images/W/wso2-logo-42B64BE90C-seeklogo.com.png" alt="WSO2" class="icon">
     <h4>WSO2</h4>
     <p>API management and integration.</p>
   </div>
