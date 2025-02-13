@@ -131,7 +131,7 @@ author_profile: true
   </div>
 
   <div class="skill-card">
-    <img src="https://seeklogo.com/images/W/wso2-logo-42B64BE90C-seeklogo.com.png" alt="WSO2" class="icon">
+    <img src="https://yt3.googleusercontent.com/ytc/AIdro_nQoO2sO1691Rb7kZNqZJVYSLO1X-lF2p59ZmzNEhYGo78=s900-c-k-c0x00ffffff-no-rj" alt="WSO2" class="icon">
     <h4>WSO2</h4>
     <p>API management and integration.</p>
   </div>
