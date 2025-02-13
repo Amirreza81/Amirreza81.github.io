@@ -16,8 +16,9 @@ author_profile: true
   </div>
 
   <div class="teach-card">
+    <div class="new-label">NEW</div>
     <h4>Artificial Intelligence</h4>
-    <p class="instructor"><strong>Instructor:</strong> Dr. Ehsan TanGhatari</a></p>
+    <p class="instructor"><strong>Instructor:</strong> Dr. Ehsan TanGhatari</p>
     <p class="term"><strong>Terms:</strong> Spring 2025</p>
   </div>
   
