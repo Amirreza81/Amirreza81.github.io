@@ -14,6 +14,12 @@ author_profile: true
     <p class="instructor"><strong>Instructor:</strong> <a href="https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en" style="color: green">Dr. Mohammad Hossein Rohban</a></p>
     <p class="term"><strong>Terms:</strong> Spring 2024, Fall 2024</p>
   </div>
+
+  <div class="teach-card">
+    <h4>Artificial Intelligence</h4>
+    <p class="instructor"><strong>Instructor:</strong> Dr. Ehsan TanGhatari</a></p>
+    <p class="term"><strong>Terms:</strong> Spring 2025</p>
+  </div>
   
   <div class="teach-card">
     <h4>Machine Learning</h4>
@@ -35,9 +41,10 @@ author_profile: true
   </div>
 
   <div class="teach-card">
+    <div class="new-label">NEW</div>
     <h4>Computer Simulation</h4>
     <p class="instructor"><strong>Instructors:</strong> <a href="https://scholar.google.com/citations?user=SVrMscYAAAAJ&hl=en" style="color: green"> Dr. Bardia Safaei </a></p>
-    <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2024</p>
+    <p class="term"><strong>Terms:</strong> Spring 2025, Fall 2024, Spring 2024</p>
   </div>
 
   <div class="teach-card">
@@ -59,9 +66,10 @@ author_profile: true
   </div>
 
   <div class="teach-card">
+    <div class="new-label">NEW</div>
     <h4>Computer Architecture</h4>
     <p class="instructor"><strong>Instructor:</strong> Dr. Laleh Arshadi</p>
-    <p class="term"><strong>Terms:</strong> Spring 2024, Fall 2023, Spring 2023</p>
+    <p class="term"><strong>Terms:</strong> Spring 2025, Spring 2024, Fall 2023, Spring 2023</p>
   </div>
 
   <div class="teach-card">
@@ -71,9 +79,18 @@ author_profile: true
   </div>
 
   <div class="teach-card">
+    <div class="new-label">NEW</div>
     <h4>Compiler Design</h4>
     <p class="instructor"><strong>Instructor:</strong> Ms. Samaneh HosseinMardi</p>
-    <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2024</p>
+    <p class="term"><strong>Terms:</strong> Spring 2025, Fall 2024, Spring 2024</p>
+    <p class="role"><strong>Role:</strong> Head TA in Spring 2025</p>
+  </div>
+
+  <div class="teach-card">
+    <div class="new-label">NEW</div>
+    <h4>Technical Presentation</h4>
+    <p class="instructor"><strong>Instructor:</strong> Prof. Shohreh Kasaei</p>
+    <p class="term"><strong>Term:</strong> Spring 2025</p>
   </div>
 
   <div class="teach-card">
@@ -127,7 +144,7 @@ author_profile: true
     right: 10px;
     background: #ff5722;
     color: white;
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-weight: bold;
     padding: 2px 6px;
     border-radius: 5px;
@@ -143,5 +160,11 @@ author_profile: true
   .new-label {
     animation: blink 3s infinite;
   }
+
+  .role {
+  color: #ff9800;
+  font-weight: bold;
+  font-size: 0.85em;
+}
 
 </style>
