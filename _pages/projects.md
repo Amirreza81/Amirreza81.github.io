@@ -28,6 +28,16 @@ author_profile: true
   </div>
 
   <div class="project-card animated-card" style="--delay: 2;">
+    <div class="new-label">NEW</div>
+    <h4>Real-Time Embedded Systems</h4>
+    <p class="technologies"><strong>Technologies:</strong> 
+      <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python Icon" class="tech-icon"> Python
+    </p>
+    <p class="description">This project focuses on optimizing energy consumption in embedded systems with limited resources, such as battery-powered devices. We utilize reinforcement learning (RL) and dynamic voltage & frequency scaling (DVFS) to efficiently manage task scheduling, ensuring system constraints are met.</p>
+    <a href="https://github.com/Amirreza81/RL-DVFS-Scheduling" class="btn">View on GitHub</a>
+  </div>
+
+  <div class="project-card animated-card" style="--delay: 2;">
     <h4>CMinus Compiler</h4>
     <p class="technologies"><strong>Technologies:</strong> 
       <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python Icon" class="tech-icon"> Python
@@ -149,5 +159,29 @@ author_profile: true
     height: 16px;
     vertical-align: middle;
     margin-right: 5px;
+  }
+
+  /* New label styles */
+  .new-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff5722;
+    color: white;
+    font-size: 0.35em;
+    font-weight: bold;
+    padding: 1px 4px;
+    border-radius: 5px;
+  }
+
+  /* New label blinking effect */
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+  }
+
+  .new-label {
+    animation: blink 3s infinite;
   }
 </style>
