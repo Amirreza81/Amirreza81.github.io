@@ -21,7 +21,8 @@ author_profile: true
     <p class="term"><strong>Term:</strong> Fall 2024</p>
   </div>
 
-  <div class="teach-card">
+  <div class="teach-card new">
+    <div class="new-label">NEW</div>
     <h4>Machine Learning</h4>
     <p class="instructor"><strong>Instructor:</strong> <a href="https://scholar.google.com/citations?hl=en&user=rKDtrNgAAAAJ&view_op=list_works" style="color: green">Prof. Hamid Reza Rabiee</a>, Dr. Zahra Dehghanian</p>
     <p class="term"><strong>Term:</strong> Spring 2025</p>
@@ -32,7 +33,7 @@ author_profile: true
     <p class="instructor"><strong>Instructors:</strong><a href="https://scholar.google.com/citations?user=N_zYPC0AAAAJ&hl=en" style="color: green"> Dr. Amir Najafi </a></p>
     <p class="term"><strong>Terms:</strong> Fall 2024, Spring 2024, Fall 2023</p>
   </div>
-  
+
   <div class="teach-card">
     <h4>Computer Simulation</h4>
     <p class="instructor"><strong>Instructors:</strong> <a href="https://scholar.google.com/citations?user=SVrMscYAAAAJ&hl=en" style="color: green"> Dr. Bardia Safaei </a></p>
@@ -117,5 +118,18 @@ author_profile: true
   .teach-card .instructor, .teach-card .term {
     font-size: 0.8em; 
     color: #666;
+  }
+
+  /* New label styles */
+  .new-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff5722;
+    color: white;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
   }
 </style>
