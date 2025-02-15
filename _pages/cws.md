@@ -36,6 +36,16 @@ author_profile: true
     <span class="label">Online</span>
   </div>
 
+  <div class="course-card online-course animated-card" style="--delay: 3;">
+  <h4>Pandas</h4>
+  <p><strong>Institution:</strong> Kaggle</p>
+  <p><strong>Status:</strong> Certificate</p>
+  <p><a href="https://www.kaggle.com/learn/pandas" class="course-link" target="_blank">Course Link</a></p>
+  <p><a href="https://www.kaggle.com/learn/certification/amirrezaazari/pandas" class="certificate-link" target="_blank">View Certificate</a></p>
+  <span class="label">Online</span>
+  </div>
+
+
   <!-- University Courses -->
   <div class="course-card animated-card" style="--delay: 4;">
     <h4>Artificial Intelligence</h4>
@@ -178,4 +188,18 @@ author_profile: true
     font-size: 0.7em; 
     line-height: 1.6;
   }
+
+  .course-link, .certificate-link {
+  display: inline-block;
+  color: #0073e6;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  }
+
+  .course-link:hover, .certificate-link:hover {
+    color: #004a99;
+    text-decoration: underline;
+  }
+
 </style>
