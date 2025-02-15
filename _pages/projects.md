@@ -182,6 +182,6 @@ author_profile: true
   }
 
   .new-label {
-    animation: blink 3s infinite;
+    animation: blink 2s infinite;
   }
 </style>
