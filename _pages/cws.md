@@ -37,9 +37,18 @@ author_profile: true
   </div>
 
   <div class="course-card online-course animated-card" style="--delay: 3;">
+  <h4>Intro to Machine Learning</h4>
+  <p><strong>Institution:</strong> Kaggle</p>
+  <p><strong>Status:</strong> Completed</p>
+  <p><a href="https://www.kaggle.com/learn/intro-to-machine-learning" class="course-link" target="_blank">Course Link</a></p>
+  <p><a href="https://www.kaggle.com/learn/certification/amirrezaazari/intro-to-machine-learning" class="certificate-link" target="_blank">View Certificate</a></p>
+  <span class="label">Online</span>
+  </div>
+
+  <div class="course-card online-course animated-card" style="--delay: 3;">
   <h4>Pandas</h4>
   <p><strong>Institution:</strong> Kaggle</p>
-  <p><strong>Status:</strong> Certificate</p>
+  <p><strong>Status:</strong> Completed</p>
   <p><a href="https://www.kaggle.com/learn/pandas" class="course-link" target="_blank">Course Link</a></p>
   <p><a href="https://www.kaggle.com/learn/certification/amirrezaazari/pandas" class="certificate-link" target="_blank">View Certificate</a></p>
   <span class="label">Online</span>
