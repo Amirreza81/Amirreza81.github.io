@@ -87,7 +87,7 @@ author_profile: true
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid #4CAF50;
+    border-left: 4px solid  #8cc5a6;
     width: 320px;
     height: 450px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
@@ -119,7 +119,7 @@ author_profile: true
   
   /* Project Title */
   .project-card h4 {
-    color: #4CAF50;
+    color:  #8cc5a6;
     margin-top: 0;
     font-size: 1.2em;
   }
@@ -135,7 +135,7 @@ author_profile: true
     display: inline-block;
     padding: 10px 15px;
     color: white;
-    background-color: #4CAF50;
+    background-color:  #8cc5a6;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -143,7 +143,7 @@ author_profile: true
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: 45%; /* نصف عرض کارت */
+    width: 45%;
     text-align: center;
   }
 
