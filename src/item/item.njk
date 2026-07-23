@@ -49,9 +49,9 @@ layout: layout.njk
         
         {% if item.image and item.image != "" and item.image != "placeholder.jpg" and item.image != "README.md" %}
         <div class="mb-8">
-            <img src="/content/{{ item.tab }}/{{ item.name }}/images/{{ item.image }}" 
+            <img src="/content/{{ item.folder }}/{{ item.name }}/images/{{ item.image }}"
                  alt="{{ item.title }}" 
-                 class="w-full h-64 object-cover rounded-lg shadow-lg"
+                 class="w-48 h-32 object-contain rounded-lg bg-white p-4"
                  onerror="this.parentElement.style.display='none'">
         </div>
         {% endif %}

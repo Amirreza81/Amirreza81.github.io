@@ -41,9 +41,9 @@ permalink: /{{ tab.slug }}/
                         {% if item.image and item.image != "" and item.image != "placeholder.jpg" and item.image != "README.md" %}
                         <div class="md:flex-shrink-0">
                             <div class="h-48 w-full md:w-48 bg-gray-200 dark:bg-gray-700 rounded-t-lg md:rounded-l-lg md:rounded-t-none overflow-hidden">
-                                <img src="/content/{{ tab.name }}/{{ item.name }}/images/{{ item.image }}" 
+                                <img src="/content/{{ item.folder }}/{{ item.name }}/images/{{ item.image }}"
                                      alt="{{ item.title }}" 
-                                     class="w-full h-full object-cover"
+                                     class="w-48 h-32 object-contain rounded-lg bg-white p-4"
                                      onerror="this.parentElement.style.display='none'">
                             </div>
                         </div>

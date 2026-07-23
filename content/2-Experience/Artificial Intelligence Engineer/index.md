@@ -5,7 +5,7 @@ description: "AI Engineer Intern"
 start: "Dec 2025"
 end: "Apr 2026"
 showDuration: true
-image: ""
+image: "hamrah.svg"
 ---
 
 ### Overview

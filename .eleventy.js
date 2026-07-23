@@ -168,6 +168,7 @@ module.exports = function(eleventyConfig) {
                   name: itemName,
                   slug: itemName.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, ''),
                   content: body,
+                  folder: tabName,
                   tabSlug: tabName.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '')
                 };
                 
@@ -270,6 +271,7 @@ module.exports = function(eleventyConfig) {
                   slug: itemName.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, ''),
                   content: body,
                   tab: cleanTabName(tabName),
+                  folder: tabName,
                   tabSlug: cleanTabName(tabName).toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '')
                 };
                 

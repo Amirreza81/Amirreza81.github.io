@@ -5,7 +5,7 @@ description: "Financial Data Analyst"
 start: "Feb 2025"
 end: "Sep 2025"
 showDuration: true
-image: ""
+image: "hermescapital.jpg"
 ---
 
 ### Overview
