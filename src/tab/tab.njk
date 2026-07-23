@@ -35,7 +35,7 @@ permalink: /{{ tab.slug }}/
         <!-- Items List -->
         <div class="space-y-6">
             {% for item in tab.items %}
-            <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <article class="max-w-5xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg">
                 <a href="/{{ tab.slug }}/{{ item.slug }}/" class="block">
                     <div class="md:flex">
                         {% if item.image and item.image != "" and item.image != "placeholder.jpg" and item.image != "README.md" %}
@@ -78,10 +78,10 @@ permalink: /{{ tab.slug }}/
                             
                             <div class="flex items-center justify-between">
                                 <div class="text-sm text-gray-500 dark:text-gray-400">
-                                    Click to view details
+                                    Read More
                                 </div>
                                 <div class="flex items-center text-blue-600 dark:text-blue-400">
-                                    <span class="text-sm font-medium">View Details</span>
+                                    <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                     </svg>
