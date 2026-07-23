@@ -106,16 +106,17 @@ description: ""
                 {% endif %}
                 
                 {% if showDetails %}
-                <a href="/{{ tab.slug }}/{{ item.slug }}/" class="block">
+                <a href="/{{ tab.slug }}/{{ item.slug }}/"
+                class="block no-underline hover:no-underline">
                 {% endif %}
-                    <div class="md:flex">
+                    <div class="flex items-stretch">
                         {% if item.image and item.image != "" and item.image != "placeholder.jpg" and item.image != "README.md" %}
-                        <div class="md:flex-shrink-0">
-                            <div class="h-48 w-full md:w-48 bg-gray-200 dark:bg-gray-700 rounded-t-lg md:rounded-l-lg md:rounded-t-none overflow-hidden">
+                        <div class="flex items-center">
+                            <div class="w-32 h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded-l-xl">
                                 <img 
                                     src="/content/{{ item.folder }}/{{ item.name }}/images/{{ item.image }}"
                                     alt="{{ item.title }}"
-                                    class="w-full h-full object-cover"
+                                    class="w-20 h-20 object-contain"
                                     loading="lazy"
                                     onerror="this.parentElement.style.display='none'"
                                 >
@@ -123,7 +124,7 @@ description: ""
                         </div>
                         {% endif %}
                         
-                        <div class="p-6 flex-1">
+                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
                                     <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
@@ -160,9 +161,6 @@ description: ""
                             
                             <div class="flex items-center justify-between">
                                 {% if showDetails %}
-                                <div class="text-sm text-gray-500 dark:text-gray-400">
-                                    Read More
-                                </div>
                                 <div class="flex items-center text-blue-600 dark:text-blue-400">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

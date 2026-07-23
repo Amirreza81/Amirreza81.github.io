@@ -35,21 +35,31 @@ permalink: /{{ tab.slug }}/
         <!-- Items List -->
         <div class="space-y-6">
             {% for item in tab.items %}
-            <article class="max-w-5xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+            <article class="max-w-xl mx-auto
+                bg-white dark:bg-[#0B132B]
+                rounded-2xl
+                border border-gray-200 dark:border-[#243B53]
+                shadow-lg
+                transition-all duration-500 ease-out
+                hover:-translate-y-2
+                hover:scale-[1.015]
+                hover:border-[#3A506B]
+                hover:shadow-[0_25px_70px_rgba(128,0,32,0.35)]>
                 <a href="/{{ tab.slug }}/{{ item.slug }}/" class="block">
                     <div class="md:flex">
                         {% if item.image and item.image != "" and item.image != "placeholder.jpg" and item.image != "README.md" %}
                         <div class="md:flex-shrink-0">
-                            <div class="h-48 w-full md:w-48 bg-gray-200 dark:bg-gray-700 rounded-t-lg md:rounded-l-lg md:rounded-t-none overflow-hidden">
-                                <img src="/content/{{ item.folder }}/{{ item.name }}/images/{{ item.image }}"
-                                     alt="{{ item.title }}" 
-                                     class="w-48 h-32 object-contain rounded-lg bg-white p-4"
-                                     onerror="this.parentElement.style.display='none'">
+                            <div class="h-24 w-20 flex-shrink-0 bg-gray-200 dark:bg-gray-700 rounded-xl overflow-hidden flex items-center justify-center">
+                                <img
+                                    src="/content/{{ item.folder }}/{{ item.name }}/images/{{ item.image }}"
+                                    alt="{{ item.title }}"
+                                    class="w-16 h-16 object-contain"
+                                    onerror="this.parentElement.style.display='none'">
                             </div>
                         </div>
                         {% endif %}
                         
-                        <div class="p-6 flex-1">
+                        <div class="p-2 flex-1">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
                                     <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">{{ item.title }}</h2>
@@ -77,9 +87,6 @@ permalink: /{{ tab.slug }}/
                             </div>
                             
                             <div class="flex items-center justify-between">
-                                <div class="text-sm text-gray-500 dark:text-gray-400">
-                                    Read More
-                                </div>
                                 <div class="flex items-center text-blue-600 dark:text-blue-400">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
