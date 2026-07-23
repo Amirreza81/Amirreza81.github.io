@@ -1,0 +1,77 @@
+---
+pagination:
+  data: collections.allItems
+  size: 1
+  alias: item
+permalink: /{{ item.tabSlug }}/{{ item.slug }}/
+layout: layout.njk
+---
+
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-8">
+        <ol class="flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
+            <li><a href="/" class="hover:text-gray-700 dark:hover:text-gray-200">Home</a></li>
+            <li class="before:content-['/'] before:mx-2">
+                <a href="/#{{ item.tabSlug }}" class="hover:text-gray-700 dark:hover:text-gray-200">{{ item.tab }}</a>
+            </li>
+            <li class="before:content-['/'] before:mx-2 text-gray-900 dark:text-white">{{ item.title }}</li>
+        </ol>
+    </nav>
+
+    <!-- Item Header -->
+    <header class="mb-8">
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-4xl font-bold text-gray-900 dark:text-white">{{ item.title }}</h1>
+            <div class="flex flex-col items-end space-y-1 text-sm text-gray-500 dark:text-gray-400">
+                <div class="flex items-center space-x-2">
+                    <span>{{ item.start }}</span>
+                    {% if item.end %}
+                    <span>–</span>
+                    <span>{{ item.end }}</span>
+                    {% endif %}
+                </div>
+                {% if item.showDuration %}
+                <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
+                    {{ item.start | calculateDuration(item.end) }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        
+        {% if item.organization %}
+        <p class="text-lg font-medium text-primary-600 dark:text-primary-400 mb-4">{{ item.organization }}</p>
+        {% endif %}
+        
+        {% if item.description %}
+        <p class="text-xl text-gray-600 dark:text-gray-300 mb-6">{{ item.description }}</p>
+        {% endif %}
+        
+        {% if item.image and item.image != "" and item.image != "placeholder.jpg" and item.image != "README.md" %}
+        <div class="mb-8">
+            <img src="/content/{{ item.tab }}/{{ item.name }}/images/{{ item.image }}" 
+                 alt="{{ item.title }}" 
+                 class="w-full h-64 object-cover rounded-lg shadow-lg"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        {% endif %}
+    </header>
+
+    <!-- Item Content -->
+    <div class="content-area max-w-none">
+        {{ item.content | markdown | safe }}
+    </div>
+
+    <!-- Navigation -->
+    <nav class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+        <div class="flex justify-between">
+            <a href="/#{{ item.tabSlug }}" 
+               class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to {{ item.tab }}
+            </a>
+        </div>
+    </nav>
+</div>

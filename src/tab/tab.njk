@@ -1,0 +1,97 @@
+---
+pagination:
+  data: collections.tabs
+  size: 1
+  alias: tab
+permalink: /{{ tab.slug }}/
+---
+{% extends "layout.njk" %}
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Tab Navigation -->
+    <nav class="mb-8">
+        <div class="flex space-x-1 bg-gray-100 dark:bg-gray-800 p-1 rounded-lg">
+            {% for tabItem in collections.tabs %}
+            <a href="/{{ tabItem.slug }}/" 
+               class="px-4 py-2 rounded-md text-sm font-medium transition-colors
+                      {% if tabItem.slug == tab.slug %}
+                      bg-white dark:bg-gray-700 text-primary-600 dark:text-primary-400 shadow-sm
+                      {% else %}
+                      text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white
+                      {% endif %}">
+                {{ tabItem.name }}
+            </a>
+            {% endfor %}
+        </div>
+    </nav>
+
+    <!-- Tab Content -->
+    <div class="space-y-8">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">{{ tab.name }}</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400">{{ tab.items.length }} items</p>
+        </div>
+
+        <!-- Items List -->
+        <div class="space-y-6">
+            {% for item in tab.items %}
+            <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+                <a href="/{{ tab.slug }}/{{ item.slug }}/" class="block">
+                    <div class="md:flex">
+                        {% if item.image and item.image != "" and item.image != "placeholder.jpg" and item.image != "README.md" %}
+                        <div class="md:flex-shrink-0">
+                            <div class="h-48 w-full md:w-48 bg-gray-200 dark:bg-gray-700 rounded-t-lg md:rounded-l-lg md:rounded-t-none overflow-hidden">
+                                <img src="/content/{{ tab.name }}/{{ item.name }}/images/{{ item.image }}" 
+                                     alt="{{ item.title }}" 
+                                     class="w-full h-full object-cover"
+                                     onerror="this.parentElement.style.display='none'">
+                            </div>
+                        </div>
+                        {% endif %}
+                        
+                        <div class="p-6 flex-1">
+                            <div class="flex items-start justify-between">
+                                <div class="flex-1">
+                                    <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">{{ item.title }}</h2>
+                                    {% if item.organization %}
+                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                        {{ item.organization }}
+                                    </p>
+                                    {% endif %}
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">{{ item.description }}</p>
+                                </div>
+                                
+                                <div class="ml-4 text-right">
+                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                        <div>{{ item.start }}</div>
+                                        {% if item.end %}
+                                        <div>{{ item.end }}</div>
+                                        {% endif %}
+                                        {% if item.showDuration %}
+                                        <div class="text-xs text-blue-600 dark:text-blue-400 font-medium mt-1">
+                                            {{ item.start | calculateDuration(item.end) }}
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    Click to view details
+                                </div>
+                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                    <span class="text-sm font-medium">View Details</span>
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</div>

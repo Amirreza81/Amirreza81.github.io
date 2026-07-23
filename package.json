@@ -1,41 +1,25 @@
 {
-  "name": "academic-pages",
-  "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+  "name": "resume-website",
+  "version": "1.0.0",
+  "description": "Static resume website with dynamic content loading",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf docs",
+    "dev": "eleventy --serve --watch",
+    "build:prod": "npm run clean && eleventy"
   },
-  "keywords": [
-    "jekyll",
-    "theme",
-    "minimal"
-  ],
-  "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
-  ],
+  "keywords": ["resume", "portfolio", "eleventy", "github-pages"],
+  "author": "Your Name",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
-  },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
-  "engines": {
-    "node": ">= 0.10.0"
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "markdown-it": "^14.0.0",
+    "markdown-it-anchor": "^8.6.7"
   },
   "dependencies": {
-    "fitvids": "^2.1.1",
-    "jquery": "^3.7.1",
-    "jquery-smooth-scroll": "^2.2.0",
-    "magnific-popup": "^1.2.0"
-  },
-  "devDependencies": {
-    "onchange": "^7.1.0",
-    "uglify-js": "^3.17.4"
-  },
-  "scripts": {
-    "uglify": "uglifyjs node_modules/jquery/dist/jquery.min.js node_modules/fitvids/dist/fitvids.min.js node_modules/magnific-popup/dist/jquery.magnific-popup.min.js node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js -c -m -o assets/js/main.min.js",
-    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify"
+    "sharp": "^0.33.0"
   }
 }
