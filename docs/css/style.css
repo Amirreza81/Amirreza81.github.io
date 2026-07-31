@@ -446,7 +446,7 @@ a:hover {
 }
 
 .dark a {
-    color: #e5e7eb;
+    color: #60a5fa;
 }
 
 /* Header anchor links - completely hidden */
@@ -570,4 +570,78 @@ a:hover {
 .dark .content-area code {
     background-color: #374151;
     color: #f9fafb;
+}
+
+/* About Me — interest link cards */
+.interest-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.interest-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: #d1d5db;
+}
+
+.dark .interest-link {
+    border-color: #3A506B;
+    background: #0B132B;
+}
+
+.dark .interest-link:hover {
+    border-color: #5BC0BE;
+    box-shadow: 0 8px 24px rgba(91, 192, 190, 0.15);
+}
+
+.interest-link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.625rem;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.interest-link-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.dark .interest-link-label {
+    color: #f9fafb;
+}
+
+.interest-link-hint {
+    display: block;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.dark .interest-link-hint {
+    color: #9ca3af;
+}
+
+.interest-link-icon-imdb {
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.interest-link:hover .interest-link-icon-imdb {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(245, 197, 24, 0.35);
 }

@@ -153,13 +153,10 @@ module.exports = function(eleventyConfig) {
           itemDirs.forEach(itemName => {
             const itemPath = path.join(tabPath, itemName);
             const indexPath = path.join(itemPath, "index.md");
-            console.log(indexPath, fs.existsSync(indexPath));
             
             if (fs.existsSync(indexPath)) {
               const content = fs.readFileSync(indexPath, "utf-8");
               const frontMatterMatch = content.match(/^---\s*\n(.*?)\n---\s*\n(.*)$/s);
-              // console.log(indexPath);
-              // console.log(frontMatterMatch);
               if (frontMatterMatch) {
                 const frontMatter = frontMatterMatch[1];
                 const body = frontMatterMatch[2];
@@ -190,19 +187,13 @@ module.exports = function(eleventyConfig) {
                 
                   item[key] = value;
                 });
-                
-                // console.log("=================================");
-                // console.log(indexPath);
-                // console.log(item);
-                // console.log("TITLE:", item.title);
-                // console.log("=================================");
 
                 items.push(item);
               }
             }
           });
         } catch (err) {
-          console.log(`Error reading items in ${tabName}:`, err.message);
+          // ignore unreadable tab folders
         }
         
         // Sort items by date (most recent first)
@@ -224,7 +215,7 @@ module.exports = function(eleventyConfig) {
         });
       });
     } catch (err) {
-      console.log("Error reading content directory:", err.message);
+      // ignore unreadable content directory
     }
     
     return tabs;
@@ -251,7 +242,6 @@ module.exports = function(eleventyConfig) {
           itemDirs.forEach(itemName => {
             const itemPath = path.join(tabPath, itemName);
             const indexPath = path.join(itemPath, "index.md");
-            console.log(indexPath, fs.existsSync(indexPath));
             
             if (fs.existsSync(indexPath)) {
               const content = fs.readFileSync(indexPath, "utf-8");
@@ -293,22 +283,17 @@ module.exports = function(eleventyConfig) {
                 
                   item[key] = value;
                 });
-                
-                // console.log("=================================");
-                // console.log(indexPath);
-                // console.log(item);
-                // console.log("TITLE:", item.title);
-                // console.log("=================================");
+
                 allItems.push(item);
               }
             }
           });
         } catch (err) {
-          console.log(`Error reading items in ${tabName}:`, err.message);
+          // ignore unreadable tab folders
         }
       });
     } catch (err) {
-      console.log("Error reading content directory:", err.message);
+      // ignore unreadable content directory
     }
     
     // Sort all items by date (most recent first)
