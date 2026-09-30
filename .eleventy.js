@@ -26,6 +26,27 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
 
   // Add markdown filter
+  eleventyConfig.addFilter("readingTime", function (content) {
+      if (!content) return 1;
+
+      const text = content
+          .replace(/<[^>]*>/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+
+      const wordCount = text.split(" ").filter(Boolean).length;
+
+      const wordsPerMinute = 200;
+
+      return Math.max(1, Math.ceil(wordCount / wordsPerMinute));
+  });
+
+  eleventyConfig.addFilter("isPersian", function (text) {
+      if (!text) return false;
+
+      return /[\u0600-\u06FF]/.test(text);
+  });
+
   eleventyConfig.addFilter("markdown", function(content) {
     return md.render(content);
   });
@@ -290,10 +311,11 @@ module.exports = function(eleventyConfig) {
                   name: itemName,
                   slug: itemName.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, ''),
                   content: body,
-                  tab: cleanTabName(tabName),
                   folder: tabName,
-                  tabSlug: cleanTabName(tabName).toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '')
+                  tabSlug: tabName.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '')
                 };
+
+                item.isPersian = /[\u0600-\u06FF]/.test(body);
                 
                 // Parse front matter
                 frontMatter.split(/\r?\n/).forEach(line => {

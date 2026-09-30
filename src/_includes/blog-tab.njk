@@ -2,29 +2,63 @@
 <div class="space-y-6">
   {% for item in tab.items %}
     {% if loop.index0 < 3 %}
-    <div class="portfolio-card blog-card rounded-lg shadow-md">
-      <a href="/{{ tab.slug }}/{{ item.slug }}/" class="block no-underline hover:no-underline">
-        <div class="px-6 py-5">
-          <div class="flex items-start justify-between gap-4">
-            <div class="flex-1">
-              <h3 class="blog-title text-xl font-semibold mb-2">{{ item.title }}</h3>
-              {% if item.description %}
-              <p class="text-gray-700 dark:text-gray-300 mb-3">{{ item.description }}</p>
-              {% endif %}
-              <div class="blog-read-more flex items-center">
-                <span class="text-sm font-medium">Read post</span>
-                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </div>
-            </div>
-            {% if item.start %}
-            <div class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">{{ item.start }}</div>
-            {% endif %}
-          </div>
-        </div>
-      </a>
+    <div class="blog-card portfolio-card rounded-lg shadow-md">
+  <a href="/{{ tab.slug }}/{{ item.slug }}/" class="block no-underline hover:no-underline">
+    <div class="blog-card-inner">
+
+      {% if item.image and item.image != "" %}
+      <div class="blog-image">
+        <img
+          src="/content/{{ item.folder }}/{{ item.name }}/images/{{ item.image }}"
+          alt="{{ item.title }}"
+          loading="lazy"
+          onerror="this.parentElement.style.display='none'"
+        >
+      </div>
+      {% endif %}
+
+      <div class="blog-content">
+
+  <div class="blog-top">
+
+    <div class="blog-reading-time">
+      {{ item.content | readingTime }} min read
     </div>
+
+    <h3 class="blog-title text-xl font-semibold mb-3 {% if item.title | isPersian %}persian-text persian-rtl{% endif %}">
+        {{ item.title }}
+    </h3>
+    
+    {% if item.description %}  
+    <p class="blog-description {% if item.description | isPersian %}persian-text persian-rtl{% endif %}">
+        {{ item.description }}
+    </p>
+    {% endif %}
+
+  </div>
+
+  <div class="blog-bottom">
+
+    <div class="blog-read-more">
+      <span>Read post</span>
+      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </div>
+
+    {% if item.start %}
+    <div class="blog-date">
+      {{ item.start }}
+    </div>
+    {% endif %}
+
+  </div>
+
+</div>
+
+    </div>
+  </a>
+</div>
     {% endif %}
   {% endfor %}
 

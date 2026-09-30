@@ -20,9 +20,11 @@ layout: layout.njk
     </nav>
 
     <!-- Item Header -->
-    <header class="mb-8">
+    <header class="mb-8 item-header">
         <div class="flex items-center justify-between mb-4">
-            <h1 class="text-4xl font-bold text-gray-900 dark:text-white">{{ item.title }}</h1>
+            <h1 class="item-title text-4xl font-bold text-gray-900 dark:text-white">
+                {{ item.title }}
+            </h1>
             <div class="flex flex-col items-end space-y-1 text-sm text-gray-500 dark:text-gray-400">
                 <div class="flex items-center space-x-2">
                     <span>{{ item.start }}</span>
@@ -44,21 +46,22 @@ layout: layout.njk
         {% endif %}
         
         {% if item.description %}
-        <p class="text-xl text-gray-600 dark:text-gray-300 mb-6">{{ item.description }}</p>
+        <p class="text-xl item-header-description mb-6">
+            {{ item.description }}
+        </p>
         {% endif %}
         
         {% if item.image and item.image != "" and item.image != "placeholder.jpg" and item.image != "README.md" %}
         <div class="mb-8">
             <img src="/content/{{ item.folder }}/{{ item.name }}/images/{{ item.image }}"
-                 alt="{{ item.title }}" 
-                 class="w-48 h-32 object-contain rounded-lg bg-white p-4"
-                 onerror="this.parentElement.style.display='none'">
+            alt="{{ item.title }}" 
+            class="w-full max-h-[500px] object-contain rounded-lg bg-white p-4"
+            onerror="this.parentElement.style.display='none'">
         </div>
         {% endif %}
     </header>
 
-    <!-- Item Content -->
-    <div class="content-area max-w-none">
+    <div class="content-area max-w-none" dir="rtl" style="direction: rtl !important; text-align: right !important;">
         {{ item.content | markdown | safe }}
     </div>
 
