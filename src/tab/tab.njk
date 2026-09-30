@@ -62,12 +62,38 @@ permalink: /{{ tab.slug }}/
                         <div class="p-2 flex-1">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">{{ item.title }}</h2>
+                                    <div class="flex items-center gap-2 mb-2 flex-wrap">
+                                    <div style="background:red;color:white;padding:10px;font-size:20px;">
+                                        TEST: {{ item.title }} | {{ item.badge }} | {{ item.professor }}
+                                    </div>
+                                        <h2 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                            {{ item.title }}
+                                        </h2>
+
+                                        <div class="text-xs text-red-500">
+                                            DEBUG — badge: [{{ item.badge }}] | professor: [{{ item.professor }}]
+                                        </div>
+
+                                        {% if item.badge %}
+                                        <span class="px-2 py-0.5 text-xs font-semibold rounded-full
+                                                    bg-blue-100 text-blue-700
+                                                    dark:bg-blue-900/50 dark:text-blue-300">
+                                            {{ item.badge }}
+                                        </span>
+                                        {% endif %}
+                                    </div>
                                     {% if item.organization %}
                                     <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
                                         {{ item.organization }}
                                     </p>
                                     {% endif %}
+
+                                    {% if item.professor %}
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                                        {{ item.professor }}
+                                    </p>
+                                    {% endif %}
+
                                     <p class="text-gray-600 dark:text-gray-300 mb-4">{{ item.description }}</p>
                                 </div>
                                 

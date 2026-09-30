@@ -6,6 +6,9 @@ start: "Spring 2024"
 end: "Spring 2025"
 image: ""
 showDuration: false
+badge: "B.Sc."
+professor: "Ms. Samaneh HosseinMardi"
+priority: 1
 ---
 
 ### Overview

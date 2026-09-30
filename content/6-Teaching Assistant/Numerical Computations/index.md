@@ -6,6 +6,9 @@ start: "Fall 2023"
 end: "Fall 2023"
 image: ""
 showDuration: false
+badge: "B.Sc."
+professor: "Dr. Samira Hossein Ghorban"
+priority: 3
 ---
 
 ### Overview

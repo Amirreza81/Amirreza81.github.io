@@ -197,11 +197,41 @@ module.exports = function(eleventyConfig) {
         }
         
         // Sort items by date (most recent first)
+        // Sort items:
+        // 1. M.Sc. badge first
+        // 2. B.Sc. badge second
+        // 3. Other / no badge afterward
+        // 4. Within the same badge, lower priority number first
+        // 5. If badge and priority are the same, most recent end date first
         items.sort((a, b) => {
+          const getBadgeRank = (item) => {
+            if (item.badge === "M.Sc.") return 1;
+            if (item.badge === "B.Sc.") return 2;
+            return 3;
+          };
+
+          const badgeRankA = getBadgeRank(a);
+          const badgeRankB = getBadgeRank(b);
+
+          // First: badge
+          if (badgeRankA !== badgeRankB) {
+            return badgeRankA - badgeRankB;
+          }
+
+          // Second: priority
+          const priorityA = Number(a.priority ?? 999);
+          const priorityB = Number(b.priority ?? 999);
+
+          if (priorityA !== priorityB) {
+            return priorityA - priorityB;
+          }
+
+          // Third: end date, most recent first
           const dateA = parseDate(a.end || a.start);
           const dateB = parseDate(b.end || b.start);
-          return dateB.getTime() - dateA.getTime(); // Descending order (most recent first)
-        });
+
+          return dateB.getTime() - dateA.getTime();
+        });                     
         
         // Clean tab name for display (remove number prefix and dash)
         const cleanTabName = (name) => {

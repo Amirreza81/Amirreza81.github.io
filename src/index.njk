@@ -152,9 +152,26 @@ description: ""
                                     <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                                         {{ item.title }}
                                     </h3>
+                                    {% if item.badge %}
+                                    <span class="px-2 py-0.5 text-xs font-semibold rounded-full
+                                                {% if item.badge == "M.Sc." %}
+                                                bg-yellow-100 text-yellow-800
+                                                dark:bg-yellow-500/20 dark:text-yellow-300
+                                                {% else %}
+                                                bg-blue-100 text-blue-700
+                                                dark:bg-blue-900/50 dark:text-blue-300
+                                                {% endif %}">
+                                        {{ item.badge }}
+                                    </span>
+                                    {% endif %}
                                     {% if item.organization %}
                                     <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
                                         {{ item.organization }}
+                                    </p>
+                                    {% endif %}
+                                    {% if item.professor %}
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                                        {{ item.professor }}
                                     </p>
                                     {% endif %}
                                     {% if item.description %}

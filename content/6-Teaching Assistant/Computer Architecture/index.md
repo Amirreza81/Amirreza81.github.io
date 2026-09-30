@@ -6,6 +6,9 @@ start: "Spring 2023"
 end: "Spring 2025"
 image: ""
 showDuration: false
+badge: "B.Sc."
+professor: "Dr. Laleh Arshadi"
+priority: 3
 ---
 
 ### Overview

@@ -6,6 +6,9 @@ start: "Fall 2023"
 end: "Fall 2024"
 image: ""
 showDuration: false
+badge: "B.Sc."
+professor: "Dr. Amir Najafi"
+priority: 1
 ---
 
 ### Overview

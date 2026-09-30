@@ -6,6 +6,9 @@ start: "Spring 2025"
 end: "Spring 2025"
 image: ""
 showDuration: false
+badge: "B.Sc."
+professor: "Prof. Hamid Reza Rabiee"
+priority: 1
 ---
 
 ### Overview

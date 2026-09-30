@@ -6,6 +6,9 @@ start: "Spring 2024"
 end: "Fall 2024"
 image: ""
 showDuration: false
+badge: "B.Sc."
+professor: "Dr. Mohammad Hossein Rohban"
+priority: 1
 ---
 
 ### Overview
