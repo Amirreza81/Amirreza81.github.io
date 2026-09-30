@@ -1,7 +1,7 @@
 ---
 title: "Teaching Assistant — Foundations of Data Science"
 description: "Joined the teaching team for Foundations of Data Science (FoDS) at the Department of Electrical Engineering, Sharif University of Technology, taught by Dr. Babak Khalaj and Dr. Saberi."
-start: "Sep 2026"
+start: "28 Aug 2026"
 badge: "NEW"
 badgeColor: "blue"
 cardColor: "blue"
