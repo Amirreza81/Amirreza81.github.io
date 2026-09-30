@@ -1,12 +1,12 @@
 <div class="space-y-8 max-w-3xl mx-auto">
   {% for item in tab.items %}
     {% if item.slug == 'about-me' %}
-    <section class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md px-6 py-5">
-      <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+    <section class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md px-6 py-5">
+      <h3 class="about-heading text-lg font-semibold tracking-tight text-gray-900 dark:text-white mb-3">
         {{ item.title or "Professional Summary" }}
       </h3>
       {% if item.description %}
-      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+      <p class="about-description text-gray-700 dark:text-gray-300 leading-7">
         {{ item.description }}
       </p>
       {% endif %}
@@ -16,8 +16,8 @@
 
   {% for item in tab.items %}
     {% if item.slug == 'interests-life' %}
-    <section class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md px-6 py-5">
-      <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    <section class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md px-6 py-5">
+      <h3 class="about-heading text-lg font-semibold tracking-tight text-gray-900 dark:text-white mb-3">
         {{ item.title or "Life & Interests" }}
       </h3>
 

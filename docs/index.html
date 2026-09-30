@@ -41,6 +41,11 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/images/favicon.png">   
 
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -50,11 +55,20 @@
                 extend: {
                     colors: {
                         primary: {
-                            50: '#eff6ff',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
-                            900: '#1e3a8a'
+                            50: '#FFF8E7',
+                            100: '#FCECC7',
+                            400: '#E8B85C',
+                            500: '#D6A64F',
+                            600: '#C9943A',
+                            700: '#A87824',
+                            900: '#5C4218'
+                        },
+                        gold: {
+                            100: '#FCECC7',
+                            300: '#E8B85C',
+                            400: '#D6A64F',
+                            500: '#C9943A',
+                            700: '#8A641F'
                         }
                     }
                 }
@@ -65,19 +79,19 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="bg-slate-100 dark:bg-[#0B132B] text-gray-900 dark:text-gray-100 transition-colors duration-300">
+<body class="bg-[#F5F3EE] dark:bg-[#080808] text-gray-900 dark:text-[#F5F5F5] transition-colors duration-300">
     <!-- Header -->
-    <header class="bg-white dark:bg-[#1C2541] shadow-sm border-b border-gray-200 dark:border-[#3A506B]">
+    <header class="bg-white/90 dark:bg-[#0A0908]/95 backdrop-blur-md shadow-sm border-b border-gray-200 dark:border-[#3D2D15]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold text-primary-600 dark:text-primary-400">
+                    <a href="/" class="text-2xl font-bold text-primary-600 dark:text-[#E8B85C]">
                         Welcome!
                     </a>
                 </div>
                 
                 <!-- Dark mode toggle -->
-                <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                <button id="theme-toggle" class="theme-toggle p-2.5 rounded-xl bg-gray-100 dark:bg-[#17130D] border border-gray-200 dark:border-[#4A3618] text-gray-700 dark:text-[#E8B85C]">
                     <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
                     </svg>
@@ -94,89 +108,108 @@
         
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Hero Section -->
-    <div class="text-center mb-12">
-        <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
+<section class="hero-section mb-16">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-14">
+
             <!-- Profile Image -->
-            <div class="flex-shrink-0">
-                <img src="/images/profile.jpg" 
-                     alt="AmirReza Azari" 
-                     class="w-64 h-64 rounded-full object-cover border-4 border-gray-200 dark:border-gray-700 shadow-lg"
+            <div class="hero-image-wrap flex-shrink-0">
+                <img src="/images/profile.jpg"
+                     alt="AmirReza Azari"
+                     class="hero-image w-56 h-56 md:w-64 md:h-64 rounded-full object-cover"
                      onerror="this.style.display='none'">
             </div>
-            
+
             <!-- Name and Description -->
-            <div class="text-center md:text-left">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
+            <div class="text-center md:text-left max-w-2xl">
+
+                <p class="hero-eyebrow mb-3">
+                    AI · MACHINE LEARNING · GENERATIVE AI
+                </p>
+
+                <h1 class="hero-title text-5xl md:text-7xl font-bold mb-5">
                     AmirReza Azari
                 </h1>
-                <p class="text-xl text-gray-600 dark:text-gray-300 mb-4">
-                    Graduated Computer Engineering student at Sharif University of Technology
+
+                <p class="hero-description text-lg md:text-xl leading-8 mb-6">
+                    Computer Engineering graduate from Sharif University of Technology
                 </p>
+
                 <a href="/cv/AmirReza_Azari_CV.pdf"
                    download
-                   class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium shadow-md transition-colors">
+                   class="download-cv inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium shadow-md transition-colors">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                        </path>
                     </svg>
                     Download CV
                 </a>
             </div>
         </div>
-        
+
         <!-- Contact Information -->
-        <div class="flex flex-wrap justify-center items-center gap-8 text-base text-gray-600 dark:text-gray-400">
-            <div class="flex items-center gap-3">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="hero-contact flex flex-wrap justify-center items-center gap-7 mt-10 text-sm">
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                          d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
                     </path>
                 </svg>
-                <a href="mailto:amirrrr.azariii123@sharif.edu"
-                class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a href="mailto:amirrrr.azariii123@sharif.edu">
                     Sharif Mail
                 </a>
             </div>
 
-            <div class="flex items-center gap-3">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                          d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2-2v10a2 2 0 002 2z">
                     </path>
                 </svg>
-                <a href="mailto:amirrezaazari1381@gmail.com"
-                class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a href="mailto:amirrezaazari1381@gmail.com">
                     Gmail
                 </a>
             </div>
-            <div class="flex items-center gap-3">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C23.2 23.227 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
-                <a href="https://www.linkedin.com/in/amirreza-azari-2b3a13229" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a href="https://www.linkedin.com/in/amirreza-azari-2b3a13229"
+                   target="_blank"
+                   rel="noopener noreferrer">
                     LinkedIn
                 </a>
             </div>
-            <div class="flex items-center gap-3">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.823.576C20.562 21.8 24 17.302 24 12c0-6.627-5.373-12-12-12z"/>
                 </svg>
-                <a href="https://github.com/Amirreza81" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a href="https://github.com/Amirreza81"
+                   target="_blank"
+                   rel="noopener noreferrer">
                     GitHub
                 </a>
             </div>
-            <div class="flex items-center gap-3">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-1.297-.415-.??">
                 </svg>
-                <a href="https://t.me/AmirReza_Azari" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a href="https://t.me/AmirReza_Azari"
+                   target="_blank"
+                   rel="noopener noreferrer">
                     Telegram
                 </a>
             </div>
         </div>
     </div>
+</section>
 
     <!-- Tab Navigation -->
-    <div class="flex flex-wrap justify-center mb-8 border-b border-gray-200 dark:border-gray-700">
+    <div class="flex flex-wrap justify-center mb-8 border-b border-gray-200/60 dark:border-[#2A2926]">
         
         <button 
             class="tab-button px-6 py-3 text-sm font-medium border-primary-600 text-primary-600 dark:border-primary-400 dark:text-primary-400 hover:text-gray-700 dark:hover:text-gray-200 border-b-2 hover:border-gray-300 dark:hover:border-gray-600 transition-colors"
@@ -258,20 +291,20 @@
         class="tab-content "
         id="tab-about-me"
     >
-        <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
+        <div class="mb-10">
+            <h2 class="tab-heading text-3xl font-bold mb-4">About Me</h2>
         </div>
 
         
         <div class="space-y-8 max-w-3xl mx-auto">
   
     
-    <section class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md px-6 py-5">
-      <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+    <section class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md px-6 py-5">
+      <h3 class="about-heading text-lg font-semibold tracking-tight text-gray-900 dark:text-white mb-3">
         Professional Summary
       </h3>
       
-      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+      <p class="about-description text-gray-700 dark:text-gray-300 leading-7">
         I am AmirReza Azari, a B.Sc. graduate in Computer Engineering from Sharif University of Technology. My focus is on Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL). I am an enthusiastic AI engineer with a strong desire to learn, grow, and contribute to challenging projects. I continuously expand my knowledge through hands-on development and research while building expertise in modern AI technologies.
       </p>
       
@@ -285,8 +318,8 @@
     
   
     
-    <section class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md px-6 py-5">
-      <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+    <section class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md px-6 py-5">
+      <h3 class="about-heading text-lg font-semibold tracking-tight text-gray-900 dark:text-white mb-3">
         Life &amp; Interests
       </h3>
 
@@ -361,14 +394,14 @@
         class="tab-content hidden"
         id="tab-education"
     >
-        <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Education</h2>
+        <div class="mb-10">
+            <h2 class="tab-heading text-3xl font-bold mb-4">Education</h2>
         </div>
 
         
         <div class="space-y-6">
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -376,14 +409,14 @@
                 <a href="/education/computer-engineering-bsc/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         <div class="flex items-center">
-                            <div class="w-32 h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded-l-xl">
+                            <div class="card-image-wrap w-28 md:w-32 h-full flex items-center justify-center rounded-l-xl">
                                 <img 
                                     src="/content/1-Education/Computer Engineering BSc/images/uni.png"
                                     alt="Bachelor of Science in Computer Engineering"
-                                    class="w-20 h-20 object-contain"
+                                    class="w-16 h-16 md:w-20 md:h-20 object-contain"
                                     loading="lazy"
                                     onerror="this.parentElement.style.display='none'"
                                 >
@@ -391,15 +424,15 @@
                         </div>
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Bachelor of Science in Computer Engineering
                                     </h3>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -413,7 +446,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>2020</div>
                                         
                                         <div>2025</div>
@@ -426,7 +459,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -449,14 +482,14 @@
         class="tab-content hidden"
         id="tab-experience"
     >
-        <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Experience</h2>
+        <div class="mb-10">
+            <h2 class="tab-heading text-3xl font-bold mb-4">Experience</h2>
         </div>
 
         
         <div class="space-y-6">
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -464,14 +497,14 @@
                 <a href="/experience/artificial-intelligence-engineer/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         <div class="flex items-center">
-                            <div class="w-32 h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded-l-xl">
+                            <div class="card-image-wrap w-28 md:w-32 h-full flex items-center justify-center rounded-l-xl">
                                 <img 
                                     src="/content/2-Experience/Artificial Intelligence Engineer/images/hamrah.svg"
                                     alt="Artificial Intelligence Engineer"
-                                    class="w-20 h-20 object-contain"
+                                    class="w-16 h-16 md:w-20 md:h-20 object-contain"
                                     loading="lazy"
                                     onerror="this.parentElement.style.display='none'"
                                 >
@@ -479,15 +512,15 @@
                         </div>
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Artificial Intelligence Engineer
                                     </h3>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Hamrah Academy
                                     </p>
                                     
@@ -501,7 +534,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Dec 2025</div>
                                         
                                         <div>Apr 2026</div>
@@ -518,7 +551,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -533,7 +566,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -541,14 +574,14 @@
                 <a href="/experience/financial-data-analyst/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         <div class="flex items-center">
-                            <div class="w-32 h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded-l-xl">
+                            <div class="card-image-wrap w-28 md:w-32 h-full flex items-center justify-center rounded-l-xl">
                                 <img 
                                     src="/content/2-Experience/Financial Data Analyst/images/hermescapital.jpg"
                                     alt="Financial Data Analyst"
-                                    class="w-20 h-20 object-contain"
+                                    class="w-16 h-16 md:w-20 md:h-20 object-contain"
                                     loading="lazy"
                                     onerror="this.parentElement.style.display='none'"
                                 >
@@ -556,15 +589,15 @@
                         </div>
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Financial Data Analyst
                                     </h3>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Hermes Capital
                                     </p>
                                     
@@ -578,7 +611,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Feb 2025</div>
                                         
                                         <div>Sep 2025</div>
@@ -595,7 +628,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -618,14 +651,14 @@
         class="tab-content hidden"
         id="tab-notable-projects"
     >
-        <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Notable Projects</h2>
+        <div class="mb-10">
+            <h2 class="tab-heading text-3xl font-bold mb-4">Notable Projects</h2>
         </div>
 
         
         <div class="space-y-6">
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -633,13 +666,13 @@
                 <a href="/notable-projects/3d-tennis-complete-analysis/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         3D Tennis Complete Analysis
                                     </h3>
                                     
@@ -654,7 +687,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>2024</div>
                                         
                                         <div>2024</div>
@@ -667,7 +700,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -682,7 +715,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -690,13 +723,13 @@
                 <a href="/notable-projects/bchi-automaton/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Buchi Automaton
                                     </h3>
                                     
@@ -711,7 +744,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>2024</div>
                                         
                                         <div>2024</div>
@@ -724,7 +757,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -739,7 +772,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -747,13 +780,13 @@
                 <a href="/notable-projects/cminus-compiler/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         CMinus Compiler
                                     </h3>
                                     
@@ -768,7 +801,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>2024</div>
                                         
                                         <div>2024</div>
@@ -781,7 +814,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -796,7 +829,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -804,13 +837,13 @@
                 <a href="/notable-projects/correlated-and-mixed-nash-equilibrium/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Correlated and Mixed Nash Equilibrium
                                     </h3>
                                     
@@ -825,7 +858,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>2024</div>
                                         
                                         <div>2024</div>
@@ -838,7 +871,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -853,7 +886,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -861,13 +894,13 @@
                 <a href="/notable-projects/real-time-embedded-systems/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Real-Time Embedded Systems
                                     </h3>
                                     
@@ -882,7 +915,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>2024</div>
                                         
                                         <div>2024</div>
@@ -895,7 +928,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -910,7 +943,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -918,13 +951,13 @@
                 <a href="/notable-projects/task-management-app/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Task Management App
                                     </h3>
                                     
@@ -939,7 +972,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>2023</div>
                                         
                                         <div>2023</div>
@@ -952,7 +985,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -975,32 +1008,32 @@
         class="tab-content hidden"
         id="tab-awards"
     >
-        <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Awards</h2>
+        <div class="mb-10">
+            <h2 class="tab-heading text-3xl font-bold mb-4">Awards</h2>
         </div>
 
         
         <div class="space-y-6">
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                     
                 
                 
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         62nd Rank – Iranian National University Entrance Examination
                                     </h3>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         National Educational Assessment Organization (Sanjesh), Iran
                                     </p>
                                     
@@ -1025,25 +1058,25 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                     
                 
                 
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Ranked 15 in Artificial Intelligence
                                     </h3>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         National Educational Assessment Organization (Sanjesh), Iran
                                     </p>
                                     
@@ -1076,14 +1109,14 @@
         class="tab-content hidden"
         id="tab-skills"
     >
-        <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Skills</h2>
+        <div class="mb-10">
+            <h2 class="tab-heading text-3xl font-bold mb-4">Skills</h2>
         </div>
 
         
         <div class="space-y-6">
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1091,13 +1124,13 @@
                 <a href="/skills/ai-machine-learning/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         AI &amp; Machine Learning
                                     </h3>
                                     
@@ -1117,7 +1150,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1132,7 +1165,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1140,13 +1173,13 @@
                 <a href="/skills/databases/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Databases
                                     </h3>
                                     
@@ -1166,7 +1199,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1181,7 +1214,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1189,13 +1222,13 @@
                 <a href="/skills/developer-tools/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Developer Tools
                                     </h3>
                                     
@@ -1215,7 +1248,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1230,7 +1263,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1238,13 +1271,13 @@
                 <a href="/skills/languages/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Languages
                                     </h3>
                                     
@@ -1264,7 +1297,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1279,7 +1312,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1287,13 +1320,13 @@
                 <a href="/skills/programming-languages/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Programming Languages
                                     </h3>
                                     
@@ -1313,7 +1346,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1328,7 +1361,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1336,13 +1369,13 @@
                 <a href="/skills/systems-hardware/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Systems &amp; Hardware
                                     </h3>
                                     
@@ -1362,7 +1395,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1385,14 +1418,14 @@
         class="tab-content hidden"
         id="tab-teaching-assistant"
     >
-        <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Teaching Assistant</h2>
+        <div class="mb-10">
+            <h2 class="tab-heading text-3xl font-bold mb-4">Teaching Assistant</h2>
         </div>
 
         
         <div class="space-y-6">
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1400,13 +1433,13 @@
                 <a href="/teaching-assistant/msc-ai-fall2026/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Teaching Assistant — Artificial Intelligence
                                     </h3>
                                     
@@ -1419,7 +1452,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -1437,7 +1470,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>12 Sep 2026</div>
                                         
                                         <div>Present</div>
@@ -1450,7 +1483,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1465,7 +1498,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1473,13 +1506,13 @@
                 <a href="/teaching-assistant/compiler-design-head-ta/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Head Teaching Assistant – Compiler Design
                                     </h3>
                                     
@@ -1492,7 +1525,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -1510,7 +1543,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Spring 2024</div>
                                         
                                         <div>Spring 2025</div>
@@ -1523,7 +1556,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1538,7 +1571,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1546,13 +1579,13 @@
                 <a href="/teaching-assistant/machine-learning-dr-ali-sharifi-zarchi/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Head of Exams and Projects – Machine Learning
                                     </h3>
                                     
@@ -1565,7 +1598,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -1583,7 +1616,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Fall 2024</div>
                                         
                                         <div>Spring 2025</div>
@@ -1596,7 +1629,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1611,7 +1644,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1619,13 +1652,13 @@
                 <a href="/teaching-assistant/machine-learning-prof-hamid-reza-rabiee/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Teaching Assistant – Machine Learning
                                     </h3>
                                     
@@ -1638,7 +1671,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -1656,7 +1689,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Spring 2025</div>
                                         
                                         <div>Spring 2025</div>
@@ -1669,7 +1702,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1684,7 +1717,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1692,13 +1725,13 @@
                 <a href="/teaching-assistant/artificial-intelligence-dr-mohammad-hossein-rohban/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Teaching Assistant – Artificial Intelligence
                                     </h3>
                                     
@@ -1711,7 +1744,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -1729,7 +1762,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Spring 2024</div>
                                         
                                         <div>Fall 2024</div>
@@ -1742,7 +1775,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1757,7 +1790,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1765,13 +1798,13 @@
                 <a href="/teaching-assistant/probability-and-statistics-for-engineering-dr-amir-najafi/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Teaching Assistant – Probability and Statistics for Engineering
                                     </h3>
                                     
@@ -1784,7 +1817,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -1802,7 +1835,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Fall 2023</div>
                                         
                                         <div>Fall 2024</div>
@@ -1815,7 +1848,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1830,7 +1863,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1838,13 +1871,13 @@
                 <a href="/teaching-assistant/linear-algebra/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Teaching Assistant – Linear Algebra
                                     </h3>
                                     
@@ -1857,7 +1890,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -1875,7 +1908,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Spring 2023</div>
                                         
                                         <div>Spring 2023</div>
@@ -1888,7 +1921,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1903,7 +1936,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1911,13 +1944,13 @@
                 <a href="/teaching-assistant/probability-and-statistics-dr-elham-monifi/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Teaching Assistant – Probability and Statistics for Engineering
                                     </h3>
                                     
@@ -1930,7 +1963,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -1948,7 +1981,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Spring 2023</div>
                                         
                                         <div>Spring 2023</div>
@@ -1961,7 +1994,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1976,7 +2009,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -1984,13 +2017,13 @@
                 <a href="/teaching-assistant/artificial-intelligence-dr-ehsan-tanghatari/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Teaching Assistant – Artificial Intelligence
                                     </h3>
                                     
@@ -2003,7 +2036,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -2021,7 +2054,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Spring 2025</div>
                                         
                                         <div>Spring 2025</div>
@@ -2034,7 +2067,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -2049,7 +2082,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -2057,13 +2090,13 @@
                 <a href="/teaching-assistant/computer-architecture/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Teaching Assistant – Computer Architecture
                                     </h3>
                                     
@@ -2076,7 +2109,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -2094,7 +2127,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Spring 2023</div>
                                         
                                         <div>Spring 2025</div>
@@ -2107,7 +2140,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -2122,7 +2155,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -2130,13 +2163,13 @@
                 <a href="/teaching-assistant/computer-simulation-dr-bardia-safaei/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Teaching Assistant – Computer Simulation
                                     </h3>
                                     
@@ -2149,7 +2182,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -2167,7 +2200,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Spring 2024</div>
                                         
                                         <div>Spring 2025</div>
@@ -2180,7 +2213,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -2195,7 +2228,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -2203,13 +2236,13 @@
                 <a href="/teaching-assistant/numerical-computations/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Teaching Assistant – Numerical Computations
                                     </h3>
                                     
@@ -2222,7 +2255,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -2240,7 +2273,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Fall 2023</div>
                                         
                                         <div>Fall 2023</div>
@@ -2253,7 +2286,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -2268,7 +2301,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -2276,13 +2309,13 @@
                 <a href="/teaching-assistant/technical-presentation-prof-shohreh-kasaei/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Teaching Assistant – Technical Presentation
                                     </h3>
                                     
@@ -2295,7 +2328,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -2313,7 +2346,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Spring 2025</div>
                                         
                                         <div>Spring 2025</div>
@@ -2326,7 +2359,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -2341,7 +2374,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -2349,13 +2382,13 @@
                 <a href="/teaching-assistant/computer-simulation-dr-hossein-peyvandi/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Head of HW – Computer Simulation
                                     </h3>
                                     
@@ -2368,7 +2401,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -2386,7 +2419,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Fall 2023</div>
                                         
                                         <div>Fall 2023</div>
@@ -2399,7 +2432,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -2414,7 +2447,7 @@
                 
             </div>
             
-            <div class="bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
+            <div class="portfolio-card bg-white dark:bg-[#1C2541] rounded-lg shadow-md">
                 
                 
                 
@@ -2422,13 +2455,13 @@
                 <a href="/teaching-assistant/technical-presentation-dr-laleh-arshadi/"
                 class="block no-underline hover:no-underline">
                 
-                    <div class="flex items-stretch">
+                    <div class="flex items-stretch portfolio-card-inner">
                         
                         
-                        <div class="px-5 py-3 flex-1 flex flex-col justify-between">
+                        <div class="px-6 py-5 flex-1 flex flex-col justify-between">
                             <div class="flex items-start justify-between">
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    <h3 class="card-title text-xl font-semibold mb-2">
                                         Teaching Assistant – Technical Presentation
                                     </h3>
                                     
@@ -2441,7 +2474,7 @@
                                     </span>
                                     
                                     
-                                    <p class="text-sm font-medium text-primary-600 dark:text-primary-400 mb-2">
+                                    <p class="card-organization text-sm font-medium mb-2">
                                         Sharif University of Technology
                                     </p>
                                     
@@ -2459,7 +2492,7 @@
                                 
                                 <div class="ml-4 text-right">
                                     
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="card-date text-sm">
                                         <div>Spring 2024</div>
                                         
                                         <div>Spring 2024</div>
@@ -2472,7 +2505,7 @@
                             
                             <div class="flex items-center justify-between">
                                 
-                                <div class="flex items-center text-blue-600 dark:text-blue-400">
+                                <div class="read-more flex items-center">
                                     <span class="text-sm font-medium">Read More</span>
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -2495,8 +2528,8 @@
         class="tab-content hidden"
         id="tab-blog"
     >
-        <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Blog</h2>
+        <div class="mb-10">
+            <h2 class="tab-heading text-3xl font-bold mb-4">Blog</h2>
         </div>
 
         
@@ -2521,8 +2554,8 @@
         class="tab-content hidden"
         id="tab-news"
     >
-        <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">News</h2>
+        <div class="mb-10">
+            <h2 class="tab-heading text-3xl font-bold mb-4">News</h2>
         </div>
 
         
@@ -2552,14 +2585,14 @@
 
   
 
-  <article class="bg-blue-200 dark:bg-blue-900/50 border border-blue-300 dark:border-blue-700 rounded-xl shadow-md px-5 py-4 transition-all duration-200 hover:shadow-lg">
+  <article class="news-card-blue bg-blue-200 dark:bg-blue-900/50 border border-blue-300 dark:border-blue-700 news-card rounded-lg shadow-md px-5 py-4 transition-all duration-300 hover:shadow-lg">
 
     <div class="flex items-start justify-between gap-4">
 
       <div class="flex-1">
 
         
-        <time class="text-xs font-medium uppercase tracking-wide text-primary-600 dark:text-primary-400">
+        <time class="text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-500 dark:text-gray-400">
           19 Sep 2026
         </time>
         
@@ -2567,9 +2600,9 @@
 
         
 
-        <div class="flex items-center gap-2 flex-wrap mt-1 mb-2">
+        <div class="flex items-center gap-2.5 flex-wrap mt-1.5 mb-3">
 
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          <h3 class="text-[17px] font-semibold leading-snug text-gray-900 dark:text-white">
 
             
 
@@ -2598,7 +2631,7 @@
         
 
         
-        <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+        <p class="text-gray-600 dark:text-gray-300 text-[13px] leading-6">
           Head of Exams for the Machine Learning course at the Department of Computer Engineering, Sharif University of Technology, taught by Dr. Mahdieh Soleymani and Mr. Marioriyad.
         </p>
         
@@ -2645,14 +2678,14 @@
 
   
 
-  <article class="bg-blue-200 dark:bg-blue-900/50 border border-blue-300 dark:border-blue-700 rounded-xl shadow-md px-5 py-4 transition-all duration-200 hover:shadow-lg">
+  <article class="news-card-blue bg-blue-200 dark:bg-blue-900/50 border border-blue-300 dark:border-blue-700 news-card rounded-lg shadow-md px-5 py-4 transition-all duration-300 hover:shadow-lg">
 
     <div class="flex items-start justify-between gap-4">
 
       <div class="flex-1">
 
         
-        <time class="text-xs font-medium uppercase tracking-wide text-primary-600 dark:text-primary-400">
+        <time class="text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-500 dark:text-gray-400">
           12 Sep 2026
         </time>
         
@@ -2660,9 +2693,9 @@
 
         
 
-        <div class="flex items-center gap-2 flex-wrap mt-1 mb-2">
+        <div class="flex items-center gap-2.5 flex-wrap mt-1.5 mb-3">
 
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          <h3 class="text-[17px] font-semibold leading-snug text-gray-900 dark:text-white">
 
             
 
@@ -2691,7 +2724,7 @@
         
 
         
-        <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+        <p class="text-gray-600 dark:text-gray-300 text-[13px] leading-6">
           Joined the teaching team for the Artificial Intelligence course at the Department of Computer Engineering, Sharif University of Technology, taught by Dr. Mahdieh Soleymani and Mr. Marioriyad.
         </p>
         
@@ -2722,7 +2755,7 @@
     
 
     
-      
+    
 
     
 
@@ -2738,14 +2771,14 @@
 
   
 
-  <article class="bg-amber-200 dark:bg-amber-900/50 border border-amber-300 dark:border-amber-700 rounded-xl shadow-md px-5 py-4 transition-all duration-200 hover:shadow-lg">
+  <article class="news-card-gold bg-amber-200 dark:bg-amber-900/50 border border-amber-300 dark:border-amber-700 news-card rounded-lg shadow-md px-5 py-4 transition-all duration-300 hover:shadow-lg">
 
     <div class="flex items-start justify-between gap-4">
 
       <div class="flex-1">
 
         
-        <time class="text-xs font-medium uppercase tracking-wide text-primary-600 dark:text-primary-400">
+        <time class="text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-500 dark:text-gray-400">
           1 Sep 2026
         </time>
         
@@ -2753,9 +2786,9 @@
 
         
 
-        <div class="flex items-center gap-2 flex-wrap mt-1 mb-2">
+        <div class="flex items-center gap-2.5 flex-wrap mt-1.5 mb-3">
 
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          <h3 class="text-[17px] font-semibold leading-snug text-gray-900 dark:text-white">
 
             
 
@@ -2784,7 +2817,7 @@
         
 
         
-        <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+        <p class="text-gray-600 dark:text-gray-300 text-[13px] leading-6">
           Achieved rank 15 in Artificial Intelligence in the 1405 M.Sc. entrance examination.
         </p>
         
@@ -2831,14 +2864,14 @@
 
   
 
-  <article class="bg-blue-200 dark:bg-blue-900/50 border border-blue-300 dark:border-blue-700 rounded-xl shadow-md px-5 py-4 transition-all duration-200 hover:shadow-lg">
+  <article class="news-card-blue bg-blue-200 dark:bg-blue-900/50 border border-blue-300 dark:border-blue-700 news-card rounded-lg shadow-md px-5 py-4 transition-all duration-300 hover:shadow-lg">
 
     <div class="flex items-start justify-between gap-4">
 
       <div class="flex-1">
 
         
-        <time class="text-xs font-medium uppercase tracking-wide text-primary-600 dark:text-primary-400">
+        <time class="text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-500 dark:text-gray-400">
           28 Aug 2026
         </time>
         
@@ -2846,9 +2879,9 @@
 
         
 
-        <div class="flex items-center gap-2 flex-wrap mt-1 mb-2">
+        <div class="flex items-center gap-2.5 flex-wrap mt-1.5 mb-3">
 
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          <h3 class="text-[17px] font-semibold leading-snug text-gray-900 dark:text-white">
 
             
 
@@ -2877,7 +2910,7 @@
         
 
         
-        <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+        <p class="text-gray-600 dark:text-gray-300 text-[13px] leading-6">
           Joined the teaching team for Foundations of Data Science (FoDS) at the Department of Electrical Engineering, Sharif University of Technology, taught by Dr. Babak Khalaj and Dr. Saberi.
         </p>
         
@@ -2924,10 +2957,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white dark:bg-[#1C2541] border-t border-gray-200 dark:border-[#3A506B] mt-16">
+    <footer class="site-footer bg-white dark:bg-[#0A0908] border-t border-gray-200 dark:border-[#24221F] mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="text-center text-gray-600 dark:text-gray-400">
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-4">
+                <div class="footer-links flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-6 mb-5">
                     <a href="mailto:amirrrr.azariii123@sharif.edu" class="flex items-center gap-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
@@ -2954,7 +2987,7 @@
                         Telegram
                     </a>
                 </div>
-                <p class="text-sm">&copy; 2026  AmirReza Azari. All rights reserved.</p>
+                <p class="footer-copyright text-sm">&copy; 2026 AmirReza Azari. All rights reserved.</p>
             </div>
         </div>
     </footer>

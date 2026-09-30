@@ -41,6 +41,11 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/images/favicon.png">   
 
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -50,11 +55,20 @@
                 extend: {
                     colors: {
                         primary: {
-                            50: '#eff6ff',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
-                            900: '#1e3a8a'
+                            50: '#FFF8E7',
+                            100: '#FCECC7',
+                            400: '#E8B85C',
+                            500: '#D6A64F',
+                            600: '#C9943A',
+                            700: '#A87824',
+                            900: '#5C4218'
+                        },
+                        gold: {
+                            100: '#FCECC7',
+                            300: '#E8B85C',
+                            400: '#D6A64F',
+                            500: '#C9943A',
+                            700: '#8A641F'
                         }
                     }
                 }
@@ -65,19 +79,19 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="bg-slate-100 dark:bg-[#0B132B] text-gray-900 dark:text-gray-100 transition-colors duration-300">
+<body class="bg-[#F5F3EE] dark:bg-[#080808] text-gray-900 dark:text-[#F5F5F5] transition-colors duration-300">
     <!-- Header -->
-    <header class="bg-white dark:bg-[#1C2541] shadow-sm border-b border-gray-200 dark:border-[#3A506B]">
+    <header class="bg-white/90 dark:bg-[#0A0908]/95 backdrop-blur-md shadow-sm border-b border-gray-200 dark:border-[#3D2D15]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold text-primary-600 dark:text-primary-400">
+                    <a href="/" class="text-2xl font-bold text-primary-600 dark:text-[#E8B85C]">
                         Welcome!
                     </a>
                 </div>
                 
                 <!-- Dark mode toggle -->
-                <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                <button id="theme-toggle" class="theme-toggle p-2.5 rounded-xl bg-gray-100 dark:bg-[#17130D] border border-gray-200 dark:border-[#4A3618] text-gray-700 dark:text-[#E8B85C]">
                     <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
                     </svg>
@@ -184,10 +198,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white dark:bg-[#1C2541] border-t border-gray-200 dark:border-[#3A506B] mt-16">
+    <footer class="site-footer bg-white dark:bg-[#0A0908] border-t border-gray-200 dark:border-[#24221F] mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="text-center text-gray-600 dark:text-gray-400">
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-4">
+                <div class="footer-links flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-6 mb-5">
                     <a href="mailto:amirrrr.azariii123@sharif.edu" class="flex items-center gap-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
@@ -214,7 +228,7 @@
                         Telegram
                     </a>
                 </div>
-                <p class="text-sm">&copy; 2026  AmirReza Azari. All rights reserved.</p>
+                <p class="footer-copyright text-sm">&copy; 2026 AmirReza Azari. All rights reserved.</p>
             </div>
         </div>
     </footer>
