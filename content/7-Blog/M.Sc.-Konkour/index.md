@@ -1,8 +1,12 @@
 ---
-title: "What I Learned from Preparing for the Master's Entrance Exam"
-description: "A personal look at how I prepared for the exam, managed my time, chose my resources, and dealt with the challenges along the way."
-start: "September 30, 2026"
+title: "From a Late Start to Rank 15: My Master's Entrance Exam Journey"
+
+description: "How I prepared for Iran's Master's entrance exam, managed a late start alongside work, chose my resources, and eventually ranked 15th in Artificial Intelligence."
+
+start: "October 1, 2026"
+
 image: "image.png"
+
 dir: "rtl"
 ---
 
