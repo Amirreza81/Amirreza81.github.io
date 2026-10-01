@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
+    if (tabButtons.length === 0 || tabContents.length === 0) {
+        return;
+    }
     
     function showTab(tabSlug) {
         // Hide all tab contents

@@ -312,7 +312,8 @@ module.exports = function(eleventyConfig) {
                   slug: itemName.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, ''),
                   content: body,
                   folder: tabName,
-                  tabSlug: tabName.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '')
+                  tab: cleanTabName(tabName),
+                  tabSlug: tabName.replace(/^\d+-/, '').toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '')
                 };
 
                 item.isPersian = /[\u0600-\u06FF]/.test(body);

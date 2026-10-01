@@ -1927,3 +1927,16 @@ footer a:hover svg {
     direction: ltr;
     text-align: left;
 }
+
+.content-area p,
+.content-area li,
+.content-area h1,
+.content-area h2,
+.content-area h3,
+.content-area h4,
+.content-area h5,
+.content-area h6 {
+    direction: auto;
+    text-align: start;
+    unicode-bidi: plaintext;
+}
