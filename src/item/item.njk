@@ -46,9 +46,9 @@ layout: layout.njk
         {% endif %}
         
         {% if item.description %}
-        <p class="text-xl item-header-description mb-6">
-            {{ item.description }}
-        </p>
+            <p dir="ltr" class="text-xl item-header-description mb-6 text-left">
+                {{ item.description }}
+            </p>
         {% endif %}
         
         {% if item.image and item.image != "" and item.image != "placeholder.jpg" and item.image != "README.md" %}
