@@ -10,6 +10,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("content/**/*.{png,jpg,jpeg,gif,svg}");
+  eleventyConfig.addPassthroughCopy({
+    "content/7-Blog/M.Sc.-Konkour/result.png": "blog/msc-konkour/result.png"
+  });
   eleventyConfig.addPassthroughCopy("public");
 
   // Set up Markdown
