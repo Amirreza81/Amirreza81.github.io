@@ -519,14 +519,14 @@ code {
     color: #d1d5db;
 }
 
-.dark .content-area h1,
+/* .dark .content-area h1,
 .dark .content-area h2,
 .dark .content-area h3,
 .dark .content-area h4,
 .dark .content-area h5,
 .dark .content-area h6 {
     color: #f9fafb;
-}
+} */
 
 .dark .content-area strong {
     color: #f9fafb;
@@ -1940,3 +1940,41 @@ footer a:hover svg {
     text-align: start;
     unicode-bidi: plaintext;
 }
+
+.content-area,
+.content-area h1,
+.content-area h2,
+.content-area h3,
+.content-area h4,
+.content-area h5,
+.content-area h6,
+.content-area p,
+.content-area li,
+.content-area a,
+.content-area strong,
+.content-area code {
+    font-family: "Vazirmatn", "Segoe UI", Tahoma, sans-serif;
+}
+
+.content-area a {
+    text-decoration: underline;
+}
+
+html:not(.dark) .content-area a {
+    color: #2563eb;
+}
+
+html:not(.dark) .content-area a:hover {
+    color: #1d4ed8;
+}
+
+
+.dark .content-area h1,
+.dark .content-area h2,
+.dark .content-area h3,
+.dark .content-area h4,
+.dark .content-area h5,
+.dark .content-area h6 {
+    color: #c9a227 !important;
+}
+
