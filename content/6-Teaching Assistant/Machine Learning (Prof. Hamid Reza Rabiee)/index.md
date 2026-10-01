@@ -1,7 +1,7 @@
 ---
 title: "Teaching Assistant – Machine Learning"
 organization: "Sharif University of Technology"
-description: "Teaching Assistant for Machine Learning"
+# description: "Teaching Assistant for Machine Learning"
 start: "Spring 2025"
 end: "Spring 2025"
 image: ""

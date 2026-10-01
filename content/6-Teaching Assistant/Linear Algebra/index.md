@@ -1,7 +1,7 @@
 ---
 title: "Teaching Assistant – Linear Algebra"
 organization: "Sharif University of Technology"
-description: "Teaching Assistant for Linear Algebra"
+# description: "Teaching Assistant for Linear Algebra"
 start: "Spring 2023"
 end: "Spring 2023"
 image: ""

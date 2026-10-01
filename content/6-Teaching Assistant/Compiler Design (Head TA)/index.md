@@ -1,7 +1,7 @@
 ---
 title: "Head Teaching Assistant – Compiler Design"
 organization: "Sharif University of Technology"
-description: "Head TA for Compiler Design"
+# description: "Head TA for Compiler Design"
 start: "Spring 2024"
 end: "Spring 2025"
 image: ""

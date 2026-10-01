@@ -1,7 +1,7 @@
 ---
 title: "Teaching Assistant – Computer Architecture"
 organization: "Sharif University of Technology"
-description: "Teaching Assistant for Computer Architecture"
+# description: "Teaching Assistant for Computer Architecture"
 start: "Spring 2023"
 end: "Spring 2025"
 image: ""

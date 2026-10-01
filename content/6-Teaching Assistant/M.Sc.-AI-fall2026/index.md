@@ -1,9 +1,9 @@
 ---
-title: "Teaching Assistant — Artificial Intelligence"
+title: "Teaching Assistant — Artificial Intelligence (Fall 2026)"
 
-organization: "Sharif University of Technology"
+organization: "Sharif University of Technology - CE"
 
-description: "Teaching Assistant for the Artificial Intelligence course at the Department of Computer Engineering, Sharif University of Technology."
+# description: "Teaching Assistant for the Artificial Intelligence course at the Department of Computer Engineering, Sharif University of Technology."
 
 start: "12 Sep 2026"
 
@@ -14,7 +14,7 @@ image: ""
 showDuration: false
 
 badge: "M.Sc."
-professor: "Dr. Mahdieh Soleymani & Mr. Marioriyad"
+professor: "Dr. Mahdieh Soleymani and Mr. Marioriyad"
 priority: 1
 ---
 

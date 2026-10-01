@@ -1,7 +1,7 @@
 ---
 title: "Teaching Assistant – Technical Presentation"
 organization: "Sharif University of Technology"
-description: "Teaching Assistant for Technical Presentation"
+# description: "Teaching Assistant for Technical Presentation"
 start: "Spring 2025"
 end: "Spring 2025"
 image: ""

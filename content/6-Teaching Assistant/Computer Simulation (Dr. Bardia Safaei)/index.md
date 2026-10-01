@@ -1,7 +1,7 @@
 ---
 title: "Teaching Assistant – Computer Simulation"
 organization: "Sharif University of Technology"
-description: "Teaching Assistant for Computer Simulation"
+# description: "Teaching Assistant for Computer Simulation"
 start: "Spring 2024"
 end: "Spring 2025"
 image: ""

@@ -1,7 +1,7 @@
 ---
 title: "Head of HW – Computer Simulation"
 organization: "Sharif University of Technology"
-description: "Teaching Assistant for Computer Simulation"
+# description: "Teaching Assistant for Computer Simulation"
 start: "Fall 2023"
 end: "Fall 2023"
 image: ""

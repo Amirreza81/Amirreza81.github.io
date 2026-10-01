@@ -1,7 +1,7 @@
 ---
 title: "Teaching Assistant – Probability and Statistics for Engineering"
 organization: "Sharif University of Technology"
-description: "Teaching Assistant for Probability and Statistics"
+# description: "Teaching Assistant for Probability and Statistics"
 start: "Spring 2023"
 end: "Spring 2023"
 image: ""

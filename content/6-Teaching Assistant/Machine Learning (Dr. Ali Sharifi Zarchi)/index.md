@@ -1,7 +1,7 @@
 ---
 title: "Head of Exams and Projects – Machine Learning"
 organization: "Sharif University of Technology"
-description: "Teaching Assistant for Machine Learning"
+# description: "Teaching Assistant for Machine Learning"
 start: "Fall 2024"
 end: "Spring 2025"
 image: ""

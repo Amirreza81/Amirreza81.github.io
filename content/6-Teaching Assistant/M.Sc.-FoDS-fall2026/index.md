@@ -1,9 +1,9 @@
 ---
-title: "Teaching Assistant — Foundations of Data Science"
+title: "Teaching Assistant — Foundations of Data Science (Fall 2026)"
 
-organization: "Sharif University of Technology"
+organization: "Sharif University of Technology - EE"
 
-description: "Teaching Assistant for the Foundations of Data Science course at the Department of Electrical Engineering, Sharif University of Technology."
+# description: "Teaching Assistant for the Foundations of Data Science course at the Department of Electrical Engineering, Sharif University of Technology."
 
 start: "28 Aug 2026"
 

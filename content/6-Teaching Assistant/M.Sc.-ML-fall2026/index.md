@@ -1,11 +1,11 @@
 ---
-title: "Teaching Assistant — Artificial Intelligence"
+title: "Head of Exams — Machine Learning (Fall 2026)"
 
-organization: "Sharif University of Technology"
+organization: "Sharif University of Technology - CE"
 
-description: "Teaching Assistant for the Artificial Intelligence course at the Department of Computer Engineering, Sharif University of Technology."
+# description: "Teaching Assistant for the Machine Learning course at the Department of Computer Engineering, Sharif University of Technology."
 
-start: "12 Sep 2026"
+start: "18 Sep 2026"
 
 end: "Present"
 
@@ -14,8 +14,8 @@ image: ""
 showDuration: false
 
 badge: "M.Sc."
-professor: "Dr. Mahdieh Soleymani & Mr. Marioriyad"
-priority: 1
+professor: "Dr. Mahdieh Soleymani and Mr. Marioriyad"
+priority: 0
 ---
 
-Teaching Assistant for the Artificial Intelligence course at the Department of Computer Engineering, Sharif University of Technology, taught by **Dr. Mahdieh Soleymani** and **Mr. Marioriyad**.
+Head of Exams for the Machine Learning course at the Department of Computer Engineering, Sharif University of Technology, taught by **Dr. Mahdieh Soleymani** and **Mr. Marioriyad**.

@@ -1,7 +1,7 @@
 ---
 title: "Teaching Assistant – Artificial Intelligence"
 organization: "Sharif University of Technology"
-description: "Teaching Assistant for Artificial Intelligence"
+# description: "Teaching Assistant for Artificial Intelligence"
 start: "Spring 2024"
 end: "Fall 2024"
 image: ""

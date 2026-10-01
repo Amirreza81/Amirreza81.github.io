@@ -1,7 +1,7 @@
 ---
 title: "Teaching Assistant – Numerical Computations"
 organization: "Sharif University of Technology"
-description: "Teaching Assistant for Numerical Computations"
+# description: "Teaching Assistant for Numerical Computations"
 start: "Fall 2023"
 end: "Fall 2023"
 image: ""
