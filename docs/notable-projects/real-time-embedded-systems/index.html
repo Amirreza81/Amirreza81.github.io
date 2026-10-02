@@ -106,6 +106,8 @@
     <!-- Main Content -->
     <main class="min-h-screen">
         
+
+
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Breadcrumb -->
     <nav class="mb-8">
@@ -143,14 +145,18 @@
                 Energy-aware task scheduling for real-time embedded systems using Reinforcement Learning and DVFS
             </p>
         
+
+        
         
         
     </header>
 
+    
+
     <div class="content-area max-w-none">
-        <h3 id="project-overview" tabindex="-1">Project Overview <a class="header-anchor" href="#project-overview" aria-hidden="true">#</a></h3>
+        <h3 id="project-overview" tabindex="-1">Project Overview</h3>
 <p>Designed an intelligent task scheduling framework for resource-constrained real-time embedded systems. The project leverages Reinforcement Learning (RL) and Dynamic Voltage and Frequency Scaling (DVFS) to minimize energy consumption while satisfying real-time execution constraints.</p>
-<h3 id="key-features" tabindex="-1">Key Features <a class="header-anchor" href="#key-features" aria-hidden="true">#</a></h3>
+<h3 id="key-features" tabindex="-1">Key Features</h3>
 <ul>
 <li><strong>Energy Optimization:</strong> Reduced power consumption through adaptive voltage and frequency scaling.</li>
 <li><strong>Reinforcement Learning:</strong> Developed an RL-based scheduler to learn energy-efficient scheduling policies.</li>
@@ -158,7 +164,7 @@
 <li><strong>Dynamic Resource Management:</strong> Optimized CPU performance based on workload characteristics and system state.</li>
 <li><strong>Performance Evaluation:</strong> Compared the proposed approach with conventional scheduling algorithms using simulation metrics.</li>
 </ul>
-<h3 id="technologies-used" tabindex="-1">Technologies Used <a class="header-anchor" href="#technologies-used" aria-hidden="true">#</a></h3>
+<h3 id="technologies-used" tabindex="-1">Technologies Used</h3>
 <ul>
 <li><strong>Python:</strong> Core implementation and experimentation.</li>
 <li><strong>Reinforcement Learning (RL):</strong> Intelligent scheduling policy optimization.</li>
@@ -166,7 +172,7 @@
 <li><strong>Real-Time Systems:</strong> Task scheduling and deadline management.</li>
 <li><strong>NumPy &amp; Matplotlib:</strong> Data analysis, simulation, and result visualization.</li>
 </ul>
-<h3 id="software-architecture" tabindex="-1">Software Architecture <a class="header-anchor" href="#software-architecture" aria-hidden="true">#</a></h3>
+<h3 id="software-architecture" tabindex="-1">Software Architecture</h3>
 <ul>
 <li><strong>Task Scheduler:</strong> Managed periodic and aperiodic real-time tasks.</li>
 <li><strong>RL Agent:</strong> Learned optimal scheduling decisions based on system states and rewards.</li>
@@ -174,7 +180,7 @@
 <li><strong>Simulation Environment:</strong> Evaluated scheduling performance under different workloads.</li>
 <li><strong>Analytics Module:</strong> Measured energy consumption, deadline miss rate, and overall system efficiency.</li>
 </ul>
-<h3 id="impact-and-applications" tabindex="-1">Impact and Applications <a class="header-anchor" href="#impact-and-applications" aria-hidden="true">#</a></h3>
+<h3 id="impact-and-applications" tabindex="-1">Impact and Applications</h3>
 <ul>
 <li><strong>Energy-Efficient Computing:</strong> Extended battery life in embedded and IoT devices.</li>
 <li><strong>Real-Time Reliability:</strong> Maintained timing guarantees while minimizing power usage.</li>
@@ -183,6 +189,68 @@
 </ul>
 
     </div>
+
+    <!-- Back to Top -->
+        <button id="back-to-top"
+                type="button"
+                aria-label="Back to top"
+                class="fixed bottom-6 right-6 z-50 hidden items-center justify-center w-10 h-10 rounded-full bg-primary-600 text-white shadow-lg hover:bg-primary-700 transition-all duration-300 opacity-0">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 15l7-7 7 7">
+                </path>
+            </svg>
+        </button>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const button = document.getElementById("back-to-top");
+
+            if (!button) return;
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 500) {
+                    button.classList.remove("hidden");
+                    button.classList.add("flex");
+
+                    requestAnimationFrame(() => {
+                        button.classList.remove("opacity-0");
+                    });
+                } else {
+                    button.classList.add("opacity-0");
+
+                    setTimeout(() => {
+                        if (window.scrollY <= 500) {
+                            button.classList.remove("flex");
+                            button.classList.add("hidden");
+                        }
+                    }, 300);
+                }
+            });
+
+            button.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+        </script>     
+
+    
+
+    <!-- Sticky Article Header -->
+    
+    
+    
+
+    
+
+    
+
+    
 
     <!-- Navigation -->
     <nav class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
@@ -197,6 +265,7 @@
         </div>
     </nav>
 </div>
+
 
     </main>
 

@@ -414,9 +414,13 @@ code {
     background-color: #374151;
 }
 
-/* Header anchor links - completely hidden */
-.header-anchor {
-    display: none;
+/* Hide heading anchor links */
+
+.header-anchor,
+.header-anchor::before,
+.header-anchor::after {
+    display: none !important;
+    content: none !important;
 }
 
 /* Print styles */

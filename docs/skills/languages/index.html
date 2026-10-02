@@ -106,6 +106,8 @@
     <!-- Main Content -->
     <main class="min-h-screen">
         
+
+
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Breadcrumb -->
     <nav class="mb-8">
@@ -140,18 +142,84 @@
                 Human languages
             </p>
         
+
+        
         
         
     </header>
 
+    
+
     <div class="content-area max-w-none">
-        <h3 id="spoken-languages" tabindex="-1">Spoken Languages <a class="header-anchor" href="#spoken-languages" aria-hidden="true">#</a></h3>
+        <h3 id="spoken-languages" tabindex="-1">Spoken Languages</h3>
 <ul>
 <li><strong>Persian:</strong> Native proficiency.</li>
 <li><strong>English:</strong> Professional working proficiency (TOEFL iBT: 107).</li>
 </ul>
 
     </div>
+
+    <!-- Back to Top -->
+        <button id="back-to-top"
+                type="button"
+                aria-label="Back to top"
+                class="fixed bottom-6 right-6 z-50 hidden items-center justify-center w-10 h-10 rounded-full bg-primary-600 text-white shadow-lg hover:bg-primary-700 transition-all duration-300 opacity-0">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 15l7-7 7 7">
+                </path>
+            </svg>
+        </button>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const button = document.getElementById("back-to-top");
+
+            if (!button) return;
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 500) {
+                    button.classList.remove("hidden");
+                    button.classList.add("flex");
+
+                    requestAnimationFrame(() => {
+                        button.classList.remove("opacity-0");
+                    });
+                } else {
+                    button.classList.add("opacity-0");
+
+                    setTimeout(() => {
+                        if (window.scrollY <= 500) {
+                            button.classList.remove("flex");
+                            button.classList.add("hidden");
+                        }
+                    }, 300);
+                }
+            });
+
+            button.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+        </script>     
+
+    
+
+    <!-- Sticky Article Header -->
+    
+    
+    
+
+    
+
+    
+
+    
 
     <!-- Navigation -->
     <nav class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
@@ -166,6 +234,7 @@
         </div>
     </nav>
 </div>
+
 
     </main>
 

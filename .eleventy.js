@@ -17,13 +17,11 @@ module.exports = function(eleventyConfig) {
 
   // Set up Markdown
   const md = markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true
+      html: true,
+      breaks: true,
+      linkify: true
   }).use(markdownItAnchor, {
-    permalink: markdownItAnchor.permalink.ariaHidden({
-      placement: "after"
-    })
+      permalink: false
   });
 
   eleventyConfig.setLibrary("md", md);

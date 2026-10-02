@@ -106,6 +106,8 @@
     <!-- Main Content -->
     <main class="min-h-screen">
         
+
+
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Breadcrumb -->
     <nav class="mb-8">
@@ -143,14 +145,18 @@
                 Game theory algorithms for computing Correlated and Mixed Nash Equilibria
             </p>
         
+
+        
         
         
     </header>
 
+    
+
     <div class="content-area max-w-none">
-        <h3 id="project-overview" tabindex="-1">Project Overview <a class="header-anchor" href="#project-overview" aria-hidden="true">#</a></h3>
+        <h3 id="project-overview" tabindex="-1">Project Overview</h3>
 <p>Implemented algorithms to compute <strong>Correlated Nash Equilibria (CNE)</strong> and <strong>Mixed Nash Equilibria (MNE)</strong> for strategic games. The project applies optimization and game-theoretic techniques to analyze rational decision-making and equilibrium strategies in multi-agent environments.</p>
-<h3 id="key-features" tabindex="-1">Key Features <a class="header-anchor" href="#key-features" aria-hidden="true">#</a></h3>
+<h3 id="key-features" tabindex="-1">Key Features</h3>
 <ul>
 <li><strong>Mixed Nash Equilibrium:</strong> Computed mixed strategy equilibria for two-player strategic games.</li>
 <li><strong>Correlated Equilibrium:</strong> Implemented algorithms to determine correlated equilibria using optimization techniques.</li>
@@ -158,7 +164,7 @@
 <li><strong>Strategy Visualization:</strong> Visualized payoff matrices and equilibrium outcomes for comparative analysis.</li>
 <li><strong>Performance Evaluation:</strong> Tested algorithms across multiple game scenarios and benchmark examples.</li>
 </ul>
-<h3 id="technologies-used" tabindex="-1">Technologies Used <a class="header-anchor" href="#technologies-used" aria-hidden="true">#</a></h3>
+<h3 id="technologies-used" tabindex="-1">Technologies Used</h3>
 <ul>
 <li><strong>Python:</strong> Core implementation language.</li>
 <li><strong>Game Theory:</strong> Mixed and Correlated Nash Equilibria.</li>
@@ -166,7 +172,7 @@
 <li><strong>NumPy:</strong> Numerical computation and matrix operations.</li>
 <li><strong>Matplotlib:</strong> Visualization of strategies and payoff analysis.</li>
 </ul>
-<h3 id="software-architecture" tabindex="-1">Software Architecture <a class="header-anchor" href="#software-architecture" aria-hidden="true">#</a></h3>
+<h3 id="software-architecture" tabindex="-1">Software Architecture</h3>
 <ul>
 <li><strong>Game Engine:</strong> Represented normal-form games and payoff matrices.</li>
 <li><strong>Equilibrium Solver:</strong> Implemented algorithms for Mixed and Correlated Nash Equilibrium computation.</li>
@@ -174,7 +180,7 @@
 <li><strong>Analysis Module:</strong> Compared equilibrium solutions and evaluated player payoffs.</li>
 <li><strong>Visualization Module:</strong> Generated graphical representations of strategies and results.</li>
 </ul>
-<h3 id="impact-and-applications" tabindex="-1">Impact and Applications <a class="header-anchor" href="#impact-and-applications" aria-hidden="true">#</a></h3>
+<h3 id="impact-and-applications" tabindex="-1">Impact and Applications</h3>
 <ul>
 <li><strong>Game Theory Research:</strong> Demonstrates practical implementation of equilibrium computation algorithms.</li>
 <li><strong>Multi-Agent Systems:</strong> Applicable to AI agents and strategic decision-making problems.</li>
@@ -183,6 +189,68 @@
 </ul>
 
     </div>
+
+    <!-- Back to Top -->
+        <button id="back-to-top"
+                type="button"
+                aria-label="Back to top"
+                class="fixed bottom-6 right-6 z-50 hidden items-center justify-center w-10 h-10 rounded-full bg-primary-600 text-white shadow-lg hover:bg-primary-700 transition-all duration-300 opacity-0">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 15l7-7 7 7">
+                </path>
+            </svg>
+        </button>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const button = document.getElementById("back-to-top");
+
+            if (!button) return;
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 500) {
+                    button.classList.remove("hidden");
+                    button.classList.add("flex");
+
+                    requestAnimationFrame(() => {
+                        button.classList.remove("opacity-0");
+                    });
+                } else {
+                    button.classList.add("opacity-0");
+
+                    setTimeout(() => {
+                        if (window.scrollY <= 500) {
+                            button.classList.remove("flex");
+                            button.classList.add("hidden");
+                        }
+                    }, 300);
+                }
+            });
+
+            button.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+        </script>     
+
+    
+
+    <!-- Sticky Article Header -->
+    
+    
+    
+
+    
+
+    
+
+    
 
     <!-- Navigation -->
     <nav class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
@@ -197,6 +265,7 @@
         </div>
     </nav>
 </div>
+
 
     </main>
 
