@@ -122,6 +122,34 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Hero Section -->
 <section class="hero-section mb-16">
+    <canvas id="neural-network-bg"></canvas>
+    <div id="easter-egg"
+        class="absolute inset-0 z-20 hidden items-center justify-center pointer-events-none">
+
+        <div class="text-center px-8 py-6 rounded-2xl
+                    bg-black/90 dark:bg-[#0A0908]/95
+                    border border-[#E8B85C]/40
+                    shadow-2xl">
+
+            <div id="easter-status"
+                class="text-[#E8B85C] font-mono text-lg tracking-widest">
+                INITIALIZING...
+            </div>
+
+            <div class="w-64 h-1 bg-[#E8B85C]/15 rounded-full mt-5 overflow-hidden">
+                <div id="easter-progress"
+                    class="h-full bg-[#E8B85C] rounded-full"
+                    style="width: 0%">
+                </div>
+            </div>
+
+            <div id="easter-ready"
+                class="text-[#E8B85C] font-mono text-sm tracking-widest mt-5 hidden">
+                MODEL READY.
+            </div>
+
+        </div>
+    </div>
     <div class="max-w-5xl mx-auto">
         <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-14">
 
