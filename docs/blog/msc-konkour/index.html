@@ -39,7 +39,10 @@
     <link rel="canonical" href="https://amirreza81.github.io/">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/images/favicon.png">   
+    <link id="site-favicon"
+      rel="icon"
+      type="image/png"
+      href="/images/favicon_dark.png">
 
     <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,8 +88,18 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold text-primary-600 dark:text-[#E8B85C]">
-                        Welcome!
+                    <a href="/" class="relative flex items-center group">
+                        <img id="site-logo"
+                            src="/images/favicon_dark.png"
+                            alt="AmirReza Azari"
+                            class="w-[60px] h-[60px] object-contain">
+
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5
+                                    bg-amber-400
+                                    transition-all duration-300
+                                    -translate-x-1/2
+                                    group-hover:w-8">
+                        </span>
                     </a>
                 </div>
                 
@@ -373,7 +386,7 @@
 <p>ذات این درس هم تقریباً مثل مدار منطقیه :). اول مطلب رو درست بفهمید، بعد با تست زدن با مدل‌های مختلف سؤال آشنا بشید.</p>
 <h4 id="%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9-%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84" tabindex="-1">الکترونیک دیجیتال</h4>
 <p>خداروشکر این درس از کنکورهای جدید حذف شده و من هم دیگه علاقه‌ای ندارم درباره‌ش توضیح بدم :))).</p>
-<p>واقعاً درس سخت و دوست‌نداشتنی‌ای بود :)</p>
+<p>واقعاً درس ناجور و دوست‌نداشتنی‌ای بود :)</p>
 <h4 id="%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D8%B9%D8%A7%D9%85%D9%84" tabindex="-1">سیستم عامل</h4>
 <p>پایه‌ام توی این درس قوی بود. سیستم عامل درس مهمیه، ولی در عین حال نسبتاً سخت و بعضاً خسته‌کننده‌ست :))). متأسفانه توی چند سال اخیر هم سؤال‌های خیلی خوبی ازش در کنکور مطرح نشده.</p>
 <p>من خودم از کتاب مدرسان شریف خوندم و واقعاً هم راضی بودم. تقریباً همه‌ی مطالب رو کامل پوشش داده بود و برای من منبع مناسبی بود.</p>

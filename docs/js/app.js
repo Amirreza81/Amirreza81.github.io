@@ -2,15 +2,47 @@
 document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('theme-toggle');
     const html = document.documentElement;
-    
+    const favicon = document.getElementById('site-favicon');
+    const logo = document.getElementById('site-logo');
+
     // Check for saved theme preference or default to dark
     const savedTheme = localStorage.getItem('theme') || 'dark';
-    html.classList.toggle('dark', savedTheme === 'dark');
-    
+    const isDark = savedTheme === 'dark';
+
+    html.classList.toggle('dark', isDark);
+
+    // Set favicon according to current theme
+    if (favicon) {
+        favicon.href = isDark
+            ? '/images/favicon_dark.png'
+            : '/images/favicon_l.png';
+    }
+
+    if (logo) {
+        logo.src = isDark
+            ? '/images/favicon_dark.png'
+            : '/images/favicon_l.png';
+    }
+
     themeToggle.addEventListener('click', function() {
         html.classList.toggle('dark');
+
         const isDark = html.classList.contains('dark');
+
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+        // Update favicon
+        if (favicon) {
+            favicon.href = isDark
+                ? '/images/favicon_dark.png'
+                : '/images/favicon_l.png';
+        }
+
+        if (logo) {
+            logo.src = isDark
+                ? '/images/favicon_dark.png'
+                : '/images/favicon_l.png';
+        }
     });
 });
 
