@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function initNodes() {
         nodes = [];
 
-        const MIN_DISTANCE = 80;
+        const MIN_DISTANCE = 96;
 
         for (let i = 0; i < 55; i++) {
             let x;
@@ -265,8 +265,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (distance < 120 && distance > 0) {
                     const force = (120 - distance) / 120;
 
-                    node.x -= (dx / distance) * force * 3;
-                    node.y -= (dy / distance) * force * 3;
+                    node.x -= (dx / distance) * force * 0.8;
+                    node.y -= (dy / distance) * force * 0.8;
                 }
             }
         });
@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         clickCount++;
 
-        if (clickCount >= 15 && !easterEggActive) {
+        if (clickCount >= 30 && !easterEggActive) {
             startEasterEgg();
         }
     });
