@@ -265,8 +265,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (distance < 120 && distance > 0) {
                     const force = (120 - distance) / 120;
 
-                    node.x -= (dx / distance) * force * 0.8;
-                    node.y -= (dy / distance) * force * 0.8;
+                    node.x -= (dx / distance) * force * 0.65;
+                    node.y -= (dy / distance) * force * 0.65;
                 }
             }
         });
