@@ -5,5 +5,6 @@ organization: "Sharif University of Technology"
 start: "2026"
 # end: "2025"
 image: "uni.png"
-showDetails: fase
+showDetails: false
 ---
+
