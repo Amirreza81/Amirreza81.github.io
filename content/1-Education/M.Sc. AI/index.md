@@ -1,5 +1,5 @@
 ---
-title: "Master of Science in Artificial Engineering"
+title: "Master of Science in Artificial Intelligence"
 organization: "Sharif University of Technology"
 # description: "GPA: 3.90 (19.51/20)"
 start: "2026"

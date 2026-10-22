@@ -1,5 +1,5 @@
 ---
 title: "Professional Summary"
-description: "I am AmirReza Azari, a B.Sc. graduate in Computer Engineering from Sharif University of Technology. My focus is on Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL). I am an enthusiastic AI engineer with a strong desire to learn, grow, and contribute to challenging projects. I continuously expand my knowledge through hands-on development and research while building expertise in modern AI technologies."
+description: "I am AmirReza Azari, an M.Sc. student in Artificial Intelligence at Sharif University of Technology, where I also earned my B.Sc. in Computer Engineering. My interests lie in Machine Learning, Deep Learning, and Generative AI, with a growing focus on research and the development of intelligent systems. I enjoy tackling challenging problems, exploring emerging AI technologies, and turning ideas into practical solutions through hands-on development and research. I am committed to continuously learning, strengthening my research skills, and contributing to impactful AI projects."
 showDetails: false
 ---
